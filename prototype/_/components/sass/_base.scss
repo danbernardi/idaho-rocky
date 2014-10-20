@@ -1,0 +1,198 @@
+// general
+body {
+	line-height: 1.618;
+}
+p {
+	margin-bottom: 20px;
+}
+*, *:after, *:before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+
+
+// font scale
+$ms-base: 1rem 1.25rem;
+$ms-ratio: $golden;  // 1.618
+
+body{ font-size: ms(0); }
+  h5{ font-size: ms(1); }
+  h4{ font-size: ms(2); }
+  h3{ font-size: ms(3); }
+  h2{ font-size: ms(4); }
+  h1{ font-size: ms(5); }
+
+// general layout
+html, body, #pagewrap {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+.row {
+	@include container(1190px);
+	@extend .clearfix;
+}
+.clearfix {
+	&:before,
+	&:after {
+		content: " "; /* 1 */
+		display: table; /* 2 */
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+
+// header
+header {
+	height: $headerheight;
+	background: $tan;
+	width: 100%;
+	display: block;
+	
+	.logo {
+		@include span(2 of 12);
+		
+		img {
+			width: 150px;
+			margin-top: 17px;
+		}
+	}
+	
+	nav {
+		@include span(10 of 12 last);
+		
+		ul li {
+			display: inline-block;
+			
+			a {
+				text-transform: uppercase;
+				font-family: $sans-serif-light;
+				line-height: $headerheight;
+				display: block;
+				color: $darkbrown;
+				font-size: 12px;
+				padding: 0 16px;
+				
+				&:hover,
+				.active {
+					background: darken($tan, 3);
+				}
+			}
+		}
+	}
+}
+
+.home-images-grid {
+	@extend .clearfix;
+	
+	height: calc(100% - 113px);
+	
+	.row {
+		@include layout($homegrid);
+		@include container(960px);
+		
+		position: relative;
+	}
+	.top {
+		@extend .clearfix;
+		height: calc(50% - 59px);
+		
+		div:nth-child(1) {
+			@include span(2 of 5);
+			
+			background: url('../../img/homegrid/homegrid01.jpg') no-repeat #fafafa;
+			background-size: cover;
+			background-position: bottom;
+		}
+		div:nth-child(2) {
+			@include span(2 of 5);
+			
+			background: url('../../img/homegrid/homegrid02.jpg') no-repeat #fafafa;
+			background-size: cover;
+			background-position: center;
+		}
+		div:nth-child(3) {
+			@include span(1 of 5 last);
+			
+			background: url('../../img/homegrid/homegrid03.jpg') no-repeat #fafafa;
+			background-size: cover;
+			background-position: right;
+		}
+		
+		div {
+			height: 100%;
+			display: block;
+			background: #eee;
+		}
+	}
+	
+	.middle {
+		@extend .clearfix;
+		
+		display: block;
+		width: 100%;
+		height: 118px;
+		background: url('../../img/middle-bg.jpg') no-repeat $darkbrown;
+		background-size: cover;
+		color: $offwhite;
+		padding: 36px 0;
+		margin: 5px 0;
+		
+		h1 {
+			font-family: $sans-serif-light;
+			
+			font-size: 2.7rem;
+			padding-top: 3px;
+			text-transform: uppercase;
+			line-height: 1;
+			position: relative;
+		}
+		.btn {
+			@include ghost-button($offwhite, $tan);
+			
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -20px;
+		}
+	}
+	
+	.bottom {
+		@extend .clearfix;
+		
+		height: calc(50% - 59px);
+		
+		div:nth-child(1) {
+			@include span(1 of 5);
+			
+			background: url('../../img/homegrid/homegrid04.jpg') no-repeat #fafafa;
+			background-size: cover;
+		}
+		div:nth-child(2) {
+			@include span(2 of 5);
+			
+			background: url('../../img/homegrid/homegrid05.jpg') no-repeat #fafafa;
+			background-size: cover;
+			background-position: center;
+		}
+		div:nth-child(3) {
+			@include span(2 of 5 last);
+			
+			background: url('../../img/homegrid/homegrid06.jpg') no-repeat #fafafa;
+			background-size: cover;
+			background-position: bottom;
+		}
+		
+		div {
+			height: 100%;
+			display: block;
+			background: #eee;
+		}
+	}
+}

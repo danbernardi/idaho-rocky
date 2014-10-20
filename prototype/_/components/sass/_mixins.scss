@@ -1,0 +1,14 @@
+// ghost button
+@mixin ghost-button($color, $hover) {
+	padding: 6px 32px;
+	border: 1px solid $color;
+	display: inline-block;
+	color: $color;
+	font-family: $sans-serif-light;
+	text-transform: uppercase;
+	
+	&:hover {
+		border-color: $hover;
+		color: $hover;
+	}
+}
