@@ -6,7 +6,7 @@
 		<div></div>
 		<div></div>
 	</div>
-	<div class="middle"> 
+	<div class="middle">
 		<div class="row">
 			<h1>Interesting Callout Headline</h1>
 			<a class="btn" href="#">Learn More</a>

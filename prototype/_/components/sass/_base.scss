@@ -1,18 +1,21 @@
 // general
 body {
+	font-size: 100%;
+	font-family: open sans;
 	line-height: 1.618;
 }
 p {
 	margin-bottom: 20px;
 }
 *, *:after, *:before {
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 a {
 	text-decoration: none;
 }
-
+strong {
+	font-weight: bold;
+}
 
 // font scale
 $ms-base: 1rem 1.25rem;
@@ -32,6 +35,7 @@ html, body, #pagewrap {
 	display: block;
 }
 .row {
+	@include layout($default);
 	@include container(1190px);
 	@extend .clearfix;
 }
@@ -46,10 +50,15 @@ html, body, #pagewrap {
 		clear: both;
 	}
 }
+.container-padding {
+	padding: 0 45px;
+}
 
 
 // header
 header {
+	@extend .container-padding;
+	
 	height: $headerheight;
 	background: $tan;
 	width: 100%;
@@ -69,6 +78,7 @@ header {
 		
 		ul li {
 			display: inline-block;
+			position: relative;
 			
 			a {
 				text-transform: uppercase;
@@ -77,11 +87,39 @@ header {
 				display: block;
 				color: $darkbrown;
 				font-size: 12px;
-				padding: 0 16px;
+				padding: 0 15px;
 				
 				&:hover,
-				.active {
+				&.active {
 					background: darken($tan, 3);
+				}
+			}
+			
+			.submenu {
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 103px;
+				width: 260px;
+				background: $tan;
+				z-index: 999;
+				
+				li {
+					display: block;
+					width: 100%;
+					border-top: 1px solid lighten($darkbrown, 55);
+					
+					a {
+						line-height: 34px;
+					}
+				}
+			}
+			
+			&.menu-item-has-children:hover {
+				background: darken($tan, 3);
+				
+				> .submenu {
+					display: block;
 				}
 			}
 		}
@@ -106,21 +144,21 @@ header {
 		div:nth-child(1) {
 			@include span(2 of 5);
 			
-			background: url('../../img/homegrid/homegrid01.jpg') no-repeat #fafafa;
+			background: url('../../img/homegrid/homegrid01.jpg') no-repeat $tan;
 			background-size: cover;
 			background-position: bottom;
 		}
 		div:nth-child(2) {
 			@include span(2 of 5);
 			
-			background: url('../../img/homegrid/homegrid02.jpg') no-repeat #fafafa;
+			background: url('../../img/homegrid/homegrid02.jpg') no-repeat $tan;
 			background-size: cover;
 			background-position: center;
 		}
 		div:nth-child(3) {
 			@include span(1 of 5 last);
 			
-			background: url('../../img/homegrid/homegrid03.jpg') no-repeat #fafafa;
+			background: url('../../img/homegrid/homegrid03.jpg') no-repeat $tan;
 			background-size: cover;
 			background-position: right;
 		}
@@ -154,7 +192,8 @@ header {
 			position: relative;
 		}
 		.btn {
-			@include ghost-button($offwhite, $tan);
+			@include ghost-button($offwhite, $darkbrown, $offwhite);
+			@include transition(all);
 			
 			position: absolute;
 			right: 0;
@@ -171,20 +210,20 @@ header {
 		div:nth-child(1) {
 			@include span(1 of 5);
 			
-			background: url('../../img/homegrid/homegrid04.jpg') no-repeat #fafafa;
+			background: url('../../img/homegrid/homegrid04.jpg') no-repeat $tan;
 			background-size: cover;
 		}
 		div:nth-child(2) {
 			@include span(2 of 5);
 			
-			background: url('../../img/homegrid/homegrid05.jpg') no-repeat #fafafa;
+			background: url('../../img/homegrid/homegrid05.jpg') no-repeat $tan;
 			background-size: cover;
 			background-position: center;
 		}
 		div:nth-child(3) {
 			@include span(2 of 5 last);
 			
-			background: url('../../img/homegrid/homegrid06.jpg') no-repeat #fafafa;
+			background: url('../../img/homegrid/homegrid06.jpg') no-repeat $tan;
 			background-size: cover;
 			background-position: bottom;
 		}
@@ -194,5 +233,27 @@ header {
 			display: block;
 			background: #eee;
 		}
+	}
+}
+
+.content {
+	@include layout($default);
+	@include container(760px);
+	
+	padding: 45px;
+	
+	article {
+		@include span(12 of 12 last);
+	}
+}
+
+.sidenav {
+	margin-bottom: 25px; 
+	
+	a {
+		font-family: $sans-serif-light;
+		text-transform: uppercase;
+		font-size: 12px;
+		color: $darkbrown;
 	}
 }

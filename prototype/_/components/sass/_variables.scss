@@ -3,9 +3,9 @@
 /* ----------------------------------------------------- */
 
 // susy configuration
-$susy: (
+$default: (
 	columns: 12,  // The number of columns in your grid
-	gutters: .10, // The size of a gutter in relation to a single column
+	gutters: .50, // The size of a gutter in relation to a single column
 	global-box-sizing: border-box,
 );
 
