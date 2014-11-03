@@ -9,4 +9,6 @@ $(document).ready(function () {
 		$('a[href^="' + location.pathname.split("/")[2] + '"]').addClass('active');
 	}());
 	
+  	$('.content aside .fixedscroll').scrollToFixed();
+	
 });

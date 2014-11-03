@@ -1,11 +1,14 @@
 // general
 body {
-	font-size: 100%;
+	font-size: 90%;
 	font-family: open sans;
 	line-height: 1.618;
+	color: $darkbrown;
+	background: $offwhite;
 }
 p {
 	margin-bottom: 20px;
+	font-family: lato;
 }
 *, *:after, *:before {
 	box-sizing: border-box;
@@ -16,17 +19,9 @@ a {
 strong {
 	font-weight: bold;
 }
-
-// font scale
-$ms-base: 1rem 1.25rem;
-$ms-ratio: $golden;  // 1.618
-
-body{ font-size: ms(0); }
-  h5{ font-size: ms(1); }
-  h4{ font-size: ms(2); }
-  h3{ font-size: ms(3); }
-  h2{ font-size: ms(4); }
-  h1{ font-size: ms(5); }
+img {
+	max-width: 100%;
+}
 
 // general layout
 html, body, #pagewrap {
@@ -86,8 +81,9 @@ header {
 				line-height: $headerheight;
 				display: block;
 				color: $darkbrown;
-				font-size: 12px;
-				padding: 0 15px;
+				font-size: 11px;
+				padding: 0 14px;
+				letter-spacing: 1px;
 				
 				&:hover,
 				&.active {
@@ -111,6 +107,8 @@ header {
 					
 					a {
 						line-height: 34px;
+						font-size: 10px;
+						padding: 0 24px;
 					}
 				}
 			}
@@ -238,22 +236,74 @@ header {
 
 .content {
 	@include layout($default);
-	@include container(760px);
+	@include container(1140px);
 	
-	padding: 45px;
+	margin: 0;
+	
+	aside {
+		@include span(3 of 12);
+		
+		nav {
+			padding: 60px 0;
+			background: url(../../img/sidenavbg.jpg) left bottom no-repeat;
+			background-size: cover;
+			border-bottom: 5px solid $offwhite;
+			
+			h5 {
+				padding: 0 45px 8px;
+				font-size: 12px;
+				text-transform: uppercase;
+				font-weight: bold;
+				border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+				color: $offwhite;
+			}
+			
+			ul li {
+				a {
+					font-size: 12px;
+					padding: 10px 45px;
+					display: block;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+					color: rgba(255,255,255,0.85);
+					
+					&:hover {
+						background: rgba(0,0,0,0.2);
+					}
+				}
+			}
+		}
+		
+		img {
+			display: block;
+			margin-bottom: 5px;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 	
 	article {
-		@include span(12 of 12 last);
+		@include span(9 of 12 last);
+		
+		padding: 45px 0 45px 15px;
+		
+		h3, h4 {
+			font-family: $serif;
+			font-weight: bold;
+			color: lighten($darkbrown, 30);
+		}
+		
+		figure {
+			padding: 5px;
+			background: #EEE;
+			margin: 30px 0;
+			
+			figcaption {
+				font-size: 13px;
+				text-align: center;
+			}
+		}
 	}
 }
 
-.sidenav {
-	margin-bottom: 25px; 
-	
-	a {
-		font-family: $sans-serif-light;
-		text-transform: uppercase;
-		font-size: 12px;
-		color: $darkbrown;
-	}
-}

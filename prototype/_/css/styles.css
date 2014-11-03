@@ -65,6 +65,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* ----------------------------------------------------- */
 /* ----------------------------------------------------- */
+/* line 22, ../components/sass/_variables.scss */
+body {
+  font-size: 1rem;
+}
+
+/* line 23, ../components/sass/_variables.scss */
+h5 {
+  font-size: 1.25rem;
+}
+
+/* line 24, ../components/sass/_variables.scss */
+h4 {
+  font-size: 1.61803rem;
+}
+
+/* line 25, ../components/sass/_variables.scss */
+h3 {
+  font-size: 2.02254rem;
+}
+
+/* line 26, ../components/sass/_variables.scss */
+h2 {
+  font-size: 2.61803rem;
+}
+
+/* line 27, ../components/sass/_variables.scss */
+h1 {
+  font-size: 3.27254rem;
+}
+
 @font-face {
   font-family: 'garamondregular';
   src: url("../fonts/garamond_regular-webfont.eot");
@@ -88,69 +118,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 2, ../components/sass/_base.scss */
 body {
-  font-size: 100%;
+  font-size: 90%;
   font-family: open sans;
   line-height: 1.618;
+  color: #4C483F;
+  background: #fefefe;
 }
 
-/* line 7, ../components/sass/_base.scss */
+/* line 9, ../components/sass/_base.scss */
 p {
   margin-bottom: 20px;
+  font-family: lato;
 }
 
-/* line 10, ../components/sass/_base.scss */
+/* line 13, ../components/sass/_base.scss */
 *, *:after, *:before {
   box-sizing: border-box;
 }
 
-/* line 13, ../components/sass/_base.scss */
+/* line 16, ../components/sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 16, ../components/sass/_base.scss */
+/* line 19, ../components/sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 24, ../components/sass/_base.scss */
-body {
-  font-size: 1rem;
-}
-
-/* line 25, ../components/sass/_base.scss */
-h5 {
-  font-size: 1.25rem;
-}
-
-/* line 26, ../components/sass/_base.scss */
-h4 {
-  font-size: 1.61803rem;
+/* line 22, ../components/sass/_base.scss */
+img {
+  max-width: 100%;
 }
 
 /* line 27, ../components/sass/_base.scss */
-h3 {
-  font-size: 2.02254rem;
-}
-
-/* line 28, ../components/sass/_base.scss */
-h2 {
-  font-size: 2.61803rem;
-}
-
-/* line 29, ../components/sass/_base.scss */
-h1 {
-  font-size: 3.27254rem;
-}
-
-/* line 32, ../components/sass/_base.scss */
 html, body, #pagewrap {
   height: 100%;
   width: 100%;
   display: block;
 }
 
-/* line 37, ../components/sass/_base.scss */
+/* line 32, ../components/sass/_base.scss */
 .row {
   max-width: 1190px;
   margin-left: auto;
@@ -163,67 +171,68 @@ html, body, #pagewrap {
   clear: both;
 }
 
-/* line 43, ../components/sass/_base.scss */
+/* line 38, ../components/sass/_base.scss */
 .clearfix:before, .row:before, .home-images-grid:before, .home-images-grid .top:before, .home-images-grid .middle:before, .home-images-grid .bottom:before, .clearfix:after, .row:after, .home-images-grid:after, .home-images-grid .top:after, .home-images-grid .middle:after, .home-images-grid .bottom:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-/* line 49, ../components/sass/_base.scss */
+/* line 44, ../components/sass/_base.scss */
 .clearfix:after, .row:after, .home-images-grid:after, .home-images-grid .top:after, .home-images-grid .middle:after, .home-images-grid .bottom:after {
   clear: both;
 }
 
-/* line 53, ../components/sass/_base.scss */
+/* line 48, ../components/sass/_base.scss */
 .container-padding, header {
   padding: 0 45px;
 }
 
-/* line 59, ../components/sass/_base.scss */
+/* line 54, ../components/sass/_base.scss */
 header {
   height: 103px;
   background: #EBE4CD;
   width: 100%;
   display: block;
 }
-/* line 67, ../components/sass/_base.scss */
+/* line 62, ../components/sass/_base.scss */
 header .logo {
   width: 14.28571%;
   float: left;
   margin-right: 2.85714%;
 }
-/* line 70, ../components/sass/_base.scss */
+/* line 65, ../components/sass/_base.scss */
 header .logo img {
   width: 150px;
   margin-top: 17px;
 }
-/* line 76, ../components/sass/_base.scss */
+/* line 71, ../components/sass/_base.scss */
 header nav {
   width: 82.85714%;
   float: right;
   margin-right: 0;
 }
-/* line 79, ../components/sass/_base.scss */
+/* line 74, ../components/sass/_base.scss */
 header nav ul li {
   display: inline-block;
   position: relative;
 }
-/* line 83, ../components/sass/_base.scss */
+/* line 78, ../components/sass/_base.scss */
 header nav ul li a {
   text-transform: uppercase;
   font-family: "nexa_lightregular", Helvetica, Arial, sans-serif;
   line-height: 103px;
   display: block;
   color: #4C483F;
-  font-size: 12px;
-  padding: 0 15px;
+  font-size: 11px;
+  padding: 0 14px;
+  letter-spacing: 1px;
 }
-/* line 92, ../components/sass/_base.scss */
+/* line 88, ../components/sass/_base.scss */
 header nav ul li a:hover, header nav ul li a.active {
   background: #e7dec2;
 }
-/* line 98, ../components/sass/_base.scss */
+/* line 94, ../components/sass/_base.scss */
 header nav ul li .submenu {
   display: none;
   position: absolute;
@@ -233,30 +242,32 @@ header nav ul li .submenu {
   background: #EBE4CD;
   z-index: 999;
 }
-/* line 107, ../components/sass/_base.scss */
+/* line 103, ../components/sass/_base.scss */
 header nav ul li .submenu li {
   display: block;
   width: 100%;
   border-top: 1px solid #d6d3ce;
 }
-/* line 112, ../components/sass/_base.scss */
+/* line 108, ../components/sass/_base.scss */
 header nav ul li .submenu li a {
   line-height: 34px;
+  font-size: 10px;
+  padding: 0 24px;
 }
-/* line 118, ../components/sass/_base.scss */
+/* line 116, ../components/sass/_base.scss */
 header nav ul li.menu-item-has-children:hover {
   background: #e7dec2;
 }
-/* line 121, ../components/sass/_base.scss */
+/* line 119, ../components/sass/_base.scss */
 header nav ul li.menu-item-has-children:hover > .submenu {
   display: block;
 }
 
-/* line 129, ../components/sass/_base.scss */
+/* line 127, ../components/sass/_base.scss */
 .home-images-grid {
   height: calc(100% - 113px);
 }
-/* line 134, ../components/sass/_base.scss */
+/* line 132, ../components/sass/_base.scss */
 .home-images-grid .row {
   max-width: 960px;
   margin-left: auto;
@@ -269,11 +280,11 @@ header nav ul li.menu-item-has-children:hover > .submenu {
   display: block;
   clear: both;
 }
-/* line 140, ../components/sass/_base.scss */
+/* line 138, ../components/sass/_base.scss */
 .home-images-grid .top {
   height: calc(50% - 59px);
 }
-/* line 144, ../components/sass/_base.scss */
+/* line 142, ../components/sass/_base.scss */
 .home-images-grid .top div:nth-child(1) {
   width: 39.76378%;
   float: left;
@@ -282,7 +293,7 @@ header nav ul li.menu-item-has-children:hover > .submenu {
   background-size: cover;
   background-position: bottom;
 }
-/* line 151, ../components/sass/_base.scss */
+/* line 149, ../components/sass/_base.scss */
 .home-images-grid .top div:nth-child(2) {
   width: 39.76378%;
   float: left;
@@ -291,7 +302,7 @@ header nav ul li.menu-item-has-children:hover > .submenu {
   background-size: cover;
   background-position: center;
 }
-/* line 158, ../components/sass/_base.scss */
+/* line 156, ../components/sass/_base.scss */
 .home-images-grid .top div:nth-child(3) {
   width: 19.68504%;
   float: right;
@@ -300,13 +311,13 @@ header nav ul li.menu-item-has-children:hover > .submenu {
   background-size: cover;
   background-position: right;
 }
-/* line 166, ../components/sass/_base.scss */
+/* line 164, ../components/sass/_base.scss */
 .home-images-grid .top div {
   height: 100%;
   display: block;
   background: #eee;
 }
-/* line 173, ../components/sass/_base.scss */
+/* line 171, ../components/sass/_base.scss */
 .home-images-grid .middle {
   display: block;
   width: 100%;
@@ -317,7 +328,7 @@ header nav ul li.menu-item-has-children:hover > .submenu {
   padding: 36px 0;
   margin: 5px 0;
 }
-/* line 185, ../components/sass/_base.scss */
+/* line 183, ../components/sass/_base.scss */
 .home-images-grid .middle h1 {
   font-family: "nexa_lightregular", Helvetica, Arial, sans-serif;
   font-size: 2.7rem;
@@ -326,7 +337,7 @@ header nav ul li.menu-item-has-children:hover > .submenu {
   line-height: 1;
   position: relative;
 }
-/* line 194, ../components/sass/_base.scss */
+/* line 192, ../components/sass/_base.scss */
 .home-images-grid .middle .btn {
   padding: 6px 32px;
   border: 1px solid #fefefe;
@@ -347,11 +358,11 @@ header nav ul li.menu-item-has-children:hover > .submenu {
   border-color: #4C483F;
   color: #4C483F;
 }
-/* line 205, ../components/sass/_base.scss */
+/* line 203, ../components/sass/_base.scss */
 .home-images-grid .bottom {
   height: calc(50% - 59px);
 }
-/* line 210, ../components/sass/_base.scss */
+/* line 208, ../components/sass/_base.scss */
 .home-images-grid .bottom div:nth-child(1) {
   width: 19.68504%;
   float: left;
@@ -359,7 +370,7 @@ header nav ul li.menu-item-has-children:hover > .submenu {
   background: url("../../img/homegrid/homegrid04.jpg") no-repeat #EBE4CD;
   background-size: cover;
 }
-/* line 216, ../components/sass/_base.scss */
+/* line 214, ../components/sass/_base.scss */
 .home-images-grid .bottom div:nth-child(2) {
   width: 39.76378%;
   float: left;
@@ -368,7 +379,7 @@ header nav ul li.menu-item-has-children:hover > .submenu {
   background-size: cover;
   background-position: center;
 }
-/* line 223, ../components/sass/_base.scss */
+/* line 221, ../components/sass/_base.scss */
 .home-images-grid .bottom div:nth-child(3) {
   width: 39.76378%;
   float: right;
@@ -377,19 +388,19 @@ header nav ul li.menu-item-has-children:hover > .submenu {
   background-size: cover;
   background-position: bottom;
 }
-/* line 231, ../components/sass/_base.scss */
+/* line 229, ../components/sass/_base.scss */
 .home-images-grid .bottom div {
   height: 100%;
   display: block;
   background: #eee;
 }
 
-/* line 239, ../components/sass/_base.scss */
+/* line 237, ../components/sass/_base.scss */
 .content {
-  max-width: 760px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  padding: 45px;
+  margin: 0;
 }
 /* line 12, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .content:after {
@@ -397,21 +408,70 @@ header nav ul li.menu-item-has-children:hover > .submenu {
   display: block;
   clear: both;
 }
-/* line 245, ../components/sass/_base.scss */
+/* line 243, ../components/sass/_base.scss */
+.content aside {
+  width: 22.85714%;
+  float: left;
+  margin-right: 2.85714%;
+}
+/* line 246, ../components/sass/_base.scss */
+.content aside nav {
+  padding: 60px 0;
+  background: url(../../img/sidenavbg.jpg) left bottom no-repeat;
+  background-size: cover;
+  border-bottom: 5px solid #fefefe;
+}
+/* line 252, ../components/sass/_base.scss */
+.content aside nav h5 {
+  padding: 0 45px 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  color: #fefefe;
+}
+/* line 262, ../components/sass/_base.scss */
+.content aside nav ul li a {
+  font-size: 12px;
+  padding: 10px 45px;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.85);
+}
+/* line 269, ../components/sass/_base.scss */
+.content aside nav ul li a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+/* line 276, ../components/sass/_base.scss */
+.content aside img {
+  display: block;
+  margin-bottom: 5px;
+}
+/* line 280, ../components/sass/_base.scss */
+.content aside img:last-child {
+  margin-bottom: 0;
+}
+/* line 286, ../components/sass/_base.scss */
 .content article {
-  width: 100%;
+  width: 74.28571%;
   float: right;
   margin-right: 0;
+  padding: 45px 0 45px 15px;
 }
-
-/* line 250, ../components/sass/_base.scss */
-.sidenav {
-  margin-bottom: 25px;
+/* line 291, ../components/sass/_base.scss */
+.content article h3, .content article h4 {
+  font-family: "garamondregular", Georgia, serif;
+  font-weight: bold;
+  color: #9c9688;
 }
-/* line 253, ../components/sass/_base.scss */
-.sidenav a {
-  font-family: "nexa_lightregular", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #4C483F;
+/* line 297, ../components/sass/_base.scss */
+.content article figure {
+  padding: 5px;
+  background: #EEE;
+  margin: 30px 0;
+}
+/* line 302, ../components/sass/_base.scss */
+.content article figure figcaption {
+  font-size: 13px;
+  text-align: center;
 }
