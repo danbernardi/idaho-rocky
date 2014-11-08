@@ -928,9 +928,7 @@ footer {
 }
 
 // form styles
-form {
-	@include layout($form);
-	
+form {	
 	background: #FFF;
 	padding: 40px;
 	border: 5px solid #EEE;
