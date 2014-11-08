@@ -14,6 +14,17 @@ $homegrid: (
 	gutters: .02, // The size of a gutter in relation to a single column
 	global-box-sizing: border-box,
 );
+$interior: (
+	columns: 5,  // The number of columns in your grid
+	gutters: .05, // The size of a gutter in relation to a single column
+	global-box-sizing: border-box,
+);
+$form: (
+	columns: 5,
+	gutters: 10px,
+	global-box-sizing: border-box,
+);
+
 
 // modular scale
 $ms-base: 1rem 1.25rem;
@@ -29,21 +40,15 @@ body { font-size: ms(0); }
 // colors
 $tan: #EBE4CD;
 $darkbrown: #4C483F;
+$brown: #5C4B3A;
+$lightbrown: #BCB998;
 $offwhite: #fefefe;
+$blue: #374C6B;
+$red: #88451E;
+$yellow: #8B6700;
+$green: #5B6D37;
 
 // fonts
-@font-face {
-    font-family: 'garamondregular';
-    src: url('../fonts/garamond_regular-webfont.eot');
-    src: url('../fonts/garamond_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/garamond_regular-webfont.woff2') format('woff2'),
-         url('../fonts/garamond_regular-webfont.woff') format('woff'),
-         url('../fonts/garamond_regular-webfont.ttf') format('truetype'),
-         url('../fonts/garamond_regular-webfont.svg#garamondregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @font-face {
     font-family: 'nexa_boldregular';
     src: url('../fonts/nexa_bold-webfont.eot');
@@ -56,9 +61,6 @@ $offwhite: #fefefe;
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'nexa_lightregular';
@@ -73,10 +75,25 @@ $offwhite: #fefefe;
 
 }
 
+@font-face {
+    font-family: 'garamond_regular';
+    src: url('../fonts/garamond_regular-webfont.eot');
+    src: url('../fonts/garamond_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/garamond_regular-webfont.woff2') format('woff2'),
+         url('../fonts/garamond_regular-webfont.woff') format('woff'),
+         url('../fonts/garamond_regular-webfont.ttf') format('truetype'),
+         url('../fonts/garamond_regular-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 // font variables
-$serif: 'garamondregular', Georgia, serif;
 $sans-serif-light: 'nexa_lightregular', Helvetica, Arial, sans-serif;
 $sans-serif-bold: 'nexa_boldregular', Helvetica, Arial, sans-serif;
+$bodytext: Lato;
+$serif: 'garamond_regular', Georgia, serif;
 
 
 // header

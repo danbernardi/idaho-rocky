@@ -18,16 +18,16 @@
 					<li><a href="index.php">Home</a></li>
 					<li class="menu-item-has-children"><a href="the-experience.php">The Experience</a>
 						<ul class="submenu">
-							<li><a href="the-experience.php">The Ranch Experience</a></li>
+							<li><a href="the-experience-the-ranch-experience.php">The Ranch Experience</a></li>
 							<li><a href="#">A Day in the Life</a></li>
 							<li><a href="#">Our Flexible Approach</a></li>
 							<li><a href="#">The Idaho Rockies</a></li>
 							<li><a href="#">Our Rich History</a></li>
 						</ul>
 					</li>
-					<li class="menu-item-has-children"><a href="#">Sports &amp; Activites</a>
+					<li class="menu-item-has-children"><a href="sports-activities.php">Sports &amp; Activites</a>
 						<ul class="submenu">
-							<li><a href="#">Hiking</a></li>
+							<li><a href="sports-activities-hiking.php">Hiking</a></li>
 							<li><a href="#">Mountain Biking</a></li>
 							<li><a href="#">Horseback Riding</a></li>
 							<li><a href="#">Fishing</a></li>
@@ -38,13 +38,24 @@
 							<li><a href="#">Summer 2014 Special Events</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Lodging</a></li>
-					<li><a href="#">Dining</a></li>
-					<li><a href="#">Press</a></li>
-					<li><a href="#">Private Events</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Blog</a></li>
+					<li class="menu-item-has-children"><a href="lodging.php">Lodging</a>
+						<ul class="submenu">
+							<li><a href="lodging.php">Types of Lodging</a></li>
+							<li><a href="lodging-rates.php">Rates</a></li>
+						</ul>
+					</li>
+					<li class="menu-item-has-children"><a href="dining.php">Dining</a>
+						<ul class="submenu">
+							<li><a href="dining.php">Dining</a></li>
+							<li><a href="#">Meet our Chef</a></li>
+							<li><a href="#">Sample Menus</a></li>
+						</ul>
+					</li>
+					<li><a href="press.php">Press</a></li>
+					<li><a href="private-parties.php">Private Events</a></li>
+					<li><a href="gallery.php">Gallery</a></li>
+					<li><a href="contact.php">Contact</a></li>
+					<li><a href="blog.php">Blog</a></li>
 				</ul>
 			</nav>
 		</div>
