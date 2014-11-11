@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Site Title</title>
 	<link rel="stylesheet" href="_/css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<script src="_/js/scripts.js"></script>
 </head>
 <body class="home">
