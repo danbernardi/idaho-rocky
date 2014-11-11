@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Site Title</title>
 	<link rel="stylesheet" href="_/css/styles.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="_/js/scripts.js"></script>
 </head>
@@ -17,7 +17,12 @@
 			<a class="logo" href="index.php"><img src="img/logo.png" alt="Idaho Rocky Mountain Ranch"></a>
 			<nav>
 				<ul>
-					<li><a href="index.php">Home</a></li>
+					<li class="menu-item-has-children"><a href="index.php">Home</a>
+						<ul class="submenu">
+							<li><a href="index.php">Home v1</a></li>
+							<li><a href="index2.php">Home v2</a></li>
+						</ul>
+					</li>
 					<li class="menu-item-has-children"><a href="the-experience.php">The Experience</a>
 						<ul class="submenu">
 							<li><a href="the-experience-the-ranch-experience.php">The Ranch Experience</a></li>

@@ -36,37 +36,37 @@
   			
   			<div class="item">
   				<img src="img/mealgrid01.jpg">
-  				<h3>Breakfast</h3>
+  				<h4>Breakfast</h4>
 				<p>Daily breakfast includes a complete continental buffet and our full hot breakfast menu. The buffet features fresh fruit, homemade granola and fresh-from-our-baker's-oven baked goods, juices, teas and fresh brewed coffee from Hailey Coffee Company. You then may choose from among our hot breakfast items, including a daily special, to complete your breakfast feast.</p>
   			</div>
   			
   			<div class="item">
   				<img src="img/mealgrid03.jpg">
-  				<h3>Lunch</h3>
+  				<h4>Lunch</h4>
 				<p>Your packed picnic lunch will be ready for you after breakfast, to take on your day’s adventure or to enjoy on the porch or at the Ranch picnic tables. Vegetarian options always are available, along with the ever reliable pb&amp;j.</p>
   			</div>
   			
   			<div class="item">
   				<img src="img/mealgrid02.jpg">
-  				<h3>Dinner</h3>
+  				<h4>Dinner</h4>
 				<p>Sunday, Tuesday, Wednesday, and Friday nights, dinners are multi-course delights, prepared by Chef Jordan. The meal is served Country fine dining style in the lodge from 6:30 until 8:30 pm. Children, if desired, may eat early from a simple children's menu these evenings; children’s menu options also are available if families choose to eat together.</p>
   			</div>
   			
   			<div class="item">
   				<img src="img/mealgrid04.jpg">
-  				<h3>Dutch Oven Cook-Out</h3>
+  				<h4>Dutch Oven Cook-Out</h4>
 				<p>Monday evening you depart from the lodge in a horse-drawn wagon for a casual dinner in a meadow amidst the pines. Spectacular views of the Sawtooth Mountains, the soothing water of Gold Creek and the crooning of local musicians accompany your feast of Dutch oven dishes like roasted beef, lamb, and poultry, hearty Dutch oven stews, roasted vegetable dishes, Dutch oven corn bread and yeast biscuits, and delicious Dutch oven cobblers, crisps and bread puddings.</p>
   			</div>
   			
   			<div class="item">
   				<img src="img/mealgrid03.jpg">
-  				<h3>IRMR Barbecue Nights</h3>
+  				<h4>IRMR Barbecue Nights</h4>
 				<p>On Thursday and Saturday evenings, watch the last lingering rays of an Idaho day come to a close as you sit on the front porch and enjoy a delicious grilled BBQ buffet with all the fixin's while listening to local musicians. Saturday is our Fajita Grill and Thursday is our traditional western BBQ.</p>
   			</div>
   			
   			<div class="item">
   				<img src="img/mealgrid01.jpg">
-  				<h3>Beverages &amp; Special Diets</h3>
+  				<h4>Beverages &amp; Special Diets</h4>
 				<p>A variety of fine wines, beers, and non-alcohol beer and sodas is available. There is a corkage fee for personal beverages brought to the porch and lodge dining room. Menu options for special diets are available with advance notice.</p>
   			</div>
   			

@@ -236,6 +236,18 @@ header {
 		}
 	}
 	
+	&.home2 .middle {
+		background: $offwhite;
+		
+		h1 {
+			color: $brown;
+		}
+		
+		.btn {
+			@include ghost-button($brown, $offwhite, $brown);
+		}
+	}
+	
 	.bottom {
 		@extend .clearfix;
 		
@@ -443,7 +455,7 @@ header {
 			margin: 0 45px;
 			
 			h4 {
-				font-size: 20px;
+				font-size: 18px;
 				color: rgba(255,255,255,0.8);
 			}
 		}
@@ -591,6 +603,7 @@ header {
 					h2 {
 						font-family: $serif;
 						font-size: 19px;
+						font-weight: bold;
 						line-height: 1;
 						text-transform: uppercase;
 						letter-spacing: 1px;
@@ -659,7 +672,6 @@ header {
 		border-bottom: 6px solid #EEE;
 		margin-bottom: 20px;
 		line-height: 1.5;
-		font-weight: lighter;
 		color: lighten($red, 5);
 		position: relative;
 		
@@ -722,11 +734,13 @@ header {
 						h2 {
 							font-family: $serif;
 							font-size: 24px;
+							font-weight: bold;
 							text-transform: uppercase;
 							transition: transform 0.35s;
 							line-height: 1.2;
 							letter-spacing: 1px;
 							margin-bottom: 5px;
+							text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 						}
 							
 						a {
@@ -928,7 +942,7 @@ img.featuredimg {
 			@include last();
 		}
 		
-		h3 {
+		h4 {
 			color: $red;
 			margin-top: 20px;
 		}

@@ -130,7 +130,7 @@
 					<div>
 						<h2>Private Events</h2>
 						<p>Go to next page</p>
-						<a href="private-events.php"></a>
+						<a href="private-parties.php"></a>
 					</div>
 				</figcaption>
 			</figure>
