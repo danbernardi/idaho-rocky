@@ -149,6 +149,12 @@
 			
 		</div>
 		
+		<div class="divider"></div>
+		
+		<a class="solidbtn" href="#">Area Links</a>
+		
+		<div class="divider"></div>
+		
 		<div class="pagenavigation">
 			<figure class="previous">
 				<img src="img/pagenavigation/adayinthelife-feat.jpg" alt="Next Page" />

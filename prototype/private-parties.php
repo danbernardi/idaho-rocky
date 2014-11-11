@@ -4,19 +4,33 @@
 	<aside>
 		<div class="fixedscroll">
 			<nav>
-				<!--<h5><a href="the-experience.php">The Experience</a></h5>
-				<ul>
-					<li><a href="the-experience-the-ranch-experience.php">The Ranch Experience</a></li>
-					<li><a href="#">A Day in the Life</a></li>
-					<li><a href="#">Our Flexible Approach</a></li>
-					<li><a href="#">The Idaho Rockies</a></li>
-					<li><a href="#">Our Rich History</a></li>
-				</ul>-->
+				<h5>Contact Info</h5>
+				<div class="textbox">
+					<p>Idaho Rocky Mountain Ranch<br>
+					HC64 Box 9934 <br>
+					Stanley, Idaho 83278</p>
+					
+					<p><i class="fa fa-phone"></i>(208) 774-3544<br>
+					<i class="fa fa-fax"></i>(208) 774-3477<br>
+					<i class="fa fa-envelope"></i><a href="mailto:info@idahorocky.com">info@idahorocky.com</a></p>
+					
+					<div class="quickcontact">
+						<h4>Have a Quick Question?</h4>
+						<form>
+							<input type="text" placeholder="Full Name" name="name">
+							<input type="text" placeholder="Email Address" name="mail">
+							<input type="text" placeholder="Phone Number" name="tel">
+							<textarea name="message" placeholder="Message"></textarea>
+							<input type="submit" name="submit" value="Submit">
+						</form>
+					</div>
+				</div>
 			</nav>
 		</div>
 	</aside>
 	<article>
-		<h2 class="pagetitle">Private Events &amp; Parties</h2>
+		<h2 class="pagetitle">Private Events &amp; Parties
+		<a class="solidbtn red" href="#">Request a Reservation</a></h2>
 		
 		<p><strong>The Idaho Rocky Mountain Ranch is a unique setting for weddings, retreats and private gatherings, whether you choose to make the Ranch your own with an exclusive occupancy or host a private Meadow Site party. The Ranch is recommended by Martha Stewart Weddings as an outstanding destination wedding venue.</strong></p>
 
@@ -35,6 +49,12 @@
 		<p>The Meadow Site is available for your wedding, reunion, business or special occasion during our summer season, June through September. For a real western flair, Pioneer Outfitters Percheron horse drawn wagon may be contracted to provide your guests a scenic ride, or for transport from the parking area.</p>
 		<p>We would be happy to reserve rooms for guests attending your Meadow Site event, subject to availability and our group reservation policies.</p>
 		<p>Please <a href="contact.php">contact us</a> for any additional information, or to plan your exclusive occupancy, private party or group event at the Ranch.</p>
+		
+		<div class="divider"></div>
+		
+		<a class="solidbtn red" href="#">Request a Reservation</a>
+		
+		<div class="divider"></div>
 		
 		<div class="pagenavigation">
 			<figure class="previous">

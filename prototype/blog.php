@@ -36,12 +36,12 @@
 			<div class="item">
 				<img class="alignleft" src="img/blog/post01.jpg" alt="New York Times">
 				<ul>
-					<li><a href="#">“Your Own Private Idaho”</a></li>
+					<li><a href="blog-single.php">“Your Own Private Idaho”</a></li>
 					<span class="author">by Some Person</span> | 
 					<time class="date">August 7, 2013</time>
 				</ul>
 				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus.</p>
-				<a class="solidbtn" href="#">Read More</a>
+				<a class="solidbtn" href="blog-single.php">Read More</a>
 			</div>
 			
 			<div class="item">

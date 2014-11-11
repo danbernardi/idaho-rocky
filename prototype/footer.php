@@ -10,10 +10,10 @@
 	</div>
 	<nav>
 		<ul>
-			<li><a href="#">Blog</a></li>
+			<li><a href="blog.php">Blog</a></li>
 			<li><a href="#">Employment</a></li>
 			<li><a href="#">Area Links</a></li>
-			<li><a href="#">Contact Us</a></li>
+			<li><a href="contact.php">Contact Us</a></li>
 		</ul>
 	</nav>
 </footer>

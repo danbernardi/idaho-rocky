@@ -12,7 +12,7 @@
 					
 					<p><i class="fa fa-phone"></i>(208) 774-3544<br>
 					<i class="fa fa-fax"></i>(208) 774-3477<br>
-					<i class="fa fa-envelope-o"></i><a href="mailto:info@idahorocky.com">info@idahorocky.com</a></p>
+					<i class="fa fa-envelope"></i><a href="mailto:info@idahorocky.com">info@idahorocky.com</a></p>
 					
 					<div class="quickcontact">
 						<h4>Have a Quick Question?</h4>
@@ -148,7 +148,8 @@
 		
 		<div class="divider"></div>
 		<a class="solidbtn" href="files/Directions_Boise_Airport_to_IRMR.pdf" target="_blank">Driving Directions - pdf</a>
-		<a class="solidbtn" href="lodging.php" target="_blank">View Accommodations</a>
+		<a class="solidbtn" href="lodging.php">View Accommodations</a>
+		<a class="solidbtn" href="#">Employment Opportunities</a>
 		<div class="divider"></div>
 		
 		<div class="pagenavigation">
