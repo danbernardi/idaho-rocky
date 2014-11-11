@@ -21,7 +21,7 @@
 		<p><strong>Donec id elit non mi porta gravida at eget metus.</strong> Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis.</p>
 		
 		<div class="divider"></div>
-		<div class="press">
+		<div class="posts">
 			
 			<div class="item">
 				<img src="img/press/newyorktimes.jpg" alt="New York Times">

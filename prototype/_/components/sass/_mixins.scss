@@ -18,3 +18,9 @@
 		color: $hover;
 	}
 }
+
+@mixin re-solidbtn() {
+	font-size: 14px;
+	font-family: $bodytext;
+	font-weight: normal;
+}

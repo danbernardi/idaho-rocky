@@ -382,6 +382,7 @@ header {
 				border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 				letter-spacing: 1px;
 				font-family: $bodytext;
+				color: $offwhite;
 				
 				a {
 					color: $offwhite;
@@ -428,12 +429,59 @@ header {
 			}
 		}
 		
+		.textbox {
+			margin: 0 45px;
+			
+			h4 {
+				font-size: 20px;
+				color: rgba(255,255,255,0.8);
+			}
+		}
+		h6 {
+			font-size: 16px;
+			color: $offwhite;
+		}
+		label {
+			color: rgba(255,255,255,0.6);
+			font-size: 12px;
+		}
+		input,
+		select,
+		textarea {
+			margin-bottom: 0px;
+			height: 30px;
+		}
+		textarea {
+			height: 70px;
+		}
+		
 		img {
 			display: block;
 			margin-bottom: 5px;
 			
 			&:last-child {
 				margin-bottom: 0;
+			}
+		}
+		
+		.textbox {
+			color: rgba(255,255,255,0.6);
+			margin-top: 12px;
+			font-size: 13px;
+			
+			a {
+				color: rgba(255,255,255,0.9);
+				
+				&:hover {
+					color: #fff;
+				}
+			}
+			i {
+				margin-right: 7px;
+			}
+			
+			.divider {
+				border-color: rgba(255,255,255,0.3);
 			}
 		}
 	}
@@ -443,6 +491,12 @@ header {
 		@include span(9 of 12 last);
 		
 		padding: 45px 61px 45px 25px;
+		
+		form {
+			background: #FFF;
+			padding: 40px;
+			border: 5px solid #EEE;
+		}
 	}
 	
 	
@@ -565,6 +619,7 @@ header {
 	
 	h1, h2, h3, h4, h5, h6 {
 		font-family: $serif;
+		position: relative;
 		
 		color: lighten($darkbrown, 20);
 	}
@@ -578,9 +633,8 @@ header {
 		position: relative;
 		
 		.solidbtn {
-			font-size: 14px;
-			font-family: lato;
-			font-weight: normal;
+			@include re-solidbtn();
+			
 			position: absolute;
 			right: 0;
 			top: 17px;
@@ -710,6 +764,7 @@ header {
 	dispaly: inline-block;
 	border-radius: 4px;
 	margin-right: 7px;
+	position: relative;
 	
 	&:hover {
 		background: lighten($red, 9);
@@ -742,6 +797,13 @@ header {
 		
 		&:hover {
 			background: lighten($yellow, 9);
+		}
+	}
+	
+	&.ic {
+		padding-left: 15px;
+		i {
+			margin-right: 7px;
 		}
 	}
 }
@@ -845,7 +907,7 @@ img.alignleft {
 	}
 }
 
-.press {
+.posts {
 	@include container();
 	@include layout($interior);
 	
@@ -862,6 +924,10 @@ img.alignleft {
 			font-size: 23px;
 		}
 		
+		a.solidbtn {
+			@include re-solidbtn();
+		}
+		
 		img {
 			max-height: 49px;
 		}
@@ -869,6 +935,24 @@ img.alignleft {
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+}
+
+.blog {
+	.item {
+	
+		img {
+			width: 24%;
+			max-height: none;
+			margin-bottom: 0;
+		}
+		p {
+			margin-top: 7px;
+		}
+	}
+	
+	.solidbtn {
+		@include re-solidbtn();
 	}
 }
 
@@ -928,11 +1012,7 @@ footer {
 }
 
 // form styles
-form {	
-	background: #FFF;
-	padding: 40px;
-	border: 5px solid #EEE;
-	
+form {
 	div div {		
 			margin-bottom: 20px;
 	}
@@ -941,9 +1021,12 @@ form {
 		@include container();
 			
 		div {
-			@include span(1 of 3);
-				
-			&:nth-child(3n) {
+			@include span(1 of 4);
+			
+			&:nth-child(1) {
+				@include span(2 of 4);
+			}
+			&:nth-child(3) {
 				@include last();
 			}
 		}
@@ -953,10 +1036,10 @@ form {
 		@include container();
 		
 		div {
-			@include span(1 of 5);
+			@include span(1 of 6);
 			
 			&:nth-child(1) {
-				@include span(2 of 5);
+				@include span(3 of 6);
 			}
 			
 			&:nth-child(4) {
@@ -999,12 +1082,13 @@ form {
 	}
 	
 	input, 
-	select {
+	select,
+	textarea {
 		width: 100%;
 		padding: 9px 14px;
 		border: 1px solid #DDD;
 		margin-top: 5px;
-		background-color: #FFF;
+		background-color: #fafafa;
 		height: 40px;
 		border-radius: 4px;
 		
@@ -1013,5 +1097,65 @@ form {
 			border-color: #444;
 		}
 	}
+	input:autofill,
+	textarea:autofill,
+	select:autofill {
+		background-color: #000;
+	}
+	
+	textarea {
+		height: 200px;
+	}
+	input[type=submit] {
+		background-color: lighten($red, 9);
+		border: none;
+		color: $offwhite;
+		cursor: hand;
+		cursor: pointer;
+		
+		&:hover {
+			background-color: lighten($red, 15);
+		}
+	}
 }
 
+.googlemap {
+	border: 5px solid #eee;
+}
+
+.pagination {
+	ul li {
+		display: inline-block;
+		margin-right: 7px;
+				
+		a {		
+			display: block;
+			color: $bodytext;
+			padding: 4px 24px;
+			background: #eee;
+			border-radius: 4px;
+					
+			&:hover {
+				background: darken(#eee, 5);
+			}
+					
+			&.active {
+				background: lighten($red, 9);
+				color: white;
+						
+				&:hover {
+					background: lighten($red, 15);
+				}
+			}
+		}
+	}
+}
+.newsletter,
+.quickcontact {
+	margin-top: 40px;
+	
+	span {
+		display: block;
+		margin-bottom: 5px;
+	}
+}
