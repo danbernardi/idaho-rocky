@@ -1,0 +1,1407 @@
+// general
+body {
+	font-size: 90%;
+	font-family: $bodytext;
+	line-height: 1.618;
+	color: lighten($darkbrown, 10);
+	background: #fafafa;
+}
+p {
+	margin-bottom: 20px;
+}
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: lighten($red, 9);
+	
+	&:hover {
+		color: lighten($red, 15);
+	}
+}
+strong {
+	font-weight: bold;
+}
+img {
+	max-width: 100%;
+}
+.divider {
+	display:block;
+	width: 100%;
+	margin: 20px 0;
+	border-bottom: 1px solid #ddd;
+	clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}	
+
+
+// general layout
+html, body, #pagewrap {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+.row {
+	@include layout($default);
+	@include container(1190px);
+	@extend .clearfix;
+}
+.clearfix {
+	&:before,
+	&:after {
+		content: " "; /* 1 */
+		display: table; /* 2 */
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+.container-padding {
+	padding: 0 45px;
+}
+
+
+// header
+header {
+	@extend .container-padding;
+	
+	height: $headerheight;
+	background: $tan;
+	width: 100%;
+	display: block;
+	
+	.row {
+		margin: 0;
+	}
+	
+	.logo {
+		@include span(2 of 12);
+		
+		img {
+			width: 150px;
+			margin-top: 17px;
+		}
+	}
+	
+	nav {
+		@include span(10 of 12 last);
+		
+		ul li {
+			display: inline-block;
+			position: relative;
+			
+			a {
+				text-transform: uppercase;
+				font-family: $sans-serif-light;
+				line-height: $headerheight;
+				display: block;
+				color: $darkbrown;
+				font-size: 11px;
+				padding: 0 14px;
+				letter-spacing: 1px;
+				
+				&:hover,
+				&.active {
+					background: darken($tan, 3);
+				}
+			}
+			
+			.submenu {
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 103px;
+				width: 260px;
+				background: #fff;
+				z-index: 999;
+				border-right: 5px solid #eee;
+				border-left: 5px solid #eee;
+				border-bottom: 5px solid #eee;
+				
+				li {
+					display: block;
+					width: 100%;
+					border-top: 1px solid darken($offwhite, 8);
+					
+					a {
+						line-height: 34px;
+						font-size: 10px;
+						padding: 0 24px;
+						
+						&:hover,
+						&.active {
+							color: lighten($red, 15);
+							background: darken($offwhite, 2);
+						}
+					}
+				}
+			}
+			
+			&.menu-item-has-children:hover {
+				background: darken($tan, 3);
+				
+				> .submenu {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+
+// homepage
+.home-images-grid {
+	@extend .clearfix;
+	
+	height: calc(100% - 113px);
+	
+	.row {
+		@include layout($homegrid);
+		@include container(960px);
+		
+		position: relative;
+	}
+	.top {
+		@extend .clearfix;
+		height: calc(50% - 59px);
+		
+		div:nth-child(1) {
+			@include span(2 of 5);
+			
+			background: url('../../img/homegrid/homegrid01.jpg') no-repeat $tan;
+			background-size: cover;
+			background-position: bottom;
+		}
+		div:nth-child(2) {
+			@include span(2 of 5);
+			
+			background: url('../../img/homegrid/homegrid02.jpg') no-repeat $tan;
+			background-size: cover;
+			background-position: center;
+		}
+		div:nth-child(3) {
+			@include span(1 of 5 last);
+			
+			background: url('../../img/homegrid/homegrid03.jpg') no-repeat $tan;
+			background-size: cover;
+			background-position: right;
+		}
+		
+		div {
+			height: 100%;
+			display: block;
+			background: #eee;
+		}
+	}
+	
+	.middle {
+		@extend .clearfix;
+		
+		display: block;
+		width: 100%;
+		height: 118px;
+		background: url('../../img/middle-bg.jpg') no-repeat $darkbrown;
+		background-size: cover;
+		color: $offwhite;
+		padding: 36px 0;
+		margin: 5px 0;
+		
+		h1 {
+			font-family: $sans-serif-light;
+			
+			font-size: 2.7rem;
+			padding-top: 3px;
+			text-transform: uppercase;
+			line-height: 1;
+			position: relative;
+		}
+		.btn {
+			@include ghost-button($offwhite, $darkbrown, $offwhite);
+			@include transition(all);
+			
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -20px;
+		}
+	}
+	
+	&.home2 .middle {
+		background: $offwhite;
+		
+		h1 {
+			color: $brown;
+		}
+		
+		.btn {
+			@include ghost-button($brown, $offwhite, $brown);
+		}
+	}
+	
+	.bottom {
+		@extend .clearfix;
+		
+		height: calc(50% - 59px);
+		
+		div:nth-child(1) {
+			@include span(1 of 5);
+			
+			background: url('../../img/homegrid/homegrid04.jpg') no-repeat $tan;
+			background-size: cover;
+		}
+		div:nth-child(2) {
+			@include span(2 of 5);
+			
+			background: url('../../img/homegrid/homegrid05.jpg') no-repeat $tan;
+			background-size: cover;
+			background-position: center;
+		}
+		div:nth-child(3) {
+			@include span(2 of 5 last);
+			
+			background: url('../../img/homegrid/homegrid06.jpg') no-repeat $tan;
+			background-size: cover;
+			background-position: bottom;
+		}
+		
+		div {
+			height: 100%;
+			display: block;
+			background: #eee;
+		}
+	}
+}
+
+// main container
+.content {
+	@include layout($default);
+	@include container(1280px);
+	
+	height: 100%;
+	margin: 0;
+	
+	
+	// content with no sidebar
+	.fullwidth {
+		@include span(12 of 12 last);
+		
+		padding: 45px;
+		position: relative;
+		height: 100%;
+		
+		footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			max-width: 1190px;
+		}
+	}
+	
+	
+	// table styles
+	table {
+		width: 100%;
+	}
+	
+	.rates {
+		h5 {
+			text-align: center;
+			background: lighten($darkbrown, 10);
+			color: $offwhite;
+			border-left: 1px solid #fafafa;
+			border-right: 1px solid #fafafa;
+		}
+		
+		table {
+			width: 100%;
+			margin-bottom: 40px;
+			
+			tr {
+				background: lighten($darkbrown, 60);
+				
+				&:nth-child(even) {
+					background: lighten($darkbrown, 63);
+				}
+				
+				td:nth-child(1) {
+					background: lighten($darkbrown, 40);
+					text-align: right;
+					width: 20%;
+					color: darken($darkbrown, 20);
+				}
+				
+				th {
+					padding: 8px 20px;
+					border: 1px solid #FAFAFA;
+					text-align: right;
+					background: lighten($darkbrown, 30);
+					color: #FFF;
+				}
+				
+				&:hover {
+					background: lighten($darkbrown, 53);
+					
+					td:nth-child(1) {
+						background: lighten($darkbrown, 35);
+					}
+					
+					th:nth-child(1) {
+						background: lighten($darkbrown, 25);
+					}
+				}
+				
+				&:nth-child(1) {
+					th {
+						background: lighten($darkbrown, 53);
+						text-align: center;
+						color: $darkbrown;
+					}
+					&:hover th {
+						background: lighten($darkbrown, 48);
+					}
+				}
+			}
+			td {
+				padding: 8px 20px;
+				border: 1px solid #FAFAFA;
+				text-align: center;
+			}
+		}
+	}
+	
+	// left sidebar
+	aside {
+		@include span(3 of 12);
+		
+		height: 100%;
+		
+		.fixedscroll {
+			height: 100%;
+		}
+		
+		// sidebar navigation
+		nav {
+			padding: 82px 0;
+			background: url(../../img/sidenavbg.jpg) left top no-repeat;
+			background-size: cover;
+			height: 100%;
+			
+			h5 {
+				padding: 0 45px 8px;
+				font-size: 12px;
+				text-transform: uppercase;
+				font-weight: bold;
+				border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+				letter-spacing: 1px;
+				font-family: $bodytext;
+				color: $offwhite;
+				
+				a {
+					color: $offwhite;
+					
+					&:hover {
+						opacity: .8;
+					}
+				}
+			}
+			
+			ul li {
+				a {
+					font-size: 12px;
+					padding: 10px 45px;
+					display: block;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+					color: rgba(255,255,255,0.85);
+					
+					&:hover,
+					&.active {
+						background: rgba(0,0,0,0.2);
+					}
+				}
+				
+				ul li a {
+					padding-left: 50px;
+					
+					&:before {
+						content: '\2014 ';
+						margin-right: 5px;
+					}
+				}
+			}
+			
+			&.recentposts ul li a {
+				font-size: 16px;
+				font-family: $serif;
+				
+				span {
+					font-family: $bodytext;
+					font-size: 13px;
+					color: rgba(255, 255, 255, 0.5);
+				}
+			}
+		}
+		
+		.textbox {
+			margin: 0 45px;
+			
+			h4 {
+				font-size: 18px;
+				color: rgba(255,255,255,0.8);
+			}
+		}
+		h6 {
+			font-size: 16px;
+			color: $offwhite;
+		}
+		label {
+			color: rgba(255,255,255,0.6);
+			font-size: 12px;
+		}
+		input,
+		select,
+		textarea {
+			margin-bottom: 0px;
+			height: 30px;
+		}
+		textarea {
+			height: 70px;
+		}
+		
+		img {
+			display: block;
+			margin-bottom: 5px;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		
+		.textbox {
+			color: rgba(255,255,255,0.6);
+			margin-top: 12px;
+			font-size: 13px;
+			
+			a {
+				color: rgba(255,255,255,0.9);
+				
+				&:hover {
+					color: #fff;
+				}
+			}
+			i {
+				margin-right: 7px;
+			}
+			
+			.divider {
+				border-color: rgba(255,255,255,0.3);
+			}
+		}
+	}
+	
+	// right content
+	article {
+		@include span(9 of 12 last);
+		
+		padding: 45px 61px 45px 25px;
+		
+		form {
+			background: #FFF;
+			padding: 40px;
+			border: 5px solid #EEE;
+			
+			&.comments {
+				background: none;
+				border: none;
+				padding: 0;
+				
+				input, 
+				select,
+				textarea {
+					background: #fff;
+				}
+				
+				input[type=submit] {
+					background: lighten($red, 9);
+					
+					&:hover {
+						background: lighten($red, 15);
+					}
+				}
+			}
+		}
+		
+	}
+	
+	
+	// footer navigation
+	.pagenavigation {
+		@include layout($homegrid);
+		@extend .clearfix;
+		
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		padding: 20px 0;
+		margin-top: 60px;
+		overflow: hidden;
+		position: relative;
+		clear: both;
+		
+		
+		.previous {
+			@include span(1 of 3);
+			
+			background: $yellow;
+			
+			
+			img {
+				height: 127px;
+			}
+		}
+		.next {
+			@include span(2 of 3 last);
+			
+			background: $red;
+		}
+		
+		figure {
+			border: 5px solid #eee;
+			overflow: hidden;
+			position: relative;
+			
+			img {
+				position: relative;
+				display: block;	
+
+				max-width: none;
+				width: calc(100% + 50px);
+				opacity: 0.7;
+				transform: translate3d(-40px,0,0);
+				transition: opacity 0.35s, transform 0.35s;
+			}
+
+			figcaption {
+				color: $offwhite;
+
+				> div {
+					position: absolute;
+					top: 0;
+					left: 0;
+					padding: 32px 30px;
+					width: 100%;
+					height: 100%;
+
+					h2 {
+						font-family: $serif;
+						font-size: 19px;
+						font-weight: bold;
+						line-height: 1;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						
+						transition: transform 0.35s;
+					}
+					
+					a {
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+					}
+					
+					p {
+						font-size: 14px;
+						font-weight: 300;
+						letter-spacing: 1px;
+						
+						opacity: 0;
+						transition: opacity 0.2s, transform 0.35s;
+						
+						span:after {
+							content: '|';
+							padding: 0 5px;
+						}
+					}
+					
+					h2, p {
+						color: $offwhite;
+						transform: translate3d(0,40px,0);
+					}
+				}
+			}
+			
+			&:hover img {
+				opacity: .5;
+			}
+			&:hover p {
+				opacity: 1;
+			}
+			
+			&:hover img,
+			&:hover h2,
+			&:hover p {
+				transform: translate3d(-5px,0,0);
+			}
+			
+			&:hover p {
+				transition-delay: 0.05s;
+				transition-duration: 0.35s;
+			}
+		}
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $serif;
+		position: relative;
+		
+		color: lighten($darkbrown, 20);
+	}
+		
+	.pagetitle {
+		border-bottom: 6px solid #EEE;
+		margin-bottom: 20px;
+		line-height: 1.5;
+		color: lighten($red, 5);
+		position: relative;
+		
+		.solidbtn {
+			@include re-solidbtn();
+			
+			position: absolute;
+			right: 0;
+			top: 17px;
+		}
+	}
+		
+	.floatimg {
+		padding: 5px;
+		background: #EEE;
+		margin: 30px 0;
+			
+		figcaption {
+			font-size: 13px;
+			text-align: center;
+		}
+	}
+
+	
+	.overview {
+		@include container;
+		@include layout($homegrid);
+			
+		.overviewpage {
+			@include span(1 of 2);
+				
+			position: relative;
+			margin-bottom: 7px;
+			overflow: hidden;
+			border: 5px solid #eee;
+			background: $brown;
+				
+			figure {
+				img {
+					position: relative;
+					display: block;	
+
+					max-width: none;
+					width: calc(100% + 50px);
+					opacity: 0.7;
+					transform: translate3d(-40px,0,0);
+					transition: opacity 0.35s, transform 0.35s;
+				}
+					
+				figcaption {
+						
+					> div {
+						position: absolute;
+						top: 0;
+						left: 0;
+						padding: 85px 38px;
+						width: 100%;
+						height: 100%;
+							
+						h2 {
+							font-family: $serif;
+							font-size: 24px;
+							font-weight: bold;
+							text-transform: uppercase;
+							transition: transform 0.35s;
+							line-height: 1.2;
+							letter-spacing: 1px;
+							margin-bottom: 5px;
+							text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+						}
+							
+						a {
+							display: block;
+							position: absolute;
+							left: 0;
+							top: 0;
+							width: 100%;
+							height: 100%;
+						}
+							
+						p {
+							font-size: 14px;
+							font-weight: 300;
+							letter-spacing: 1px;
+							opacity: 0;
+							transition: opacity 0.2s, transform 0.35s;
+
+							span:after {
+								content: '|';
+								padding: 0 5px;
+							}
+						}
+							
+						h2, p {
+							color: $offwhite;
+							transform: translate3d(0,40px,0);
+						}
+					}
+				}
+					
+				&:hover img {
+					opacity: .3;
+				}
+				&:hover p {
+					opacity: 1;
+				}
+
+				&:hover img,
+				&:hover h2,
+				&:hover p {
+					transform: translate3d(0,0,0);
+				}
+				
+				&:hover p {
+					transition-delay: 0.05s;
+					transition-duration: 0.35s;
+				}
+			}
+			
+			&:nth-child(2n) {
+				@include span(1 of 2 last);
+			}
+			&:last-child {
+				@include span(2 of 2 last);
+			}
+		}
+	}
+}
+
+// buttons
+.solidbtn {
+	padding: 4px 20px;
+	background: lighten($red, 6);
+	color: $offwhite;
+	dispaly: inline-block;
+	border-radius: 4px;
+	margin-right: 7px;
+	position: relative;
+	
+	&:hover {
+		background: lighten($red, 9);
+		color: $offwhite;
+	}
+	
+	&.red {
+		background: lighten($red, 6);
+		
+		&:hover {
+			background: lighten($red, 9);
+		}
+	}
+	&.blue {
+		background: lighten($blue, 6);
+		
+		&:hover {
+			background: lighten($blue, 9);
+		}
+	}
+	&.brown {
+		background: lighten($darkbrown, 16);
+		
+		&:hover {
+			background: lighten($darkbrown, 19);
+		}
+	}
+	&.yellow {
+		background: lighten($yellow, 6);
+		
+		&:hover {
+			background: lighten($yellow, 9);
+		}
+	}
+	
+	&.ic {
+		padding-left: 15px;
+		i {
+			margin-right: 7px;
+		}
+	}
+}
+
+// img styles
+img.alignright {
+	width: 50%;
+	margin: 0 0 20px 20px;
+	float: right;
+	border: 5px solid #EEE;
+}
+img.alignleft {
+	width: 50%;
+	margin: 0 20px 20px 0;
+	float: left;
+	border: 5px solid #EEE;
+}
+img.featuredimg {
+	width:23%;
+	margin-bottom: 10px;
+}
+.textimg {
+	@extend .clearfix;
+}
+
+
+// slides.js
+
+#slides {
+	position: relative;
+	border: 5px solid #eee;
+}
+.slidesjs-navigation {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	margin-top: -41px;
+	width: 40px;
+	text-align: center;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 9px 0;
+	font-size: 40px;
+	color: $offwhite;
+	border-radius: 4px;
+	
+	&:hover {
+		background: rgba(0,0,0,0.7);
+		color: $offwhite;
+	}
+	
+	&.slidesjs-next {
+		right: 10px;
+		
+		&:before {
+			content: '\f105';
+			@extend .fa;
+		}
+	}
+	&.slidesjs-previous {
+		left: 10px;
+		
+		&:before {
+			content: '\f104';
+			@extend .fa;
+		}
+	}
+}
+.slidesjs-pagination,
+.slidesjs-play,
+.slidesjs-stop {
+	display: none;
+}
+
+.mealgrid {
+	@include container();
+	@include layout($interior);
+	
+	margin-top: 60px;
+	
+	.item {
+		@include span(1 of 2);
+		
+		padding: 0 40px 10px;
+		border: 5px solid #eee;
+		background: #FFF;
+		margin-bottom: 20px;
+		min-height: 462px;
+		
+		&:nth-child(2n) {
+			@include last();
+		}
+		
+		h4 {
+			color: $red;
+			margin-top: 20px;
+		}
+		
+		img {
+			margin-left: -40px;
+			margin-top: -1px;
+			width: calc(100% + 81px);
+			max-width: none;
+		}
+	}
+}
+
+.posts {
+	@include container();
+	@include layout($interior);
+	
+	.item {
+		@include span(2 of 2 last);
+		
+		background: #FFF;
+		padding: 40px;
+		border: 5px solid #EEE;
+		margin-bottom: 20px;
+		
+		a {
+			font-family: $serif;
+			font-size: 23px;
+		}
+		
+		a.solidbtn {
+			@include re-solidbtn();
+		}
+		
+		img {
+			max-height: 49px;
+		}
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.blog {
+	.item {
+	
+		img {
+			width: 24%;
+			max-height: none;
+			margin-bottom: 0;
+		}
+		p {
+			margin-top: 7px;
+		}
+	}
+	
+	.solidbtn {
+		@include re-solidbtn();
+	}
+}
+
+
+// footer
+footer {
+	@extend .clearfix;
+			
+	margin-top: 10px;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 10px;
+	text-align: right;
+	font-size: 13px;
+	position: relative;
+	
+	.socialmedia {
+		float: right;
+		margin-left: 14px;
+				
+		ul li {
+			margin-left: 10px;
+			
+			&:after {
+				display: none;
+			}
+		}
+	}
+	.copyright {
+		float: left;
+		font-size: 11px;
+		margin-bottom: 0;
+		padding-top: 2px;
+	}
+	
+	nav {
+		float: right;
+		display: inline-block;
+	}
+	ul li {
+		display: inline-block;
+		margin-right: 7px;
+		
+		&:after {
+			content: '|';
+			margin-left: 7px;
+		}
+		
+		&:last-child {
+			margin-right: 0;
+			
+			&:after {
+				content: '';
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+// form styles
+form {
+	div div {		
+			margin-bottom: 20px;
+	}
+	
+	.personal {
+		@include container();
+			
+		div {
+			@include span(1 of 4);
+			
+			&:nth-child(1) {
+				@include span(2 of 4);
+			}
+			&:nth-child(3) {
+				@include last();
+			}
+		}
+	}
+	
+	.address {
+		@include container();
+		
+		div {
+			@include span(1 of 6);
+			
+			&:nth-child(1) {
+				@include span(3 of 6);
+			}
+			
+			&:nth-child(4) {
+				@include last();
+			}
+		}
+	}
+	
+	.party {
+		@include container();
+		
+		div {
+			@include span(1 of 4);
+			
+			&:nth-child(4) {
+				@include last();
+			}
+		}
+	}
+	
+	.misc {
+		@include container();
+		
+		div {
+			@include span(1 of 4);
+		
+		
+			&:nth-child(1) {
+				@include span(2 of 4);
+			}
+
+			&:nth-child(3) {
+				@include last();
+			}
+		}
+	}
+	
+	label {
+		display: block;
+	}
+	
+	input, 
+	select,
+	textarea {
+		width: 100%;
+		padding: 9px 14px;
+		border: 1px solid #DDD;
+		margin-top: 5px;
+		background-color: #fafafa;
+		height: 40px;
+		border-radius: 4px;
+		
+		&:focus {
+			outline: none;
+			border-color: #444;
+		}
+	}
+	input:autofill,
+	textarea:autofill,
+	select:autofill {
+		background-color: #000;
+	}
+	
+	textarea {
+		height: 200px;
+	}
+	input[type=submit] {
+		background-color: lighten($red, 9);
+		border: none;
+		color: $offwhite;
+		cursor: hand;
+		cursor: pointer;
+		
+		&:hover {
+			background-color: lighten($red, 15);
+		}
+	}
+}
+
+.googlemap {
+	border: 5px solid #eee;
+}
+
+.pagination {
+	ul li {
+		display: inline-block;
+		margin-right: 7px;
+				
+		a {		
+			display: block;
+			color: $bodytext;
+			padding: 4px 24px;
+			background: #eee;
+			border-radius: 4px;
+					
+			&:hover {
+				background: darken(#eee, 5);
+			}
+					
+			&.active {
+				background: lighten($red, 9);
+				color: white;
+						
+				&:hover {
+					background: lighten($red, 15);
+				}
+			}
+		}
+	}
+}
+.newsletter,
+.quickcontact {
+	margin-top: 40px;
+	
+	span {
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+
+.socialshare {
+	float: right;
+	
+	ul li {
+		display: inline-block;
+		margin-right: 6px;
+		
+		a {
+			background: lighten($darkbrown, 20);
+			color: $offwhite;
+			display: block;
+			width: 22px;
+			text-align: center;
+			border-radius: 3px;
+			
+			&:hover {
+				background: lighten($darkbrown, 25);
+			}
+		}
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	ul:before {
+		content: 'Share: ';
+		padding-right: 7px;
+		color: lighten($red, 9);
+	}
+}
+
+// gallery 
+
+.gallery {
+	@extend .clearfix;
+	
+	height: calc(100% - 103px);
+	
+	.row {
+		@include layout($homegrid);
+		@include container(960px);
+		
+		position: relative;
+	}
+	section {
+		@extend .clearfix;
+		height: 100%;
+		
+		&:nth-child(1n + 2) {
+			margin-top: 6px;
+			height: calc(100% + 103px);
+		}
+		
+		div {
+			height: 100%;
+			display: block;
+			background: #eee;
+			position: relative;
+			
+			figure {
+				opacity: 0;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.6);
+				padding: 0 40px;
+				color: $offwhite;
+				transition: opacity 0.2s ease-in-out;
+				display: table;
+				
+				figcaption {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+			
+			&:hover figure {
+				opacity: 1;
+				transition: opacity 0.2s ease-in-out;
+			}
+		}
+		
+		&.grid1 {
+			div:nth-child(1) {
+				@include span(2 of 4);
+				
+				background: url('../../img/gallery/grid1-01.jpg') no-repeat $tan;
+				background-position: bottom;
+				background-size: cover;
+				height: 100%;
+			}
+			
+			div:nth-child(2) {
+				@include span(1 of 4);
+
+				background: url('../../img/gallery/grid1-02.jpg') no-repeat $tan;
+				background-position: center;
+				background-size: cover;
+				height: 50%;
+			}
+			div:nth-child(3) {
+				@include span(1 of 4 last);
+
+				background: url('../../img/gallery/grid1-03.jpg') no-repeat $tan;
+				background-position: bottom;
+				background-size: cover;
+				heighT: 50%;
+			}
+			div:nth-child(4) {
+				@include span(2 of 4 last);
+
+				background: url('../../img/homegrid/homegrid03.jpg') no-repeat $tan;
+				background-position: right;
+				background-size: cover;
+				height: 50%;
+				border-top: 6px solid #fafafa;
+			}
+		}
+		&.grid2 {
+			div:nth-child(1) {
+				@include span(2 of 4);
+				
+				background: url('../../img/gallery/grid2-01.jpg') no-repeat $tan;
+				background-position: bottom;
+				background-size: cover;
+				height: 50%;
+			}
+			
+			div:nth-child(2) {
+				@include span(2 of 4 last);
+
+				background: url('../../img/gallery/grid2-02.jpg') no-repeat $tan;
+				background-position: center;
+				background-size: cover;
+				height: 50%;
+			}
+			div:nth-child(3) {
+				@include span(2 of 4);
+
+				background: url('../../img/gallery/grid2-03.jpg') no-repeat $tan;
+				background-position: right;
+				background-size: cover;
+				heighT: 50%;
+				border-top: 6px solid #fafafa;
+			}
+			div:nth-child(4) {
+				@include span(1 of 4);
+
+				background: url('../../img/gallery/grid2-04.jpg') no-repeat $tan;
+				background-position: left;
+				background-size: cover;
+				height: 50%;
+				border-top: 6px solid #fafafa;
+			}
+			div:nth-child(5) {
+				@include span(1 of 4 last);
+
+				background: url('../../img/gallery/grid2-05.jpg') no-repeat $tan;
+				background-position: top;
+				background-size: cover;
+				height: 50%;
+				border-top: 6px solid #fafafa;
+			}
+		}
+		&.grid3 {
+			div:nth-child(1) {
+				@include span(1 of 4);
+				
+				background: url('../../img/gallery/grid3-01.jpg') no-repeat $tan;
+				background-position: bottom;
+				background-size: cover;
+				height: 100%;
+			}
+			
+			div:nth-child(2) {
+				@include span(1 of 4);
+
+				background: url('../../img/gallery/grid3-02.jpg') no-repeat $tan;
+				background-position: center;
+				background-size: cover;
+				height: 100%;
+			}
+			div:nth-child(3) {
+				@include span(2 of 4 last);
+
+				background: url('../../img/gallery/grid3-04.jpg') no-repeat $tan;
+				background-position: left;
+				background-size: cover;
+				height: 100%;
+			}
+		}
+	}
+}

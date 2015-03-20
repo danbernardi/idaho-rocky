@@ -1,0 +1,26 @@
+// transition
+@mixin transition($type) {
+	transition: $type 0.2s ease-in-out;
+}
+
+// ghost button
+@mixin ghost-button($color, $hover, $bghover) {
+	padding: 6px 32px;
+	border: 1px solid $color;
+	display: inline-block;
+	color: $color;
+	font-family: $sans-serif-light;
+	text-transform: uppercase;
+	
+	&:hover {
+		background-color: $bghover;
+		border-color: $hover;
+		color: $hover;
+	}
+}
+
+@mixin re-solidbtn() {
+	font-size: 14px;
+	font-family: $bodytext;
+	font-weight: normal;
+}
