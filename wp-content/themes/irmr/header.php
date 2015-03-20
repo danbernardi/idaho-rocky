@@ -12,15 +12,10 @@
 	<header>
 		<div class="row">
 			<div class="logo">
-				<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/img/sfhr_logo@2x.png'; ?>" alt="San Francisco High Rises" /></a>
+				<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>" alt="Idaho Rocky Mount Ranch" /></a>
 			</div>
 			<nav>
 				<?php wp_nav_menu( array('theme_location'  => 'primary') ); ?>
 			</nav>
 		</div>
-		<div class="quick-search">
-			<div class="search"><i class="fa fa-search"></i>Quick Search</div>
-			<div class="search-dropdown"><div class="row"><?php dynamic_sidebar( 'quick_search' ); ?></div></div>
-		</div>
-		
 	</header>
