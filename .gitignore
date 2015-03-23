@@ -9,3 +9,4 @@ npm-debug.log
 .nodemonignore
 .sass-cache/
 wp-config.php
+wp-content/themes/irmr/_/css/jaime.css
