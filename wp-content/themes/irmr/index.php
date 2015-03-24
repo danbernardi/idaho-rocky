@@ -47,13 +47,20 @@
 		</div>
 		
 		<div class="pagenavigation">
+			<?php
+			  $prev_title = get_post_meta( get_the_ID(), '_zd_prev_title', true );
+			  $prev_url = get_post_meta( get_the_ID(), '_zd_prev_url', true );
+			  $next_title = get_post_meta( get_the_ID(), '_zd_next_title', true );
+			  $next_url = get_post_meta( get_the_ID(), '_zd_next_url', true );
+			?>
+			
 			<figure class="previous">
 				<img src="/img/pagenavigation/adayinthelife-feat.jpg" alt="Next Page" />
 				<figcaption>
 					<div>
-						<h2>Home</h2>
+						<h2><?php echo $prev_title; ?></h2>
 						<p>Go to previous page</p>
-						<a href="index.php"></a>
+						<a href="<?php echo $prev_url; ?>"></a>
 					</div>
 				</figcaption>
 			</figure>
@@ -62,28 +69,15 @@
 				<img src="/img/pagenavigation/adayinthelife-feat.jpg" alt="Next Page" />
 				<figcaption>
 					<div>
-						<h2>The Ranch Experience</h2>
+						<h2><?php echo $next_title; ?></h2>
 						<p>Go to next page</p>
-						<a href="the-experience-the-ranch-experience.php"></a>
+						<a href="<?php echo $text_url; ?>"></a>
 					</div>
 				</figcaption>
 			</figure>
 		</div>
 		
-		<footer>
-      <p class="copyright">© 2014 Idaho Rocky Mountain Ranch. All rights reserved.</p>
-      <div class="socialmedia">
-        <ul>
-          <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-        </ul>
-      </div>
-      <nav>
-        <?php wp_nav_menu( array('theme_location'  => 'footer') ); ?>
-      </nav>
-    </footer>
+		<?php include('inline-footer.php'); ?>
   </article>
 </section>
 	

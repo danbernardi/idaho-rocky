@@ -12,7 +12,7 @@
 	<header>
 		<div class="row">
 			<div class="logo">
-				<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>" alt="Idaho Rocky Mount Ranch" /></a>
+				<a href="<?php echo home_url(); ?>"><img src="<?php echo of_get_option( 'zd_logo'); ?>" alt="Idaho Rocky Mount Ranch" /></a>
 			</div>
 			<nav>
 				<?php wp_nav_menu( array('theme_location'  => 'primary') ); ?>
