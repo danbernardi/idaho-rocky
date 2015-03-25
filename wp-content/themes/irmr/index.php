@@ -10,7 +10,7 @@
 	</aside>
   
   <article class="main">
-		<h2 class="pagetitle"><?php the_title(); ?></h2>
+		<h2 class="pagetitle"><?php _e('Blog', 'zd'); ?></h2>
 						
 		<div class="posts blog">
 			<?php // Start the loop.
