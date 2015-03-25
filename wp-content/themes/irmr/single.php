@@ -50,13 +50,12 @@
                 $next_title = get_post_meta( get_the_ID(), '_zd_next_title', true );
                 $next_url = get_post_meta( get_the_ID(), '_zd_next_url', true );
               ?>
-
               <figure class="previous">
                 <img src="/img/pagenavigation/adayinthelife-feat.jpg" alt="Next Page" />
                 <figcaption>
                   <div>
                     <h2><?php echo $prev_title; ?></h2>
-                    <p>Go to previous page</p>
+                    <p>Go to previous post</p>
                     <a href="<?php echo $prev_url; ?>"></a>
                   </div>
                 </figcaption>
@@ -67,7 +66,7 @@
                 <figcaption>
                   <div>
                     <h2><?php echo $next_title; ?></h2>
-                    <p>Go to next page</p>
+                    <p>Go to next post</p>
                     <a href="<?php echo $next_url; ?>"></a>
                   </div>
                 </figcaption>
