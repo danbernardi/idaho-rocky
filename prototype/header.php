@@ -21,6 +21,7 @@
 						<ul class="submenu">
 							<li><a href="index.php">Home v1</a></li>
 							<li><a href="index2.php">Home v2</a></li>
+							<li><a href="index3.php">Home v3</a></li>
 						</ul>
 					</li>
 					<li class="menu-item-has-children"><a href="the-experience.php">The Experience</a>
