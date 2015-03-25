@@ -9,7 +9,7 @@
 		</div>
 	</aside>
   
-  <article>
+  <article class="main">
 		<h2 class="pagetitle"><?php the_title(); ?></h2>
 						
 		<div class="posts blog">
@@ -25,7 +25,7 @@
 				  <img class="alignleft" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>"> 
 				<?php } ?>
 				<ul>
-					<li><a href="blog-single.php"><?php the_title(); ?></a></li>
+					<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					<span class="author">by <?php the_author(); ?></span> | 
 					<time class="date"><?php the_date(); ?></time>
 				</ul>

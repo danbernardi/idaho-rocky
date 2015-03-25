@@ -509,7 +509,7 @@ header {
 	}
 	
 	// right content
-	article {
+	article.main {
 		@include span(9 of 12 last);
 		
 		padding: 45px 61px 45px 25px;
@@ -1404,4 +1404,34 @@ form {
 			}
 		}
 	}
+}
+
+// comments
+.comment-meta {
+  text-align: left;
+  border-bottom: none;
+}
+.comment {
+  border: 5px solid #EEE;
+  padding: 40px;
+  background: #FFF;
+  margin-bottom: 30px;
+  position: relative;
+  
+  .comment {
+    border: none;
+    border-top: 1px solid #eee;
+    padding: 20px 0 20px 40px;
+    margin-top: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:before {
+      @include fontawesome('\f112');
+      position: absolute;
+      left: 9px;
+      top: 33px;
+      transform: rotate(180deg);
+    }
+  }
 }

@@ -21,7 +21,7 @@ function zd_page_options( array $meta_boxes ) {
     $meta_boxes['page_options'] = array(
         'id'            => 'page_options',
         'title'         => __( 'Page Options', 'zd' ),
-        'object_types'  => array( 'page', ), // Post type
+        'object_types'  => array( 'page', 'post' ), // Post type
         'context'       => 'normal',
         'priority'      => 'high',
         'show_names'    => true, // Show field names on the left
