@@ -46,6 +46,61 @@ function zd_icon( $atts ) {
 add_shortcode( 'icon', 'zd_icon' );
 
 
+// overview
+function zd_overview( $atts, $content = null ) {
+	$output = '';
+		
+	$output .= '<div class="overview">';
+  $output .= do_shortcode($content);
+  $output .= '</div>';
+		
+	return $output;
+}
+add_shortcode( 'overview', 'zd_overview' );
+
+// overview page
+function zd_overview_page( $atts, $content = null ) {
+	$output = '';
+		
+  extract( shortcode_atts( array(
+    'img'   => '',
+    'title' => '',
+    'link'  => '',
+	), $atts ) );
+		
+	$output .= '<div class="overviewpage"><figure>';
+  $output .= '<img src="'.$img.'" alt="'.$title.'">';
+  $output .= '<figcaption><div>';
+  $output .= '<h2>'.$title.'</h2>';
+  $output .= '<p>'.$content.'</p>';
+  $output .= '<a href="'.$link.'"></a>';
+  $output .= '</div></figcaption></figure></div>';
+		
+	return $output;
+}
+add_shortcode( 'overview_page', 'zd_overview_page' );
+
+/*
+[overview]
+[overview_page img="" title="" link=""][/overview_page]
+[/overview]
+<div class="overview">
+			
+			<div class="overviewpage">
+				<figure>
+					<img src="img/overview-theranchexperience.jpg" alt="Next Page" />
+					<figcaption>
+						<div>
+							<h2>The Ranch <span>Experience</span></h2>
+							<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam pellentesque.</p>
+							<a href="the-experience-the-ranch-experience.php"></a>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+*/
+
+
 /* ------------------------------------------------
  * Team Members & Testimonials Shortcodes
  * ------------------------------------------------*/
@@ -124,7 +179,7 @@ add_shortcode( 'button', 'zd_button' );
 
 // disables automatic spacing & p tags inside selected shortcodes. Add shortcode name to array inside $block
 function the_content_filter($content) {
-	$block = join("|",array('callout', 'col', 'neighborhoods_grid', 'neighborhood', 'list_buildings', 'listings_cta', 'team_member', 'steps', 'step', 'contact_info', 'box_title', 'reveal'));
+	$block = join("|",array('overview', 'overview_page'));
 	$rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
 	$rep = preg_replace("/(<p>)?\[\/($block)](<\/p>|<br \/>)?/","[/$2]",$rep);
 return $rep;
