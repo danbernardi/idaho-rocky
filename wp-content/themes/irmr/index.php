@@ -32,20 +32,18 @@
 				<p><?php the_excerpt(); ?></p>
 				<a class="solidbtn" href="<?php the_permalink(); ?>">Read More</a>
 			</div>
-
-		  <div class="divider"></div>
-		
-		<div class="pagination">
-			<?php sfhr_numeric_posts_nav(); ?>
-		</div>
-		
-		<div class="divider"></div>
 		  <?php endwhile; else : ?>
         
         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
       <?php endif; ?>
 		</div>
-		
+    
+    <div class="divider"></div>
+		<div class="pagination">
+			<?php sfhr_numeric_posts_nav(); ?>
+		</div>
+		<div class="divider"></div>
+    						
 		<div class="pagenavigation">
 			<?php
 			  $prev_title = get_post_meta( get_the_ID(), '_zd_prev_title', true );
