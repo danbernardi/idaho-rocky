@@ -2,6 +2,7 @@
 .dev/
 error_log
 php_errorlog
+_notes/
 
 temp/
 node_modules/
