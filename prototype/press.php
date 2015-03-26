@@ -26,12 +26,12 @@
 			<div class="item">
 				<img src="img/press/newyorktimes.jpg" alt="New York Times">
 				<div class="divider"></div>
-				<ul>
-					<li><a href="#">“Your Own Private Idaho”</a></li>
+				<div class="article">
+					<a href="#">“Your Own Private Idaho”</a>
 					<span class="author">by Rachel Levin</span> | 
 					<span class="media">New York Times</span> | 
 					<time class="date">August 7, 2013</time>
-				</ul>
+				</div>
 				
 				<div class="divider"></div>
 				

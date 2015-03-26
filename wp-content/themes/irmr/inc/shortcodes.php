@@ -80,6 +80,19 @@ function zd_overview_page( $atts, $content = null ) {
 }
 add_shortcode( 'overview_page', 'zd_overview_page' );
 
+
+// posts wrapper
+function zd_posts( $atts, $content = null ) {
+	$output = '';
+		
+	$output .= '<div class="posts">';
+  $output .= do_shortcode($content);
+  $output .= '</div>';
+		
+	return $output;
+}
+add_shortcode( 'posts', 'zd_posts' );
+
 /*
 [overview]
 [overview_page img="" title="" link=""][/overview_page]
@@ -106,47 +119,42 @@ add_shortcode( 'overview_page', 'zd_overview_page' );
  * ------------------------------------------------*/
 
 // list press items
-/*
-function zd_list_team_members( $atts ) {
-    $output = '';
+function zd_list_press( $atts ) {
+    
+    extract( shortcode_atts( array(
+      'logo' => '',
+      'publication' => '',
+    ), $atts ) );
+    
+    $publication_id = preg_replace("/[^a-z0-9\-]+/i", "-", $publication);
     
     ob_start();
     $query = new WP_Query( array(
-        'post_type' => 'team_members',
+        'post_type' => 'press',
         'posts_per_page' => -1,
         'order' => 'ASC',
+        'tax_query' => array(
+          array(
+            'taxonomy' => 'publications',
+            'field'    => 'slug',
+            'terms'    => $publication_id,
+          )
+        ),
     ) );
+    
     if ( $query->have_posts() ) { ?>
-        <div class="team clearfix">
+        <div class="item">
+            <img src="<?php echo $logo; ?>">
             <?php while ( $query->have_posts() ) : $query->the_post();
-            
-				$job_title = get_post_meta( get_the_ID(), '_zd_job_title', true );
-				$linkedin = get_post_meta( get_the_ID(), '_zd_linkedin', true );
-				$twitter = get_post_meta( get_the_ID(), '_zd_twitter', true );
-				$google_plus = get_post_meta( get_the_ID(), '_zd_google_plus', true );
+              $author = get_post_meta( get_the_ID(), '_zd_press_author', true );
+              $pubdate = get_post_meta( get_the_ID(), '_zd_press_pubdate', true );
             ?>
-            
-            
-            <div id="post-<?php the_ID(); ?>" <?php post_class('teammember'); ?>>
-                <?php if( has_post_thumbnail() ) {
-                	echo the_post_thumbnail('team_member', array( 'class' => 'alignleft' ) );
-				} ?>
-                <ul class="social">
-					<?php
-						if(!strlen($linkedin) == 0) {
-							echo '<li><a href="'.$linkedin.'" target="_blank"><i class="fa fa-linkedin"></i></a></li>';
-						}
-						if(!strlen($twitter) == 0) {
-							echo '<li><a href="'.$twitter.'" target="_blank"><i class="fa fa-twitter"></i></a></li>';
-						}
-						if(!strlen($google_plus) == 0) {
-							echo '<li><a href="'.$google_plus.'" target="_blank"><i class="fa fa-google-plus"></i></a></li>';
-						}
-					?>
-				</ul>
-                <h4><?php the_title(); ?></h4>
-                <h6><?php echo $job_title; ?></h6>
-                <p><?php the_content(); ?></p>
+            <div class="divider"></div>
+            <div id="press-<?php the_ID(); ?>" <?php post_class(); ?>>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              <span class="author">by <?php echo $author; ?></span> | 
+              <span class="media"><?php echo $publication; ?></span> | 
+              <time class="date"><?php echo $pubdate; ?></time>
             </div>
             <?php endwhile; wp_reset_postdata(); ?>
         </div>
@@ -154,8 +162,7 @@ function zd_list_team_members( $atts ) {
     return $myvariable;
     }
 }
-add_shortcode( 'list_team', 'zd_list_team_members' );
-*/
+add_shortcode( 'list_press', 'zd_list_press' );
 
 
 /* ------------------------------------------------

@@ -1,13 +1,4 @@
 <?php
-
-
-add_filter( 'cmb2_meta_boxes', 'zd_page_options' );
-/**
- * Define the metabox and field configurations.
- *
- * @param  array $meta_boxes
- * @return array
- */
  
 // page options
 function zd_page_options( array $meta_boxes ) {
@@ -63,5 +54,50 @@ function zd_page_options( array $meta_boxes ) {
 
     return $meta_boxes;
 }
+add_filter( 'cmb2_meta_boxes', 'zd_page_options' );
+
+
+// press options
+function zd_press_options( array $meta_boxes ) {
+
+    // Start with an underscore to hide fields from custom fields list
+    $prefix = '_zd_';
+
+    /**
+     * Sample metabox to demonstrate each field type included
+     */
+    $meta_boxes['press_options'] = array(
+        'id'            => 'press_options',
+        'title'         => __( 'Article Options', 'zd' ),
+        'object_types'  => array( 'press' ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+            array(
+                'name'       => __( 'Article Author', 'zd' ),
+                'desc'       => __( 'Enter the author of press article.', 'zd' ),
+                'id'         => $prefix . 'press_author',
+                'type'       => 'text',
+                'show_on_cb' => 'cmb2_hide_if_no_cats',
+            ),
+            array(
+                'name'       => __( 'Date Published', 'zd' ),
+                'desc'       => __( 'Enter the date the article was published.', 'zd' ),
+                'id'         => $prefix . 'press_pubdate',
+                'type'       => 'text_date',
+                'show_on_cb' => 'cmb2_hide_if_no_cats',
+                'date_format' => 'F j, Y',
+            ),
+        ),
+    );
+
+    // Add other metaboxes as needed
+
+    return $meta_boxes;
+}
+add_filter( 'cmb2_meta_boxes', 'zd_press_options' );
 
 ?>

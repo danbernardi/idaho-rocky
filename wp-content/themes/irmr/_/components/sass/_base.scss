@@ -970,10 +970,10 @@ img.featuredimg {
 		padding: 40px;
 		border: 5px solid #EEE;
 		margin-bottom: 20px;
-		
 		a {
 			font-family: $bodytext;
 			font-size: 23px;
+      display: block;
 		}
 		
 		a.solidbtn {
