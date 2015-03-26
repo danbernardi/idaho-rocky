@@ -10,7 +10,18 @@
 	</aside>
   
   <article class="main">
-		<h2 class="pagetitle"><?php the_title(); ?></h2>
+    <?php 
+      $hdg_btn = get_post_meta( get_the_ID(), '_zd_hdg_btn', true );
+      $hdg_btn_text = get_post_meta( get_the_ID(), '_zd_hdg_btn_text', true ); 
+      $hdg_btn_url = get_post_meta( get_the_ID(), '_zd_hdg_btn_url', true ); 
+    
+    ?>
+		<h2 class="pagetitle">
+		  <?php 
+		    the_title();
+		    if($hdg_btn == 'on') { echo '<a class="solidbtn red" href="'.$hdg_btn_url.'">'.$hdg_btn_text.'</a>'; }
+		  ?>
+    </h2>
 						
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       

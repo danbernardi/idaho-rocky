@@ -151,7 +151,7 @@ function zd_list_press( $atts ) {
             ?>
             <div class="divider"></div>
             <div id="press-<?php the_ID(); ?>" <?php post_class(); ?>>
-              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              <a href="<?php the_permalink(); ?>">&ldquo;<?php the_title(); ?>&rdquo;</a>
               <span class="author">by <?php echo $author; ?></span> | 
               <span class="media"><?php echo $publication; ?></span> | 
               <time class="date"><?php echo $pubdate; ?></time>
@@ -186,7 +186,7 @@ add_shortcode( 'button', 'zd_button' );
 
 // disables automatic spacing & p tags inside selected shortcodes. Add shortcode name to array inside $block
 function the_content_filter($content) {
-	$block = join("|",array('overview', 'overview_page'));
+	$block = join("|",array('overview', 'overview_page', 'list_press', 'posts'));
 	$rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
 	$rep = preg_replace("/(<p>)?\[\/($block)](<\/p>|<br \/>)?/","[/$2]",$rep);
 return $rep;

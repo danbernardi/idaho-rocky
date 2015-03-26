@@ -47,6 +47,27 @@ function zd_page_options( array $meta_boxes ) {
                 'type'       => 'text_url',
                 'show_on_cb' => 'cmb2_hide_if_no_cats',
             ),
+            array(
+                'name'       => __( 'Heading Button', 'zd' ),
+                'desc'       => __( 'Check this box to enable the call to action button in the page title.', 'zd' ),
+                'id'         => $prefix . 'hdg_btn',
+                'type'       => 'checkbox',
+                'show_on_cb' => 'cmb2_hide_if_no_cats',
+            ),
+            array(
+                'name'       => __( 'Heading Button Title', 'zd' ),
+                'desc'       => __( 'Enter the text that appears inside the heading button.', 'zd' ),
+                'id'         => $prefix . 'hdg_btn_text',
+                'type'       => 'text',
+                'show_on_cb' => 'cmb2_hide_if_no_cats',
+            ),
+            array(
+                'name'       => __( 'Heading Button URL', 'zd' ),
+                'desc'       => __( 'Enter the URL for the heading button.', 'zd' ),
+                'id'         => $prefix . 'hdg_btn_url',
+                'type'       => 'text_url',
+                'show_on_cb' => 'cmb2_hide_if_no_cats',
+            ),
         ),
     );
 
