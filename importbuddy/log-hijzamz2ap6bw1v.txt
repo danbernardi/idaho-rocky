@@ -1,3 +1,0 @@
-[Mar 26, 2015 19:23:01 0-error] #TITLE# #MESSAGE# <a href="http://ithemes.com/codex/page/BackupBuddy:_Error_Codes#9021" target="_blank"><i>ImportBuddy Error Code 9021 - Click for more details.</i></a> Error Code: 9021
-[Mar 26, 2015 19:23:01 0-details] [] Finished step.
-[Mar 26, 2015 19:23:07 0-error] #TITLE# #MESSAGE# <a href="http://ithemes.com/codex/page/BackupBuddy:_Error_Codes#9021" target="_blank"><i>ImportBuddy Error Code 9021 - Click for more details.</i></a> Error Code: 9021
