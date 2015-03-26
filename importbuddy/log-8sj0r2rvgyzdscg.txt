@@ -1,0 +1,780 @@
+[Mar 26, 2015 19:23:07 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (zip) trying executable path: `/usr/local/bin`.
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (zip) FAILED: Test zip file not found.
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (zip) FAILED: exec Exit Code: 127
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (zip) trying executable path: ``.
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (zip) PASSED.
+[Mar 26, 2015 19:23:07 0-details] [] Checking zip version...
+[Mar 26, 2015 19:23:07 0-details] [] Found zip version: 3.0
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (unzip) checking test file readable: /Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/lib/zipbuddy/zbzip.php
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (unzip) checking test file intact: 0a0f9b28c5ff89dfb4f2a0472be0ea8f
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (unzip) trying executable path: `/usr/local/bin`.
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (unzip) FAILED: Test unzip file test failed.
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (unzip) FAILED: exec Exit Code: 127
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (unzip) trying executable path: ``.
+[Mar 26, 2015 19:23:07 0-details] [] Exec test (unzip) PASSED.
+[Mar 26, 2015 19:23:07 0-details] [] Checking unzip version...
+[Mar 26, 2015 19:23:07 0-details] [] Found unzip version: 5.52
+[Mar 26, 2015 19:23:07 0-details] [] ZipArchive test PASSED.
+[Mar 26, 2015 19:23:07 0-details] [] PCLZip class not found. Attempting to load from `/Users/danielbernardi/Documents/Websites/IRMR/irmr/wp-admin/includes/class-pclzip.php`.
+[Mar 26, 2015 19:23:07 0-details] [] PclZip test PASSED.
+[Mar 26, 2015 19:23:07 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Mar 26, 2015 19:23:07 0-details] [] Running ImportBuddy v5.1.1.18 (downloaded 2015-03-20T20:54:37+00:00).
+[Mar 26, 2015 19:23:07 0-details] [] Finished step.
+[Mar 26, 2015 19:23:31 0-error] #TITLE# #MESSAGE# <a href="http://ithemes.com/codex/page/BackupBuddy:_Error_Codes#9021" target="_blank"><i>ImportBuddy Error Code 9021 - Click for more details.</i></a> Error Code: 9021
+[Mar 26, 2015 19:23:31 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (zip) trying executable path: `/usr/local/bin`.
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (zip) FAILED: Test zip file not found.
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (zip) FAILED: exec Exit Code: 127
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (zip) trying executable path: ``.
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (zip) PASSED.
+[Mar 26, 2015 19:23:31 0-details] [] Checking zip version...
+[Mar 26, 2015 19:23:31 0-details] [] Found zip version: 3.0
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (unzip) checking test file readable: /Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/lib/zipbuddy/zbzip.php
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (unzip) checking test file intact: 0a0f9b28c5ff89dfb4f2a0472be0ea8f
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (unzip) trying executable path: `/usr/local/bin`.
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (unzip) FAILED: Test unzip file test failed.
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (unzip) FAILED: exec Exit Code: 127
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (unzip) trying executable path: ``.
+[Mar 26, 2015 19:23:31 0-details] [] Exec test (unzip) PASSED.
+[Mar 26, 2015 19:23:31 0-details] [] Checking unzip version...
+[Mar 26, 2015 19:23:31 0-details] [] Found unzip version: 5.52
+[Mar 26, 2015 19:23:31 0-details] [] ZipArchive test PASSED.
+[Mar 26, 2015 19:23:31 0-details] [] PCLZip class not found. Attempting to load from `/Users/danielbernardi/Documents/Websites/IRMR/irmr/wp-admin/includes/class-pclzip.php`.
+[Mar 26, 2015 19:23:31 0-details] [] PclZip test PASSED.
+[Mar 26, 2015 19:23:31 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Mar 26, 2015 19:23:31 0-details] [] exec (unzip) retrieved comment in file /Users/danielbernardi/Documents/Websites/IRMR/irmr/backup-irmr_zendentest_com-2015_03_26-06_22pm-db-kr7tubdnmz.zip
+[Mar 26, 2015 19:23:31 0-details] [] Running ImportBuddy v5.1.1.18 (downloaded 2015-03-20T20:54:37+00:00).
+[Mar 26, 2015 19:23:31 0-details] [] Finished step.
+[Mar 26, 2015 19:23:33 0-details] [] Loading step 2.
+[Mar 26, 2015 19:23:33 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:33 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:33 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:33 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:33 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:33 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:33 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:33 0-details] [] Starting function `start`.
+[Mar 26, 2015 19:23:33 0-details] [] Attempting to retrieve zip meta data from comment.
+[Mar 26, 2015 19:23:33 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (zip) trying executable path: `/usr/local/bin`.
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (zip) FAILED: Test zip file not found.
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (zip) FAILED: exec Exit Code: 127
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (zip) trying executable path: ``.
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (zip) PASSED.
+[Mar 26, 2015 19:23:33 0-details] [] Checking zip version...
+[Mar 26, 2015 19:23:33 0-details] [] Found zip version: 3.0
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (unzip) checking test file readable: /Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/lib/zipbuddy/zbzip.php
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (unzip) checking test file intact: 0a0f9b28c5ff89dfb4f2a0472be0ea8f
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (unzip) trying executable path: `/usr/local/bin`.
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (unzip) FAILED: Test unzip file test failed.
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (unzip) FAILED: exec Exit Code: 127
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (unzip) trying executable path: ``.
+[Mar 26, 2015 19:23:33 0-details] [] Exec test (unzip) PASSED.
+[Mar 26, 2015 19:23:33 0-details] [] Checking unzip version...
+[Mar 26, 2015 19:23:33 0-details] [] Found unzip version: 5.52
+[Mar 26, 2015 19:23:33 0-details] [] ZipArchive test PASSED.
+[Mar 26, 2015 19:23:33 0-details] [] PCLZip class not found. Attempting to load from `/Users/danielbernardi/Documents/Websites/IRMR/irmr/wp-admin/includes/class-pclzip.php`.
+[Mar 26, 2015 19:23:34 0-details] [] PclZip test PASSED.
+[Mar 26, 2015 19:23:34 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Mar 26, 2015 19:23:34 0-details] [] exec (unzip) retrieved comment in file /Users/danielbernardi/Documents/Websites/IRMR/irmr/backup-irmr_zendentest_com-2015_03_26-06_22pm-db-kr7tubdnmz.zip
+[Mar 26, 2015 19:23:34 0-details] [] Found zip meta data.
+[Mar 26, 2015 19:23:34 0-details] [] Loading zipbuddy.
+[Mar 26, 2015 19:23:34 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (zip) trying executable path: `/usr/local/bin`.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (zip) FAILED: Test zip file not found.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (zip) FAILED: exec Exit Code: 127
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (zip) trying executable path: ``.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (zip) PASSED.
+[Mar 26, 2015 19:23:34 0-details] [] Checking zip version...
+[Mar 26, 2015 19:23:34 0-details] [] Found zip version: 3.0
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) checking test file readable: /Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/lib/zipbuddy/zbzip.php
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) checking test file intact: 0a0f9b28c5ff89dfb4f2a0472be0ea8f
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) trying executable path: `/usr/local/bin`.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) FAILED: Test unzip file test failed.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) FAILED: exec Exit Code: 127
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) trying executable path: ``.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) PASSED.
+[Mar 26, 2015 19:23:34 0-details] [] Checking unzip version...
+[Mar 26, 2015 19:23:34 0-details] [] Found unzip version: 5.52
+[Mar 26, 2015 19:23:34 0-details] [] ZipArchive test PASSED.
+[Mar 26, 2015 19:23:34 0-details] [] PclZip test PASSED.
+[Mar 26, 2015 19:23:34 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Mar 26, 2015 19:23:34 0-details] [] Zipbuddy loaded.
+[Mar 26, 2015 19:23:34 0-details] [] Calculating possible DAT file locations.
+[Mar 26, 2015 19:23:34 0-details] [] Possible DAT file locations: `backupbuddy_dat.php;wp-content/uploads/backupbuddy_temp/kr7tubdnmz/backupbuddy_dat.php;backupbuddy_dat.php`.
+[Mar 26, 2015 19:23:34 0-details] [] Looking for DAT file in zip archive itself.
+[Mar 26, 2015 19:23:34 0-details] [] File found (exec): backupbuddy_dat.php
+[Mar 26, 2015 19:23:34 0-details] [] Confirmed DAT file location: `backupbuddy_dat.php`.
+[Mar 26, 2015 19:23:34 0-details] [] Creating temporary file directory `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_8sj0r2rvgyzdscg/`.
+[Mar 26, 2015 19:23:34 0-details] [] Extracting DAT file.
+[Mar 26, 2015 19:23:34 0-details] [] Extracting into temporary directory "/var/folders/sc/dk2flrj143s1w7njcwzprrp00000gn/T/backupbuddy-kr7tubdnmz".
+[Mar 26, 2015 19:23:34 0-details] [] Files to extract: `backupbuddy_dat.php =&gt; backupbuddy_dat.php`.
+[Mar 26, 2015 19:23:34 0-details] [] exec (unzip) extracted file contents (backupbuddy_dat.php from /Users/danielbernardi/Documents/Websites/IRMR/irmr/backup-irmr_zendentest_com-2015_03_26-06_22pm-db-kr7tubdnmz.zip to /var/folders/sc/dk2flrj143s1w7njcwzprrp00000gn/T/backupbuddy-kr7tubdnmz/backupbuddy_dat.php)
+[Mar 26, 2015 19:23:34 0-details] [] Recursively moved `/var/folders/sc/dk2flrj143s1w7njcwzprrp00000gn/T/backupbuddy-kr7tubdnmz/backupbuddy_dat.php` to `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_8sj0r2rvgyzdscg/backupbuddy_dat.php`.<br>
+[Mar 26, 2015 19:23:34 0-details] [] Cleaned up temporary files.
+[Mar 26, 2015 19:23:34 0-message] [] File retrieval completed successfully.
+[Mar 26, 2015 19:23:34 0-details] [] Loading backup dat file.
+[Mar 26, 2015 19:23:34 0-details] [] Successfully loaded backup dat file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_8sj0r2rvgyzdscg/backupbuddy_dat.php`.
+[Mar 26, 2015 19:23:34 0-details] [] DAT contents: Array; (;     [backupbuddy_version] => 5.1.1.18;     [wordpress_version] => 4.1.1;     [backup_time] => 1427394134;     [backup_type] => db;     [profile] => Array;         (;             [type] => db;             [title] => Database Only;             [skip_database_dump] => 0;             [mysqldump_additional_includes] => ;             [mysqldump_additional_excludes] => ;             [backup_nonwp_tables] => 0;             [excludes] => ;             [integrity_check] => 1;             [profile_globaltables] => 1;             [profile_globalexcludes] => 1;             [backup_mode] => 2;             [tip] => Just your database. I like your minimalist style.;         ); ;     [default_profile] => Array;         (;             [type] => defaults;             [title] => Global Defaults;             [skip_database_dump] => 0;             [backup_nonwp_tables] => 0;             [integrity_check] => 1;             [mysqldump_additional_includes] => ;             [mysqldump_additional_excludes] => ;             [excludes] => ;         ); ;     [serial] => kr7tubdnmz;     [trigger] => manual;     [wp-config_in_parent] => ;     [deployment_direction] => ;     [abspath] => /home/zendente/public_html/irmr/;     [siteurl] => http://irmr.zendentest.com;     [homeurl] => http://irmr.zendentest.com;     [blogname] => Idaho Rocky Mountain Ranch;     [blogdescription] => Just another WordPress site;     [active_plugins] => backupbuddy/backupbuddy.php, columns/columns.php, custom-sidebars/customsidebars.php, options-framework/options-framework.php, wordpress-importer/wordpress-importer.php;     [posts] => 12;     [pages] => 33;     [comments] => 0;     [users] => 3;     [db_prefix] => irmr_;     [db_server] => localhost;     [db_name] => zendente_irmr;     [db_user] => zendente_irmr;     [db_password] => *HIDDEN*;     [db_exclusions] => ;     [db_inclusions] => ;     [breakout_tables] => Array;         (;             [0] => irmr_posts;             [1] => irmr_postmeta;         ); ;     [tables_sizes] => Array;         (;             [irmr_commentmeta] => 5406720;             [irmr_comments] => 98304;             [irmr_links] => 32768;             [irmr_options] => 1114112;             [irmr_postmeta] => 147456;             [irmr_posts] => 1622016;             [irmr_term_relationships] => 32768;             [irmr_term_taxonomy] => 49152;             [irmr_terms] => 49152;             [irmr_usermeta] => 49152;             [irmr_users] => 49152;         ); ;     [is_multisite] => ;     [is_multisite_export] => ;     [domain] => ;     [path] => ;     [upload_url] => ;     [upload_url_rewrite] => ; ); 
+[Mar 26, 2015 19:23:34 0-details] [] DAT file extracted.
+[Mar 26, 2015 19:23:34 0-details] [] Finished starting function.
+[Mar 26, 2015 19:23:34 0-details] [] Starting function `getDefaultUrl`.
+[Mar 26, 2015 19:23:34 0-details] [] Starting function `getDefaultDomain`.
+[Mar 26, 2015 19:23:34 0-details] [] Starting function `getDefaultUrl`.
+[Mar 26, 2015 19:23:34 0-details] [] Database backup OR not restoring files.
+[Mar 26, 2015 19:23:34 0-details] [] Starting function `maintenanceOn`.
+[Mar 26, 2015 19:23:34 0-details] [] Turning on maintenance mode on.
+[Mar 26, 2015 19:23:34 0-details] [] .maintenance file generated to prevent viewing partially migrated site.
+[Mar 26, 2015 19:23:34 0-details] [] Starting function `restoreFiles`.
+[Mar 26, 2015 19:23:34 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (zip) trying executable path: `/usr/local/bin`.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (zip) FAILED: Test zip file not found.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (zip) FAILED: exec Exit Code: 127
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (zip) trying executable path: ``.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (zip) PASSED.
+[Mar 26, 2015 19:23:34 0-details] [] Checking zip version...
+[Mar 26, 2015 19:23:34 0-details] [] Found zip version: 3.0
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) checking test file readable: /Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/lib/zipbuddy/zbzip.php
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) checking test file intact: 0a0f9b28c5ff89dfb4f2a0472be0ea8f
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) trying executable path: `/usr/local/bin`.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) FAILED: Test unzip file test failed.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) FAILED: exec Exit Code: 127
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) trying executable path: ``.
+[Mar 26, 2015 19:23:34 0-details] [] Exec test (unzip) PASSED.
+[Mar 26, 2015 19:23:34 0-details] [] Checking unzip version...
+[Mar 26, 2015 19:23:34 0-details] [] Found unzip version: 5.52
+[Mar 26, 2015 19:23:34 0-details] [] ZipArchive test PASSED.
+[Mar 26, 2015 19:23:34 0-details] [] PclZip test PASSED.
+[Mar 26, 2015 19:23:34 0-details] [] Zip method caching disabled based on settings or unavailable.
+[Mar 26, 2015 19:23:34 0-message] [] Unzipping archive `/Users/danielbernardi/Documents/Websites/IRMR/irmr/backup-irmr_zendentest_com-2015_03_26-06_22pm-db-kr7tubdnmz.zip` into `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/`
+[Mar 26, 2015 19:23:34 0-details] [] Using all available unzip methods in preferred order.
+[Mar 26, 2015 19:23:34 0-details] [] exec (unzip) extracted file contents (/Users/danielbernardi/Documents/Websites/IRMR/irmr/backup-irmr_zendentest_com-2015_03_26-06_22pm-db-kr7tubdnmz.zip to /Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/)
+[Mar 26, 2015 19:23:34 0-details] [] Zip Archive file size: 538478 bytes, owned by user:group 501:80 with permissions 0644
+[Mar 26, 2015 19:23:34 0-details] [] Success extracting backup archive.
+[Mar 26, 2015 19:23:34 0-details] [] SKIPPING restore of files based on settings from Step 1.
+[Mar 26, 2015 19:23:34 0-details] [] Finishing step 2.
+[Mar 26, 2015 19:23:34 0-details] [] Starting function `renameHtaccessTemp`.
+[Mar 26, 2015 19:23:34 0-message] [] Renamed `.htaccess` file to `.htaccess.bb_temp` until final ImportBuddy step.
+[Mar 26, 2015 19:23:34 0-details] [] Starting function `determineDatabaseFiles`.
+[Mar 26, 2015 19:23:34 0-details] [] Determining SQL file location...
+[Mar 26, 2015 19:23:34 0-details] [] Looking for SQL files in `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/wp-content/uploads/temp_kr7tubdnmz/`.
+[Mar 26, 2015 19:23:34 0-details] [] Looking for SQL files in `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/wp-content/uploads/backupbuddy_temp/kr7tubdnmz/`.
+[Mar 26, 2015 19:23:34 0-details] [] Looking for SQL files in `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/`.
+[Mar 26, 2015 19:23:34 0-details] [] Found 11 SQL files in `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/`.
+[Mar 26, 2015 19:23:34 0-details] [] About to load Step 3.
+[Mar 26, 2015 19:23:51 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:51 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:51 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:51 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:51 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:51 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:51 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:51 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:51 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:51 0-message] [] Wiping existing database tables with the prefix `irmr_` based on settings...
+[Mar 26, 2015 19:23:51 0-message] [] Beginning wipe of database tables matching prefix `irmr_`...
+[Mar 26, 2015 19:23:51 0-details] [] Dropping table `irmr_commentmeta`.
+[Mar 26, 2015 19:23:51 0-details] [] Dropping table `irmr_comments`.
+[Mar 26, 2015 19:23:51 0-details] [] Dropping table `irmr_links`.
+[Mar 26, 2015 19:23:51 0-details] [] Dropping table `irmr_options`.
+[Mar 26, 2015 19:23:51 0-details] [] Dropping table `irmr_postmeta`.
+[Mar 26, 2015 19:23:51 0-details] [] Dropping table `irmr_posts`.
+[Mar 26, 2015 19:23:51 0-details] [] Dropping table `irmr_term_relationships`.
+[Mar 26, 2015 19:23:51 0-details] [] Dropping table `irmr_term_taxonomy`.
+[Mar 26, 2015 19:23:51 0-details] [] Dropping table `irmr_terms`.
+[Mar 26, 2015 19:23:51 0-details] [] Dropping table `irmr_usermeta`.
+[Mar 26, 2015 19:23:51 0-details] [] Dropping table `irmr_users`.
+[Mar 26, 2015 19:23:51 0-message] [] Wiped database of 11 tables.
+[Mar 26, 2015 19:23:51 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:51 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:51 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:51 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:51 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:51 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:51 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:51 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:51 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:51 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:51 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:51 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:51 0-details] [] SQL files to import: 11
+[Mar 26, 2015 19:23:51 0-details] [] Importing SQL file `irmr_commentmeta.sql` (size: 4.24 MB).
+[Mar 26, 2015 19:23:51 0-message] [] Restoring database dump. This may take a moment...
+[Mar 26, 2015 19:23:51 0-message] [] Starting database import procedure.
+[Mar 26, 2015 19:23:51 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Mar 26, 2015 19:23:51 0-details] [] mysqlbuddy: Old prefix: `irmr_`; New prefix: `irmr_`.
+[Mar 26, 2015 19:23:51 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_commentmeta.sql`. Old prefix: `irmr_`. Query start: ``.
+[Mar 26, 2015 19:23:51 0-details] [] About to flush...
+[Mar 26, 2015 19:23:51 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Mar 26, 2015 19:23:51 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Mar 26, 2015 19:23:51 0-message] [] Starting import of SQL data... This may take a moment...
+[Mar 26, 2015 19:23:51 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_commentmeta.sql`.
+[Mar 26, 2015 19:23:51 0-details] [] Creating table `irmr_commentmeta`.
+[Mar 26, 2015 19:23:52 0-message] [] Working... Imported 2000 queries so far.
+[Mar 26, 2015 19:23:53 0-message] [] Working... Imported 4000 queries so far.
+[Mar 26, 2015 19:23:54 0-message] [] Working... Imported 6000 queries so far.
+[Mar 26, 2015 19:23:55 0-message] [] Working... Imported 8000 queries so far.
+[Mar 26, 2015 19:23:56 0-message] [] Import of SQL data in PHP mode complete.
+[Mar 26, 2015 19:23:56 0-message] [] Took 4.633 seconds on 9949 queries. 
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Mar 26, 2015 19:23:56 0-message] [] Database import of `irmr_commentmeta.sql` succeeded.
+[Mar 26, 2015 19:23:56 0-details] [] Finished importing SQL file `irmr_commentmeta.sql`. Database files remaining: 10
+[Mar 26, 2015 19:23:56 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Mar 26, 2015 19:23:56 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:56 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:56 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:56 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:56 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:56 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:56 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:56 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:56 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:56 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:56 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:56 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:56 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:56 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:56 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:56 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:56 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:56 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:56 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:56 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:56 0-details] [] SQL files to import: 10
+[Mar 26, 2015 19:23:56 0-details] [] Importing SQL file `irmr_comments.sql` (size: 1 KB).
+[Mar 26, 2015 19:23:56 0-message] [] Restoring database dump. This may take a moment...
+[Mar 26, 2015 19:23:56 0-message] [] Starting database import procedure.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Old prefix: `irmr_`; New prefix: `irmr_`.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_comments.sql`. Old prefix: `irmr_`. Query start: ``.
+[Mar 26, 2015 19:23:56 0-details] [] About to flush...
+[Mar 26, 2015 19:23:56 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Mar 26, 2015 19:23:56 0-message] [] Starting import of SQL data... This may take a moment...
+[Mar 26, 2015 19:23:56 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_comments.sql`.
+[Mar 26, 2015 19:23:56 0-details] [] Creating table `irmr_comments`.
+[Mar 26, 2015 19:23:56 0-message] [] Import of SQL data in PHP mode complete.
+[Mar 26, 2015 19:23:56 0-message] [] Took 0.026 seconds on 3 queries. 
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Mar 26, 2015 19:23:56 0-message] [] Database import of `irmr_comments.sql` succeeded.
+[Mar 26, 2015 19:23:56 0-details] [] Finished importing SQL file `irmr_comments.sql`. Database files remaining: 9
+[Mar 26, 2015 19:23:56 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Mar 26, 2015 19:23:56 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:56 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:56 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:56 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:56 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:56 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:56 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:56 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:56 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:56 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:56 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:56 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:56 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:56 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:56 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:56 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:56 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:56 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:56 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:56 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:56 0-details] [] SQL files to import: 9
+[Mar 26, 2015 19:23:56 0-details] [] Importing SQL file `irmr_links.sql` (size: 871 Bytes).
+[Mar 26, 2015 19:23:56 0-message] [] Restoring database dump. This may take a moment...
+[Mar 26, 2015 19:23:56 0-message] [] Starting database import procedure.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Old prefix: `irmr_`; New prefix: `irmr_`.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_links.sql`. Old prefix: `irmr_`. Query start: ``.
+[Mar 26, 2015 19:23:56 0-details] [] About to flush...
+[Mar 26, 2015 19:23:56 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Mar 26, 2015 19:23:56 0-message] [] Starting import of SQL data... This may take a moment...
+[Mar 26, 2015 19:23:56 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_links.sql`.
+[Mar 26, 2015 19:23:56 0-details] [] Creating table `irmr_links`.
+[Mar 26, 2015 19:23:56 0-message] [] Import of SQL data in PHP mode complete.
+[Mar 26, 2015 19:23:56 0-message] [] Took 0.035 seconds on 3 queries. 
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Mar 26, 2015 19:23:56 0-message] [] Database import of `irmr_links.sql` succeeded.
+[Mar 26, 2015 19:23:56 0-details] [] Finished importing SQL file `irmr_links.sql`. Database files remaining: 8
+[Mar 26, 2015 19:23:56 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Mar 26, 2015 19:23:56 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:56 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:56 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:56 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:56 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:56 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:56 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:56 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:56 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:56 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:56 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:56 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:56 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:56 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:56 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:56 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:56 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:56 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:56 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:56 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:56 0-details] [] SQL files to import: 8
+[Mar 26, 2015 19:23:56 0-details] [] Importing SQL file `irmr_options.sql` (size: 424 KB).
+[Mar 26, 2015 19:23:56 0-message] [] Restoring database dump. This may take a moment...
+[Mar 26, 2015 19:23:56 0-message] [] Starting database import procedure.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Old prefix: `irmr_`; New prefix: `irmr_`.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_options.sql`. Old prefix: `irmr_`. Query start: ``.
+[Mar 26, 2015 19:23:56 0-details] [] About to flush...
+[Mar 26, 2015 19:23:56 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Mar 26, 2015 19:23:56 0-message] [] Starting import of SQL data... This may take a moment...
+[Mar 26, 2015 19:23:56 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_options.sql`.
+[Mar 26, 2015 19:23:56 0-details] [] Creating table `irmr_options`.
+[Mar 26, 2015 19:23:56 0-message] [] Import of SQL data in PHP mode complete.
+[Mar 26, 2015 19:23:56 0-message] [] Took 0.123 seconds on 153 queries. 
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Mar 26, 2015 19:23:56 0-message] [] Database import of `irmr_options.sql` succeeded.
+[Mar 26, 2015 19:23:56 0-details] [] Finished importing SQL file `irmr_options.sql`. Database files remaining: 7
+[Mar 26, 2015 19:23:56 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Mar 26, 2015 19:23:56 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:56 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:56 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:56 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:56 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:56 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:56 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:56 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:56 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:56 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:56 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:56 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:56 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:56 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:56 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:56 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:56 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:56 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:56 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:56 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:56 0-details] [] SQL files to import: 7
+[Mar 26, 2015 19:23:56 0-details] [] Importing SQL file `irmr_postmeta.sql` (size: 61 KB).
+[Mar 26, 2015 19:23:56 0-message] [] Restoring database dump. This may take a moment...
+[Mar 26, 2015 19:23:56 0-message] [] Starting database import procedure.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Old prefix: `irmr_`; New prefix: `irmr_`.
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_postmeta.sql`. Old prefix: `irmr_`. Query start: ``.
+[Mar 26, 2015 19:23:56 0-details] [] About to flush...
+[Mar 26, 2015 19:23:56 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Mar 26, 2015 19:23:56 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Mar 26, 2015 19:23:56 0-message] [] Starting import of SQL data... This may take a moment...
+[Mar 26, 2015 19:23:56 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_postmeta.sql`.
+[Mar 26, 2015 19:23:56 0-details] [] Creating table `irmr_postmeta`.
+[Mar 26, 2015 19:23:57 0-message] [] Import of SQL data in PHP mode complete.
+[Mar 26, 2015 19:23:57 0-message] [] Took 0.362 seconds on 696 queries. 
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Mar 26, 2015 19:23:57 0-message] [] Database import of `irmr_postmeta.sql` succeeded.
+[Mar 26, 2015 19:23:57 0-details] [] Finished importing SQL file `irmr_postmeta.sql`. Database files remaining: 6
+[Mar 26, 2015 19:23:57 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Mar 26, 2015 19:23:57 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:57 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:57 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:57 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:57 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:57 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:57 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:57 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:57 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:57 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:57 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:57 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:57 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:57 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:57 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:57 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:57 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:57 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:57 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:57 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:57 0-details] [] SQL files to import: 6
+[Mar 26, 2015 19:23:57 0-details] [] Importing SQL file `irmr_posts.sql` (size: 745 KB).
+[Mar 26, 2015 19:23:57 0-message] [] Restoring database dump. This may take a moment...
+[Mar 26, 2015 19:23:57 0-message] [] Starting database import procedure.
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Old prefix: `irmr_`; New prefix: `irmr_`.
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_posts.sql`. Old prefix: `irmr_`. Query start: ``.
+[Mar 26, 2015 19:23:57 0-details] [] About to flush...
+[Mar 26, 2015 19:23:57 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Mar 26, 2015 19:23:57 0-message] [] Starting import of SQL data... This may take a moment...
+[Mar 26, 2015 19:23:57 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_posts.sql`.
+[Mar 26, 2015 19:23:57 0-details] [] Creating table `irmr_posts`.
+[Mar 26, 2015 19:23:57 0-message] [] Import of SQL data in PHP mode complete.
+[Mar 26, 2015 19:23:57 0-message] [] Took 0.38 seconds on 340 queries. 
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Mar 26, 2015 19:23:57 0-message] [] Database import of `irmr_posts.sql` succeeded.
+[Mar 26, 2015 19:23:57 0-details] [] Finished importing SQL file `irmr_posts.sql`. Database files remaining: 5
+[Mar 26, 2015 19:23:57 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Mar 26, 2015 19:23:57 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:57 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:57 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:57 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:57 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:57 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:57 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:57 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:57 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:57 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:57 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:57 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:57 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:57 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:57 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:57 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:57 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:57 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:57 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:57 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:57 0-details] [] SQL files to import: 5
+[Mar 26, 2015 19:23:57 0-details] [] Importing SQL file `irmr_term_relationships.sql` (size: 4 KB).
+[Mar 26, 2015 19:23:57 0-message] [] Restoring database dump. This may take a moment...
+[Mar 26, 2015 19:23:57 0-message] [] Starting database import procedure.
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Old prefix: `irmr_`; New prefix: `irmr_`.
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_term_relationships.sql`. Old prefix: `irmr_`. Query start: ``.
+[Mar 26, 2015 19:23:57 0-details] [] About to flush...
+[Mar 26, 2015 19:23:57 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Mar 26, 2015 19:23:57 0-message] [] Starting import of SQL data... This may take a moment...
+[Mar 26, 2015 19:23:57 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_term_relationships.sql`.
+[Mar 26, 2015 19:23:57 0-details] [] Creating table `irmr_term_relationships`.
+[Mar 26, 2015 19:23:57 0-message] [] Import of SQL data in PHP mode complete.
+[Mar 26, 2015 19:23:57 0-message] [] Took 0.061 seconds on 68 queries. 
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Mar 26, 2015 19:23:57 0-message] [] Database import of `irmr_term_relationships.sql` succeeded.
+[Mar 26, 2015 19:23:57 0-details] [] Finished importing SQL file `irmr_term_relationships.sql`. Database files remaining: 4
+[Mar 26, 2015 19:23:57 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Mar 26, 2015 19:23:57 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:57 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:57 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:57 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:57 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:57 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:57 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:57 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:57 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:57 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:57 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:57 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:57 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:57 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:57 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:57 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:57 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:57 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:57 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:57 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:57 0-details] [] SQL files to import: 4
+[Mar 26, 2015 19:23:57 0-details] [] Importing SQL file `irmr_term_taxonomy.sql` (size: 1 KB).
+[Mar 26, 2015 19:23:57 0-message] [] Restoring database dump. This may take a moment...
+[Mar 26, 2015 19:23:57 0-message] [] Starting database import procedure.
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Old prefix: `irmr_`; New prefix: `irmr_`.
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_term_taxonomy.sql`. Old prefix: `irmr_`. Query start: ``.
+[Mar 26, 2015 19:23:57 0-details] [] About to flush...
+[Mar 26, 2015 19:23:57 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Mar 26, 2015 19:23:57 0-message] [] Starting import of SQL data... This may take a moment...
+[Mar 26, 2015 19:23:57 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_term_taxonomy.sql`.
+[Mar 26, 2015 19:23:57 0-details] [] Creating table `irmr_term_taxonomy`.
+[Mar 26, 2015 19:23:57 0-message] [] Import of SQL data in PHP mode complete.
+[Mar 26, 2015 19:23:57 0-message] [] Took 0.028 seconds on 13 queries. 
+[Mar 26, 2015 19:23:57 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Mar 26, 2015 19:23:57 0-message] [] Database import of `irmr_term_taxonomy.sql` succeeded.
+[Mar 26, 2015 19:23:57 0-details] [] Finished importing SQL file `irmr_term_taxonomy.sql`. Database files remaining: 3
+[Mar 26, 2015 19:23:57 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Mar 26, 2015 19:23:58 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:58 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:58 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:58 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:58 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:58 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:58 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:58 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:58 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:58 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:58 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:58 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:58 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:58 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:58 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:58 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:58 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:58 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:58 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:58 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:58 0-details] [] SQL files to import: 3
+[Mar 26, 2015 19:23:58 0-details] [] Importing SQL file `irmr_terms.sql` (size: 1 KB).
+[Mar 26, 2015 19:23:58 0-message] [] Restoring database dump. This may take a moment...
+[Mar 26, 2015 19:23:58 0-message] [] Starting database import procedure.
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Old prefix: `irmr_`; New prefix: `irmr_`.
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_terms.sql`. Old prefix: `irmr_`. Query start: ``.
+[Mar 26, 2015 19:23:58 0-details] [] About to flush...
+[Mar 26, 2015 19:23:58 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Mar 26, 2015 19:23:58 0-message] [] Starting import of SQL data... This may take a moment...
+[Mar 26, 2015 19:23:58 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_terms.sql`.
+[Mar 26, 2015 19:23:58 0-details] [] Creating table `irmr_terms`.
+[Mar 26, 2015 19:23:58 0-message] [] Import of SQL data in PHP mode complete.
+[Mar 26, 2015 19:23:58 0-message] [] Took 0.033 seconds on 13 queries. 
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Mar 26, 2015 19:23:58 0-message] [] Database import of `irmr_terms.sql` succeeded.
+[Mar 26, 2015 19:23:58 0-details] [] Finished importing SQL file `irmr_terms.sql`. Database files remaining: 2
+[Mar 26, 2015 19:23:58 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Mar 26, 2015 19:23:58 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:58 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:58 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:58 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:58 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:58 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:58 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:58 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:58 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:58 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:58 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:58 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:58 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:58 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:58 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:58 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:58 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:58 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:58 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:58 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:58 0-details] [] SQL files to import: 2
+[Mar 26, 2015 19:23:58 0-details] [] Importing SQL file `irmr_usermeta.sql` (size: 6 KB).
+[Mar 26, 2015 19:23:58 0-message] [] Restoring database dump. This may take a moment...
+[Mar 26, 2015 19:23:58 0-message] [] Starting database import procedure.
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Old prefix: `irmr_`; New prefix: `irmr_`.
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_usermeta.sql`. Old prefix: `irmr_`. Query start: ``.
+[Mar 26, 2015 19:23:58 0-details] [] About to flush...
+[Mar 26, 2015 19:23:58 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Mar 26, 2015 19:23:58 0-message] [] Starting import of SQL data... This may take a moment...
+[Mar 26, 2015 19:23:58 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_usermeta.sql`.
+[Mar 26, 2015 19:23:58 0-details] [] Creating table `irmr_usermeta`.
+[Mar 26, 2015 19:23:58 0-message] [] Import of SQL data in PHP mode complete.
+[Mar 26, 2015 19:23:58 0-message] [] Took 0.055 seconds on 51 queries. 
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Mar 26, 2015 19:23:58 0-message] [] Database import of `irmr_usermeta.sql` succeeded.
+[Mar 26, 2015 19:23:58 0-details] [] Finished importing SQL file `irmr_usermeta.sql`. Database files remaining: 1
+[Mar 26, 2015 19:23:58 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Mar 26, 2015 19:23:58 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:58 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:58 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:58 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:58 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:58 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:58 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:58 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:58 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:58 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:58 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:58 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:58 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:58 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:58 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:58 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:58 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:58 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:58 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:58 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:58 0-details] [] SQL files to import: 1
+[Mar 26, 2015 19:23:58 0-details] [] Importing SQL file `irmr_users.sql` (size: 1 KB).
+[Mar 26, 2015 19:23:58 0-message] [] Restoring database dump. This may take a moment...
+[Mar 26, 2015 19:23:58 0-message] [] Starting database import procedure.
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Maximum execution time for this run: 7200 seconds.
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Old prefix: `irmr_`; New prefix: `irmr_`.
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Importing SQL file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_users.sql`. Old prefix: `irmr_`. Query start: ``.
+[Mar 26, 2015 19:23:58 0-details] [] About to flush...
+[Mar 26, 2015 19:23:58 0-details] [] Preparing to import using available method(s) by priority. Basing import methods off dump methods: `php`
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Attempting import method `php`.
+[Mar 26, 2015 19:23:58 0-message] [] Starting import of SQL data... This may take a moment...
+[Mar 26, 2015 19:23:58 0-details] [] Loading SQL from file `/Users/danielbernardi/Documents/Websites/IRMR/irmr/importbuddy/temp_n98qgb0sy30b/irmr_users.sql`.
+[Mar 26, 2015 19:23:58 0-details] [] Creating table `irmr_users`.
+[Mar 26, 2015 19:23:58 0-message] [] Import of SQL data in PHP mode complete.
+[Mar 26, 2015 19:23:58 0-message] [] Took 0.027 seconds on 6 queries. 
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Import method `php` completed successfully.
+[Mar 26, 2015 19:23:58 0-message] [] Database import of `irmr_users.sql` succeeded.
+[Mar 26, 2015 19:23:58 0-details] [] Finished importing SQL file `irmr_users.sql`. Database files remaining: 0
+[Mar 26, 2015 19:23:58 0-details] [] Database restore did not fully complete this pass. Chunking in progress. Resuming where left off. If the process does not proceed check your browser error console or PHP error log.
+[Mar 26, 2015 19:23:58 0-details] [] Loading step 4.
+[Mar 26, 2015 19:23:58 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:23:58 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:23:58 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:23:58 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:23:58 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:23:58 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:23:58 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:23:58 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:23:58 0-details] [] About to restore database.
+[Mar 26, 2015 19:23:58 0-details] [] Starting function `restoreDatabase`.
+[Mar 26, 2015 19:23:58 0-details] [] Restoring database tables.
+[Mar 26, 2015 19:23:58 0-details] [] Database method set to PHP only.
+[Mar 26, 2015 19:23:58 0-details] [] Compatibility mysqldump (if applicable) max rows per select set to 1000.
+[Mar 26, 2015 19:23:58 0-details] [] Database host for dumping: `localhost`
+[Mar 26, 2015 19:23:58 0-details] [] Loading mysqlbuddy library.
+[Mar 26, 2015 19:23:58 0-details] [] Mysql server default directories: `/usr/bin/,/usr/bin/mysql/,/usr/local/bin/`
+[Mar 26, 2015 19:23:58 0-details] [] mysqlbuddy: Force method of `1` passed.
+[Mar 26, 2015 19:23:58 0-message] [] mysqlbuddy: Settings overriding automatic detection of available database dump methods. Using forced override methods: `php`.
+[Mar 26, 2015 19:23:58 0-message] [] mysqlbuddy: Detected database dump methods: `php`.
+[Mar 26, 2015 19:23:58 0-details] [] If applicable, breaking up with max execution time `7200` seconds.
+[Mar 26, 2015 19:23:58 0-details] [] SQL files to import: 0
+[Mar 26, 2015 19:23:58 0-details] [] Database restore finished importing all SQL files.
+[Mar 26, 2015 19:23:58 0-details] [] Database restore completed.
+[Mar 26, 2015 19:23:58 0-details] [] Finishing step 4.
+[Mar 26, 2015 19:24:02 0-details] [] Loading step 5.
+[Mar 26, 2015 19:24:02 0-details] [] Constructing rollback class.
+[Mar 26, 2015 19:24:02 0-details] [] Setting restore state defaults.
+[Mar 26, 2015 19:24:02 0-details] [] Using provided restore state data.
+[Mar 26, 2015 19:24:02 0-details] [] Restore class constructed in `restore` mode.
+[Mar 26, 2015 19:24:02 0-details] [] Maximum PHP execution time was not modified
+[Mar 26, 2015 19:24:02 0-details] [] Reported PHP execution time - Configured: 30; Original: 7200; Current: 7200
+[Mar 26, 2015 19:24:02 0-details] [] Reported PHP memory limits - Configured: 128M; Original: 128M; Current: 128M
+[Mar 26, 2015 19:24:02 0-message] [] Migrating `.htaccess.bb_temp` file...
+[Mar 26, 2015 19:24:02 0-message] [] Checking `.htaccess.bb_temp` file.
+[Mar 26, 2015 19:24:02 0-message] [] No changes needed for `.htaccess.bb_temp` file.
+[Mar 26, 2015 19:24:02 0-details] [] Starting function `connectDatabase`.
+[Mar 26, 2015 19:24:02 0-details] [] Using normal mode database prefix based on settings: `irmr_`.
+[Mar 26, 2015 19:24:02 0-message] [] Migrating database content...
+[Mar 26, 2015 19:24:02 0-details] [] Destination site table prefix: irmr_
+[Mar 26, 2015 19:24:02 0-details] [] Migration type: `standalone` to `standalone`.
+[Mar 26, 2015 19:24:02 0-details] [] Destination Site URL: http://localhost:8888
+[Mar 26, 2015 19:24:02 0-details] [] Destination Home URL: http://localhost:8888
+[Mar 26, 2015 19:24:02 0-details] [] Steps to run: `migrateCommon,_calculateNewOldURLs,bruteForceTables,finalize,verifyDatabase`.
+[Mar 26, 2015 19:24:02 0-details] [] Starting step `migrateCommon`.
+[Mar 26, 2015 19:24:02 0-details] [] Starting migration steps for `all` sites.
+[Mar 26, 2015 19:24:02 0-details] [] ABSPATH change for database. Old Path: /home/zendente/public_html/irmr/, New Path: /Users/danielbernardi/Documents/Websites/IRMR/irmr/.
+[Mar 26, 2015 19:24:02 0-details] [] Calculated site URL update. Previous URL: `http://irmr.zendentest.com`, New URL: `http://localhost:8888`.
+[Mar 26, 2015 19:24:02 0-details] [] Calculated home URL update. Previous URL: `http://irmr.zendentest.com`, New URL: `http://localhost:8888`
+[Mar 26, 2015 19:24:02 0-details] [] Finished migration steps for `all` sites.
+[Mar 26, 2015 19:24:02 0-details] [] Finished step `migrateCommon`.
+[Mar 26, 2015 19:24:02 0-details] [] Database migration step `migrateCommon` finished successfully.
+[Mar 26, 2015 19:24:02 0-details] [] Starting step `_calculateNewOldURLs`.
+[Mar 26, 2015 19:24:02 0-details] [] Old URLs: http://irmr.zendentest.com, http://www.irmr.zendentest.com
+[Mar 26, 2015 19:24:02 0-details] [] New URLs: http://localhost:8888, http://localhost:8888
+[Mar 26, 2015 19:24:02 0-details] [] Old full replace: http://irmr.zendentest.com, http://www.irmr.zendentest.com, /home/zendente/public_html/irmr/
+[Mar 26, 2015 19:24:02 0-details] [] New full replace: http://localhost:8888, http://localhost:8888, /Users/danielbernardi/Documents/Websites/IRMR/irmr/
+[Mar 26, 2015 19:24:02 0-details] [] Finished step `_calculateNewOldURLs`.
+[Mar 26, 2015 19:24:02 0-details] [] Database migration step `_calculateNewOldURLs` finished successfully.
+[Mar 26, 2015 19:24:02 0-details] [] Starting step `bruteForceTables`.
+[Mar 26, 2015 19:24:02 0-message] [] Found 11 WordPress tables. 
+[Mar 26, 2015 19:24:02 0-details] [] Starting substep `Posts table site URLs.`.
+[Mar 26, 2015 19:24:02 0-details] [] Finished substep `Posts table site URLs.`.
+[Mar 26, 2015 19:24:02 0-details] [] Database migration substep `Posts table site URLs.` finished successfully.
+[Mar 26, 2015 19:24:02 0-details] [] Starting substep `WordPress core database text data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Finished substep `WordPress core database text data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Database migration substep `WordPress core database text data.` finished successfully.
+[Mar 26, 2015 19:24:02 0-details] [] Starting substep `WordPress core database text data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Finished substep `WordPress core database text data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Database migration substep `WordPress core database text data.` finished successfully.
+[Mar 26, 2015 19:24:02 0-details] [] Starting substep `WordPress core database text data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Finished substep `WordPress core database text data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Database migration substep `WordPress core database text data.` finished successfully.
+[Mar 26, 2015 19:24:02 0-details] [] Starting substep `WordPress core database serialized data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Finding rows in table `irmr_options` to update.
+[Mar 26, 2015 19:24:02 0-details] [] Table: `irmr_options` - processing 150 rows ( Rows 0-149 of 150 )
+[Mar 26, 2015 19:24:02 0-details] [] Updated serialized data in table `irmr_options`.
+[Mar 26, 2015 19:24:02 0-details] [] Finished substep `WordPress core database serialized data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Database migration substep `WordPress core database serialized data.` finished successfully.
+[Mar 26, 2015 19:24:02 0-details] [] Starting substep `WordPress core database serialized data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Finding rows in table `irmr_usermeta` to update.
+[Mar 26, 2015 19:24:02 0-details] [] Table: `irmr_usermeta` - processing 48 rows ( Rows 0-47 of 48 )
+[Mar 26, 2015 19:24:02 0-details] [] Nothing found to update in table `irmr_usermeta`.
+[Mar 26, 2015 19:24:02 0-details] [] Finished substep `WordPress core database serialized data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Database migration substep `WordPress core database serialized data.` finished successfully.
+[Mar 26, 2015 19:24:02 0-details] [] Starting substep `WordPress core database serialized data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Finding rows in table `irmr_postmeta` to update.
+[Mar 26, 2015 19:24:02 0-details] [] Table: `irmr_postmeta` - processing 500 rows ( Rows 0-499 of 693 )
+[Mar 26, 2015 19:24:02 0-details] [] Table: `irmr_postmeta` - processing 193 rows ( Rows 500-692 of 693 )
+[Mar 26, 2015 19:24:02 0-details] [] Updated serialized data in table `irmr_postmeta`.
+[Mar 26, 2015 19:24:02 0-details] [] Finished substep `WordPress core database serialized data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Database migration substep `WordPress core database serialized data.` finished successfully.
+[Mar 26, 2015 19:24:02 0-details] [] Starting substep `WordPress core database serialized data.`.
+[Mar 26, 2015 19:24:02 0-details] [] Finding rows in table `irmr_commentmeta` to update.
+[Mar 26, 2015 19:24:02 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 0-499 of 9946 )
+[Mar 26, 2015 19:24:02 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 500-999 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 1000-1499 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 1500-1999 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 2000-2499 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 2500-2999 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 3000-3499 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 3500-3999 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 4000-4499 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 4500-4999 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 5000-5499 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 5500-5999 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 6000-6499 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 6500-6999 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 7000-7499 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 7500-7999 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 8000-8499 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 8500-8999 of 9946 )
+[Mar 26, 2015 19:24:03 0-details] [] Table: `irmr_commentmeta` - processing 500 rows ( Rows 9000-9499 of 9946 )
+[Mar 26, 2015 19:24:04 0-details] [] Table: `irmr_commentmeta` - processing 446 rows ( Rows 9500-9945 of 9946 )
+[Mar 26, 2015 19:24:04 0-details] [] Nothing found to update in table `irmr_commentmeta`.
+[Mar 26, 2015 19:24:04 0-details] [] Finished substep `WordPress core database serialized data.`.
+[Mar 26, 2015 19:24:04 0-details] [] Database migration substep `WordPress core database serialized data.` finished successfully.
+[Mar 26, 2015 19:24:04 0-details] [] Old DB prefix: `irmr_`; New final DB prefix (override does not apply): `irmr_`. Network prefix: `irmr_`
+[Mar 26, 2015 19:24:04 0-message] [] Migrated 0 tables via brute force.
+[Mar 26, 2015 19:24:04 0-details] [] Finished step `bruteForceTables`.
+[Mar 26, 2015 19:24:04 0-details] [] Database migration step `bruteForceTables` finished successfully.
+[Mar 26, 2015 19:24:04 0-details] [] Starting step `finalize`.
+[Mar 26, 2015 19:24:04 0-details] [] Modified 0 row(s) while updating Site URL in options table `irmr_options` to `http://localhost:8888`.
+[Mar 26, 2015 19:24:04 0-details] [] Modified 0 row(s) while updating Home URL in options table to `http://localhost:8888`.
+[Mar 26, 2015 19:24:04 0-details] [] Finished step `finalize`.
+[Mar 26, 2015 19:24:04 0-details] [] Database migration step `finalize` finished successfully.
+[Mar 26, 2015 19:24:04 0-details] [] Starting step `verifyDatabase`.
+[Mar 26, 2015 19:24:04 0-details] [] Final site URL: `http://localhost:8888`.
+[Mar 26, 2015 19:24:04 0-details] [] Final home URL: `http://localhost:8888`.
+[Mar 26, 2015 19:24:04 0-details] [] Media upload path in database options table: ``.
+[Mar 26, 2015 19:24:04 0-details] [] Your media upload path is assigned a relative path; validity not tested.
+[Mar 26, 2015 19:24:04 0-details] [] Finished step `verifyDatabase`.
+[Mar 26, 2015 19:24:04 0-details] [] Database migration step `verifyDatabase` finished successfully.
+[Mar 26, 2015 19:24:04 0-message] [] Took 1.523 seconds. Done.
+[Mar 26, 2015 19:24:04 0-message] [] Database content migrated.
+[Mar 26, 2015 19:24:04 0-details] [] Database migration completed.
+[Mar 26, 2015 19:24:04 0-details] [] Starting function `renameHtaccessTempBack`.
+[Mar 26, 2015 19:24:04 0-message] [] Renamed `.htaccess.bb_temp` file to `.htaccess` until final ImportBuddy step.
+[Mar 26, 2015 19:24:04 0-details] [] Starting function `maintenanceOff`.
+[Mar 26, 2015 19:24:04 0-details] [] Turn off maintenance mode off if on.
+[Mar 26, 2015 19:24:04 0-details] [] .maintenance file exists. Checking to see if ImportBuddy generated it.
+[Mar 26, 2015 19:24:04 0-details] [] Temporary .maintenance file created by ImportBuddy successfully deleted.
+[Mar 26, 2015 19:24:04 0-details] [] Starting function `scrubIndexFiles`.
+[Mar 26, 2015 19:24:04 0-details] [] index.htm file not found. Skipping deletion.
+[Mar 26, 2015 19:24:04 0-details] [] index.html file not found. Skipping deletion.
+[Mar 26, 2015 19:24:04 0-details] [] DAT file indicates wp-config.php was previously in the normal location.
+[Mar 26, 2015 19:24:04 0-details] [] Updating Database Settings and URLs in wp-config.php as this is not a Files Only Backup.
+[Mar 26, 2015 19:24:04 0-message] [] Starting migration of wp-config.php file...
+[Mar 26, 2015 19:24:04 0-details] [] Config file: `/Users/danielbernardi/Documents/Websites/IRMR/irmr/wp-config.php`.
+[Mar 26, 2015 19:24:04 0-details] [] wp-config.php: Setting WP_SITEURL (if applicable) to `http://localhost:8888`.
+[Mar 26, 2015 19:24:04 0-details] [] wp-config.php: Setting WP_HOME (if applicable) to `http://localhost:8888`.
+[Mar 26, 2015 19:24:04 0-details] [] wp-config.php did not update DOMAIN_CURRENT_SITE as it was blank.
+[Mar 26, 2015 19:24:04 0-message] [] Migration of wp-config.php complete.
+[Mar 26, 2015 19:24:04 0-details] [] Checking wp-config.php file for unchanged URLs.
+[Mar 26, 2015 19:24:04 0-details] [] No potential problems detected.
+[Mar 26, 2015 19:24:04 0-details] [] Finished final actions function.
+[Mar 26, 2015 19:24:04 0-details] [] Finishing step 5.

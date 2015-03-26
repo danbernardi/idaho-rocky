@@ -103,10 +103,11 @@ header {
 			
 			a {
 				text-transform: uppercase;
-				font-family: $sans-serif-light;
+				font-family: $bodytext;
 				line-height: $headerheight;
 				display: block;
 				color: $darkbrown;
+        font-weight: 400;
 				font-size: 11px;
 				padding: 0 14px;
 				letter-spacing: 1px;

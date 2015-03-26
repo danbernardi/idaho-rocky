@@ -29,7 +29,7 @@
 					<span class="author">by <?php the_author(); ?></span> | 
 					<time class="date"><?php the_date(); ?></time>
 				</ul>
-				<p><?php the_excerpt(); ?></p>
+		    <?php the_excerpt(); ?>
 				<a class="solidbtn" href="<?php the_permalink(); ?>">Read More</a>
 			</div>
 		  <?php endwhile; else : ?>

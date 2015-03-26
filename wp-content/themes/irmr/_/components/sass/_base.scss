@@ -102,10 +102,11 @@ header {
 			
 			a {
 				text-transform: uppercase;
-				font-family: $sans-serif-light;
+				font-family: $bodytext;
 				line-height: $headerheight;
 				display: block;
 				color: $darkbrown;
+        font-weight: 400;
 				font-size: 11px;
 				padding: 0 14px;
 				letter-spacing: 1px;
@@ -218,7 +219,6 @@ header {
 		
 		h1 {
 			font-family: $sans-serif-light;
-			
 			font-size: 2.7rem;
 			padding-top: 3px;
 			text-transform: uppercase;
@@ -442,7 +442,7 @@ header {
 			
 			&.recentposts ul li a {
 				font-size: 16px;
-				font-family: $serif;
+				font-family: $bodytext;
 				
 				span {
 					font-family: $bodytext;
@@ -604,7 +604,7 @@ header {
 					height: 100%;
 
 					h2 {
-						font-family: $serif;
+						font-family: $bodytext;
 						font-size: 19px;
 						font-weight: bold;
 						line-height: 1;
@@ -665,7 +665,7 @@ header {
 	}
 	
 	h1, h2, h3, h4, h5, h6 {
-		font-family: $serif;
+		font-family: $bodytext;
 		position: relative;
 		
 		color: lighten($darkbrown, 20);
@@ -735,7 +735,7 @@ header {
 						height: 100%;
 							
 						h2 {
-							font-family: $serif;
+							font-family: $bodytext;
 							font-size: 24px;
 							font-weight: bold;
 							text-transform: uppercase;
@@ -972,7 +972,7 @@ img.featuredimg {
 		margin-bottom: 20px;
 		
 		a {
-			font-family: $serif;
+			font-family: $bodytext;
 			font-size: 23px;
 		}
 		
@@ -1435,6 +1435,142 @@ form {
       left: 9px;
       top: 33px;
       transform: rotate(180deg);
+    }
+  }
+}
+
+// homepage slider
+.home-slick {
+  overflow: hidden;
+  width: 100%;
+  height: calc(100vh - 103px);
+  margin-bottom: 0;
+  
+  div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: $brown;
+    transform: scale(1);
+    transform-origin: 20% 80%;
+    transition: transform 0 linear;
+    transition-delay: 1s;
+    &.slowZoom {
+      img {
+        transform: scale(1.3) rotate(0.1deg);
+        transition: transform 30s linear;
+      }
+    }
+    img {
+      margin-top: -103px;
+      transition: transform 0s linear;
+      transition-delay: 4s;
+      transform: scale(1) rotate(0deg);
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      background-size: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      opacity: 0.7;
+      
+      
+    }
+  }
+}
+
+.cta-overlay {
+  color: lighten($lightbrown, 30);
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  height: auto;
+  width: 460px;
+  background: rgba(darken($brown, 20), 0.4);
+  padding: 40px;
+  border-radius: 4px;
+  
+  h4 {
+    margin-bottom: 10px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-bottom: 1px solid $lightbrown;
+    padding-bottom: 10px;
+    font-family: $bodytext;
+    span {
+      display: block;
+      font-size: 15px;
+      text-transform: none;
+      font-weight: 300;
+      font-family: $bodytext;
+    }
+  }
+  h1 {
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 14px;
+    img {
+      width: 63px;
+      float: left;
+      margin-right: 14px;
+    }
+  }
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.818;
+    margin-bottom: 0;
+    strong {
+      font-weight: 500;
+    }
+  }
+  a {
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    padding: 5px 24px;
+    background: lighten($red, 10);
+    text-align: center;
+    display: block;
+    margin-bottom: 7px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border-radius: 4px;
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+}
+
+// slick slider
+.slick-dots {
+  text-align: left;
+  bottom: 60px;
+  max-width: 1190px;
+  position: relative;
+  padding-left: 45px;
+  
+  li {
+    background: rgba(white, 0.2);
+    height: 10px;
+    width: 100px;
+    
+    &.slick-active {
+      background: rgba(white, 0.6);
+    }
+    
+    button{
+      height: 10px;
+      width: 100px;
+      &:before {
+        content: '';
+      }
     }
   }
 }
