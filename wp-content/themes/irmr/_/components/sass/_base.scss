@@ -417,6 +417,8 @@ header {
 			}
 			
 			ul li {
+        position: relative;
+        
 				a {
 					font-size: 12px;
 					padding: 10px 45px;
@@ -429,6 +431,13 @@ header {
 						background: rgba(0,0,0,0.2);
 					}
 				}
+        span {
+          font-family: $bodytext;
+					font-size: 13px;
+					color: rgba(white, 0.5);
+          position: absolute;
+          bottom: 0;
+        }
 				
 				ul li a {
 					padding-left: 50px;
