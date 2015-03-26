@@ -44,6 +44,14 @@ function zd_theme_setup() {
 	// enable the use of shortcodes inside sidebars
 	add_filter('widget_text', 'do_shortcode');
     
+  // define custom thumbnail sizes
+	if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'slideshow', 1280, 857, true );
+  }
+    
+  // hide admin bar
+  add_filter('show_admin_bar', '__return_false');
+    
   // adds page slug as body class
 	function add_slug_body_class( $classes ) {
 		global $post;

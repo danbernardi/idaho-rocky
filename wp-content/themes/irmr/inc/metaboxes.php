@@ -78,6 +78,65 @@ function zd_page_options( array $meta_boxes ) {
 add_filter( 'cmb2_meta_boxes', 'zd_page_options' );
 
 
+
+// home page options
+function zd_home_slideshow( array $meta_boxes ) {
+
+    // Start with an underscore to hide fields from custom fields list
+    $prefix = '_zd_';
+
+    /**
+     * Sample metabox to demonstrate each field type included
+     */
+    $meta_boxes['home_slideshow'] = array(
+        'id'            => 'home_slideshow',
+        'title'         => __( 'Home Slideshow', 'zd' ),
+        'object_types'  => array( 'page' ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+          array(
+              'name' => 'Slideshow Images',
+              'desc' => '',
+              'id' => $prefix . 'home_slideshow',
+              'type' => 'file_list',
+              'preview_size' => array( 212, 142 ), // Default: array( 50, 50 )
+            ),
+        ),
+    );
+
+    // Add other metaboxes as needed
+
+    return $meta_boxes;
+}
+add_filter( 'cmb2_meta_boxes', 'zd_home_slideshow' );
+
+/*
+$meta_boxes['gallery'] = array(
+        'id'            => 'gallery',
+        'title'         => __( 'Gallery', 'sfhr' ),
+        'object_types'  => array( 'buildings', ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => false, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+            array(
+                'name' => 'Gallery Images',
+				'desc' => '',
+				'id' => $prefix . 'gallery',
+				'type' => 'file_list',
+				'preview_size' => array( 212, 142 ), // Default: array( 50, 50 )
+            ),
+        ),
+    );
+*/
+
+
 // press options
 function zd_press_options( array $meta_boxes ) {
 

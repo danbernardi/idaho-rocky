@@ -54,17 +54,7 @@ html, body, #pagewrap {
 	@include layout($default);
 	@include container(1190px);
 	@extend .clearfix;
-}
-.clearfix {
-	&:before,
-	&:after {
-		content: " "; /* 1 */
-		display: table; /* 2 */
-	}
-
-	&:after {
-		clear: both;
-	}
+  position: relative;
 }
 .container-padding {
 	padding: 0 45px;
@@ -1263,8 +1253,6 @@ form {
 	.row {
 		@include layout($homegrid);
 		@include container(960px);
-		
-		position: relative;
 	}
 	section {
 		@extend .clearfix;
