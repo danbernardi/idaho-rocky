@@ -54,6 +54,7 @@ html, body, #pagewrap {
 	@include layout($default);
 	@include container(1190px);
 	@extend .clearfix;
+  position: relative;
 }
 .clearfix {
 	&:before,
@@ -1448,19 +1449,33 @@ form {
 }
 
 .cta-overlay {
-  color: white;
+  color: lighten($lightbrown, 30);
   position: absolute;
   right: 0;
-  bottom: 0;
-  height: calc(100vh - 103px);
-  width: 360px;
-  background: rgba(black, 0.5);
-  padding: 120px 40px 40px;
+  bottom: 40px;
+  height: auto;
+  width: 460px;
+  background: rgba(darken($brown, 20), 0.4);
+  padding: 40px;
+  border-radius: 4px;
   
   h4 {
-    margin-bottom: 14px;
-    color: white;
+    margin-bottom: 10px;
     line-height: 1.3;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-bottom: 1px solid $lightbrown;
+    padding-bottom: 10px;
+    font-family: $serif;
+    span {
+      display: block;
+      font-size: 15px;
+      text-transform: none;
+      font-weight: 300;
+      font-family: $bodytext;
+    }
   }
   h1 {
     font-weight: 800;
@@ -1478,7 +1493,7 @@ form {
     font-weight: 300;
     font-size: 18px;
     line-height: 1.818;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     strong {
       font-weight: 500;
     }
@@ -1505,7 +1520,7 @@ form {
 // slick slider
 .slick-dots {
   text-align: left;
-  bottom: 45px;
+  bottom: 60px;
   max-width: 1190px;
   position: relative;
   padding-left: 45px;

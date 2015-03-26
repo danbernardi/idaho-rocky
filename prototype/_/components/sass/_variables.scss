@@ -71,13 +71,13 @@ $green: #5B6D37;
 }
 
 @font-face {
-    font-family: 'garamond_regular';
-    src: url('../fonts/garamond_regular-webfont.eot');
-    src: url('../fonts/garamond_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/garamond_regular-webfont.woff2') format('woff2'),
-         url('../fonts/garamond_regular-webfont.woff') format('woff'),
-         url('../fonts/garamond_regular-webfont.ttf') format('truetype'),
-         url('../fonts/garamond_regular-webfont.svg#nexa_lightregular') format('svg');
+    font-family: 'bree_serifregular';
+    src: url('../fonts/BreeSerif-Regular-webfont.eot');
+    src: url('../fonts/BreeSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BreeSerif-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/BreeSerif-Regular-webfont.woff') format('woff'),
+         url('../fonts/BreeSerif-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/BreeSerif-Regular-webfont.svg#bree_serifregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -88,7 +88,7 @@ $green: #5B6D37;
 $sans-serif-light: 'nexa_lightregular', Helvetica, Arial, sans-serif;
 $sans-serif-bold: 'nexa_boldregular', Helvetica, Arial, sans-serif;
 $bodytext: 'Lato', helvetica, Arial, sans-serif;
-$serif: 'Lato', helvetica, Arial, sans-serif;
+$serif: 'bree_serifregular', Georgia, Times New Roman, sans-serif;
 
 // fontawesome
 .fa {
