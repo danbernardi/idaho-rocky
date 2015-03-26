@@ -84,7 +84,7 @@ function zd_theme_setup() {
 		register_sidebar( array(
 			'name'          => 'Default Sidebar',
 			'id'            => 'default',
-			'before_widget' => '<div class="widget">',
+			'before_widget' => '<div class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h5>',
 			'after_title'   => '</h5>',
@@ -94,7 +94,7 @@ function zd_theme_setup() {
 		register_sidebar( array(
 			'name'          => 'Blog Sidebar',
 			'id'            => 'blog',
-			'before_widget' => '<div class="widget">',
+			'before_widget' => '<div class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h5>',
 			'after_title'   => '</h5>',
