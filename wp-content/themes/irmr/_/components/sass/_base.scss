@@ -1072,10 +1072,10 @@ form {
 		@include container();
 			
 		div {
-			@include span(1 of 4);
+			@include span(3 of 12);
 			
 			&:nth-child(1) {
-				@include span(2 of 4);
+				@include span(6 of 12);
 			}
 			&:nth-child(3) {
 				@include last();
@@ -1087,10 +1087,10 @@ form {
 		@include container();
 		
 		div {
-			@include span(1 of 6);
+			@include span(2 of 12);
 			
 			&:nth-child(1) {
-				@include span(3 of 6);
+				@include span(6 of 12);
 			}
 			
 			&:nth-child(4) {
@@ -1103,7 +1103,7 @@ form {
 		@include container();
 		
 		div {
-			@include span(1 of 4);
+			@include span(3 of 12);
 			
 			&:nth-child(4) {
 				@include last();
@@ -1115,11 +1115,11 @@ form {
 		@include container();
 		
 		div {
-			@include span(1 of 4);
+			@include span(3 of 12);
 		
 		
 			&:nth-child(1) {
-				@include span(2 of 4);
+				@include span(6 of 12);
 			}
 
 			&:nth-child(3) {

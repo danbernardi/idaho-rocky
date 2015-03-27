@@ -33,5 +33,19 @@ $(document).ready(function () {
       currSlideIndex.addClass('slowZoom');
     });
   }());
+  
+  (function initSlides() {
+    // initialize simple image slider using slides.js
+    $("#slides").slidesjs({
+      width: 940,
+      height: 528,
+			play: {
+				active: false,
+				auto: true,
+				interval: 7000,
+				swap: true
+			}
+    });
+  }());
 	
 });

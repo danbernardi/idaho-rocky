@@ -114,6 +114,86 @@ function zd_home_slideshow( array $meta_boxes ) {
 }
 add_filter( 'cmb2_meta_boxes', 'zd_home_slideshow' );
 
+
+// gallery options
+function zd_gallery_options( array $meta_boxes ) {
+
+    // Start with an underscore to hide fields from custom fields list
+    $prefix = '_zd_';
+
+    /**
+     * Sample metabox to demonstrate each field type included
+     */
+    $meta_boxes['gallery_options'] = array(
+        'id'            => 'gallery_options',
+        'title'         => __( 'Image', 'zd' ),
+        'object_types'  => array( 'gallery' ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+          array(
+              'name' => 'Upload an image',
+              'desc' => '',
+              'id' => $prefix . 'gal_image',
+              'type' => 'file',
+              'preview_size' => array( 212, 142 ), // Default: array( 50, 50 )
+            ),
+        ),
+    );
+    
+    $meta_boxes['size_options'] = array(
+        'id'            => 'size_options',
+        'title'         => __( 'Grid Size', 'zd' ),
+        'object_types'  => array( 'gallery' ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+          array(
+              'name' => 'Width',
+              'desc' => 'Enter a whole number between 1 and 4',
+              'id' => $prefix . 'gal_width',
+              'type' => 'text_small',
+          ),
+          array(
+              'name' => 'Height',
+              'desc' => 'Enter a whole number between 1 and 2',
+              'id' => $prefix . 'gal_height',
+              'type' => 'text_small',
+          ),
+        ),
+    );
+    
+    $meta_boxes['caption'] = array(
+        'id'            => 'caption',
+        'title'         => __( 'Caption', 'zd' ),
+        'object_types'  => array( 'gallery' ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+          array(
+              'name' => 'Add a caption',
+              'desc' => '',
+              'id' => $prefix . 'gal_caption',
+              'type' => 'textarea',
+            ),
+        ),
+    );
+
+    // Add other metaboxes as needed
+
+    return $meta_boxes;
+}
+add_filter( 'cmb2_meta_boxes', 'zd_gallery_options' );
+
 /*
 $meta_boxes['gallery'] = array(
         'id'            => 'gallery',
