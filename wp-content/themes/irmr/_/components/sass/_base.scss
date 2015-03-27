@@ -959,6 +959,18 @@ img.featuredimg {
 	}
 }
 
+.blog .posts .item {
+  padding-left: 270px;
+  min-height: 297px;
+  img.alignleft {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+  }
+  a {
+    display: inline-block;
+  }
+}
 .posts {
 	@include container();
 	@include layout($interior);
@@ -970,13 +982,11 @@ img.featuredimg {
 		padding: 40px;
 		border: 5px solid #EEE;
 		margin-bottom: 20px;
-    padding-left: 270px;
     position: relative;
-    min-height: 297px;
 		a {
 			font-family: $bodytext;
 			font-size: 23px;
-      display: inline-block;
+      display: block;
 		}
 		
 		a.solidbtn {
@@ -986,11 +996,6 @@ img.featuredimg {
 		img {
 			max-height: 49px;
 		}
-    img.alignleft {
-      position: absolute;
-      left: 40px;
-      top: 40px;
-    }
 		
 		&:last-child {
 			margin-bottom: 0;
