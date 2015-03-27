@@ -211,6 +211,35 @@ function zd_list_press( $atts ) {
 add_shortcode( 'list_press', 'zd_list_press' );
 
 
+// recent press articles
+function zd_recent_press( $atts ) {
+    
+    ob_start();
+    $query = new WP_Query( array(
+        'post_type' => 'press',
+        'posts_per_page' => 6,
+        'order' => 'ASC',
+    ) );
+    
+    if ( $query->have_posts() ) { ?>
+        <ul class="recent-press">
+            <?php while ( $query->have_posts() ) : $query->the_post();
+              $terms = get_the_terms( $post->ID , 'publications' );
+            ?>
+            <li id="press-<?php the_ID(); ?>" <?php post_class(); ?>>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?><br>
+                <span><?php foreach ( $terms as $term ) { echo $term->name; } ?></span>
+              </a>
+            </li>
+            <?php endwhile; wp_reset_postdata(); ?>
+        </ul>
+    <?php $myvariable = ob_get_clean();
+    return $myvariable;
+    }
+}
+add_shortcode( 'recent_press', 'zd_recent_press' );
+
+
 /* ------------------------------------------------
  * Misc Functions
  * ------------------------------------------------*/
