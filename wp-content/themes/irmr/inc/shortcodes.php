@@ -228,7 +228,7 @@ function zd_recent_press( $atts ) {
               $pdf = wp_get_attachment_url( get_post_meta( get_the_ID(), '_zd_press_pdf_id', true ) );
             ?>
             <li id="press-<?php the_ID(); ?>" <?php post_class(); ?>>
-              <a href="<?php echo $pdf; ?>"><?php the_title(); ?><br>
+              <a target="_blank" href="<?php echo $pdf; ?>"><?php the_title(); ?><br>
                 <span><?php foreach ( $terms as $term ) { echo $term->name; } ?></span>
               </a>
             </li>
