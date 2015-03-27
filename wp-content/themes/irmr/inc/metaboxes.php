@@ -124,26 +124,6 @@ function zd_gallery_options( array $meta_boxes ) {
     /**
      * Sample metabox to demonstrate each field type included
      */
-    $meta_boxes['gallery_options'] = array(
-        'id'            => 'gallery_options',
-        'title'         => __( 'Image', 'zd' ),
-        'object_types'  => array( 'gallery' ), // Post type
-        'context'       => 'normal',
-        'priority'      => 'high',
-        'show_names'    => true, // Show field names on the left
-        // 'cmb_styles' => false, // false to disable the CMB stylesheet
-        // 'closed'     => true, // Keep the metabox closed by default
-        'fields'        => array(
-          array(
-              'name' => 'Upload an image',
-              'desc' => '',
-              'id' => $prefix . 'gal_image',
-              'type' => 'file',
-              'preview_size' => array( 212, 142 ), // Default: array( 50, 50 )
-            ),
-        ),
-    );
-    
     $meta_boxes['size_options'] = array(
         'id'            => 'size_options',
         'title'         => __( 'Grid Size', 'zd' ),
@@ -183,7 +163,7 @@ function zd_gallery_options( array $meta_boxes ) {
               'name' => 'Add a caption',
               'desc' => '',
               'id' => $prefix . 'gal_caption',
-              'type' => 'textarea',
+              'type' => 'textarea_small',
             ),
         ),
     );

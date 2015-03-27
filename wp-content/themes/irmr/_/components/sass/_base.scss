@@ -50,6 +50,9 @@ html, body, #pagewrap {
 	width: 100%;
 	display: block;
 }
+#pagewrap {
+  overflow-x: hidden;
+}
 .row {
 	@include layout($default);
 	@include container(1190px);
@@ -1247,162 +1250,85 @@ form {
 
 .gallery {
 	@extend .clearfix;
-	
-	height: calc(100% - 103px);
+  width: calc(100% + 4px);
+	height: calc(100vh - 103px) !important;
+  margin-left: -2px;
 	
 	.row {
 		@include layout($homegrid);
 		@include container(960px);
 	}
-	section {
-		@extend .clearfix;
+		
+  div {
 		height: 100%;
-		
-		&:nth-child(1n + 2) {
-			margin-top: 6px;
-			height: calc(100% + 103px);
-		}
-		
-		div {
-			height: 100%;
-			display: block;
-			background: #eee;
-			position: relative;
+		display: block;
+	  background-color: #eee;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+		position: relative;
+    border: 2px solid white;
+    &.size-1x1 {
+      width: 25%;
+      height: 50%;
+    }
+    &.size-1x2 {
+      width: 25%;
+      height: 100%;
+    }
+    &.size-2x1 {
+      display: block;
+      width: 50%;
+      height: 50%;
+    }
+    &.size-3x1 {
+      display: block;
+      width: 75%;
+      height: 50%;
+    }
+    &.size-4x1 {
+      display: block;
+      width: 100%;
+      height: 50%;
+    }
+    &.size-2x2 {
+      width: 50%;
+      height: 100%;
+    }
+    &.size-3x2 {
+      display: block;
+      width: 75%;
+      height: 100%;
+    }
+    &.size-4x2 {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
 			
-			figure {
-				opacity: 0;
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-				height: 100%;
-				background: rgba(0,0,0,0.6);
-				padding: 0 40px;
-				color: $offwhite;
-				transition: opacity 0.2s ease-in-out;
-				display: table;
-				
-				figcaption {
-					display: table-cell;
-					vertical-align: middle;
-				}
-			}
-			
-			&:hover figure {
-				opacity: 1;
-				transition: opacity 0.2s ease-in-out;
-			}
+		figure {
+		  opacity: 0;
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      padding: 0 40px;
+      color: $offwhite;
+      transition: opacity 0.2s ease-in-out;
+      display: table;
+
+      figcaption {
+        display: table-cell;
+        vertical-align: middle;
+      }
 		}
-		
-		&.grid1 {
-			div:nth-child(1) {
-				@include span(2 of 4);
-				
-				background: url('../../img/gallery/grid1-01.jpg') no-repeat $tan;
-				background-position: bottom;
-				background-size: cover;
-				height: 100%;
-			}
 			
-			div:nth-child(2) {
-				@include span(1 of 4);
-
-				background: url('../../img/gallery/grid1-02.jpg') no-repeat $tan;
-				background-position: center;
-				background-size: cover;
-				height: 50%;
-			}
-			div:nth-child(3) {
-				@include span(1 of 4 last);
-
-				background: url('../../img/gallery/grid1-03.jpg') no-repeat $tan;
-				background-position: bottom;
-				background-size: cover;
-				heighT: 50%;
-			}
-			div:nth-child(4) {
-				@include span(2 of 4 last);
-
-				background: url('../../img/homegrid/homegrid03.jpg') no-repeat $tan;
-				background-position: right;
-				background-size: cover;
-				height: 50%;
-				border-top: 6px solid #fafafa;
-			}
-		}
-		&.grid2 {
-			div:nth-child(1) {
-				@include span(2 of 4);
-				
-				background: url('../../img/gallery/grid2-01.jpg') no-repeat $tan;
-				background-position: bottom;
-				background-size: cover;
-				height: 50%;
-			}
-			
-			div:nth-child(2) {
-				@include span(2 of 4 last);
-
-				background: url('../../img/gallery/grid2-02.jpg') no-repeat $tan;
-				background-position: center;
-				background-size: cover;
-				height: 50%;
-			}
-			div:nth-child(3) {
-				@include span(2 of 4);
-
-				background: url('../../img/gallery/grid2-03.jpg') no-repeat $tan;
-				background-position: right;
-				background-size: cover;
-				heighT: 50%;
-				border-top: 6px solid #fafafa;
-			}
-			div:nth-child(4) {
-				@include span(1 of 4);
-
-				background: url('../../img/gallery/grid2-04.jpg') no-repeat $tan;
-				background-position: left;
-				background-size: cover;
-				height: 50%;
-				border-top: 6px solid #fafafa;
-			}
-			div:nth-child(5) {
-				@include span(1 of 4 last);
-
-				background: url('../../img/gallery/grid2-05.jpg') no-repeat $tan;
-				background-position: top;
-				background-size: cover;
-				height: 50%;
-				border-top: 6px solid #fafafa;
-			}
-		}
-		&.grid3 {
-			div:nth-child(1) {
-				@include span(1 of 4);
-				
-				background: url('../../img/gallery/grid3-01.jpg') no-repeat $tan;
-				background-position: bottom;
-				background-size: cover;
-				height: 100%;
-			}
-			
-			div:nth-child(2) {
-				@include span(1 of 4);
-
-				background: url('../../img/gallery/grid3-02.jpg') no-repeat $tan;
-				background-position: center;
-				background-size: cover;
-				height: 100%;
-			}
-			div:nth-child(3) {
-				@include span(2 of 4 last);
-
-				background: url('../../img/gallery/grid3-04.jpg') no-repeat $tan;
-				background-position: left;
-				background-size: cover;
-				height: 100%;
-			}
-		}
+		&:hover figure {
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
 	}
 }
 

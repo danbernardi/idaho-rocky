@@ -47,6 +47,16 @@ function zd_theme_setup() {
   // define custom thumbnail sizes
 	if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'slideshow', 1280, 857, true );
+    
+    // gallery sizes
+    add_image_size( 'size-1x1', 323,  301, true );
+    add_image_size( 'size-2x1', 646,  301, true );
+    add_image_size( 'size-3x1', 969,  301, true );
+    add_image_size( 'size-4x1', 1294, 301, true );
+    add_image_size( 'size-1x2', 323,  602, true );
+    add_image_size( 'size-2x2', 646,  602, true );
+    add_image_size( 'size-3x2', 969,  602, true );
+    add_image_size( 'size-4x2', 1294, 602, true );
   }
     
   // hide admin bar

@@ -73,7 +73,7 @@ function register_gallery() {
 		'label'               => __( 'gallery', 'zd' ),
 		'description'         => __( 'Featured Gallery Item', 'zd' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'revisions', ),
+		'supports'            => array( 'title', 'revisions', 'thumbnail' ),
 		'taxonomies'          => array( '' ),
 		'hierarchical'        => false,
 		'public'              => true,

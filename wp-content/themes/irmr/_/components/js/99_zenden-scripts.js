@@ -47,5 +47,18 @@ $(document).ready(function () {
 			}
     });
   }());
+  
+  // init isotope
+  (function galleryInit() {
+    
+    var $container = $('.gallery');
+    $container.isotope({
+      itemSelector: '.gallery-item',
+      layoutMode: 'packery'
+    });
+    $(window).resize(function () {
+      $container.isotope('layout');
+    });
+  }());
 	
 });
