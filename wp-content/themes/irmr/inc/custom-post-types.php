@@ -25,7 +25,7 @@ function register_press() {
 		'label'               => __( 'press', 'zd' ),
 		'description'         => __( 'Featured Press Item', 'zd' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'excerpt', 'revisions', ),
+		'supports'            => array( 'title', 'revisions', ),
 		'taxonomies'          => array( 'publications' ),
 		'hierarchical'        => false,
 		'public'              => true,
