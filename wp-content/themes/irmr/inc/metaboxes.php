@@ -231,6 +231,13 @@ function zd_press_options( array $meta_boxes ) {
                 'show_on_cb' => 'cmb2_hide_if_no_cats',
                 'date_format' => 'F j, Y',
             ),
+            array(
+                'name'       => __( 'Upload PDF', 'zd' ),
+                'desc'       => __( 'Upload the article as a pdf', 'zd' ),
+                'id'         => $prefix . 'press_pdf',
+                'type'       => 'file',
+                'show_on_cb' => 'cmb2_hide_if_no_cats',
+            ),
         ),
     );
 

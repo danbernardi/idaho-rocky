@@ -193,10 +193,11 @@ function zd_list_press( $atts ) {
             <?php while ( $query->have_posts() ) : $query->the_post();
               $author = get_post_meta( get_the_ID(), '_zd_press_author', true );
               $pubdate = get_post_meta( get_the_ID(), '_zd_press_pubdate', true );
+              $pdf = wp_get_attachment_url( get_post_meta( get_the_ID(), '_zd_press_pdf_id', true ) );
             ?>
             <div class="divider"></div>
             <div id="press-<?php the_ID(); ?>" <?php post_class(); ?>>
-              <a href="<?php the_permalink(); ?>">&ldquo;<?php the_title(); ?>&rdquo;</a>
+              <a target="_blank" href="<?php echo $pdf; ?>">&ldquo;<?php the_title(); ?>&rdquo;</a>
               <span class="author">by <?php echo $author; ?></span> | 
               <span class="media"><?php echo $publication; ?></span> | 
               <time class="date"><?php echo $pubdate; ?></time>
