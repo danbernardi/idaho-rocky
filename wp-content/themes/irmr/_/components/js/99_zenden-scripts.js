@@ -1,18 +1,18 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert, console, Modernizr*/
 
-$(document).ready(function () {
+var j$ = jQuery.noConflict();
+j$(document).ready(function () {
 	"use strict";
+
 	
-	// apply active class to anchors that match current page
-	(function addActive() {
-		$('a[href^="' + location.pathname.split("/")[2] + '"]').addClass('active');
-	}());
-	
-  $('.content aside .fixedscroll').scrollToFixed();
+  (function initScrollToFixed() {
+    j$('.content aside .fixedscroll').scrollToFixed();
+    console.log('scroll to fixed initialized...');
+  }());
   
   (function initSlick() {
-    $('.home-slick').slick({
+    j$('.home-slick').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
@@ -25,18 +25,18 @@ $(document).ready(function () {
       speed: 1000
     });
     
-    $('.home-slick').find('[data-slick-index="0"]').addClass('slowZoom');
-    $('.home-slick').on('afterChange', function (slick, currentSlide) {
-      var currSlide = $('.home-slick').slick('slickCurrentSlide'),
-        currSlideIndex = $('.home-slick').find("[data-slick-index='" + currSlide + "']");
-      $('.home-slick div').removeClass('slowZoom');
+    j$('.home-slick').find('[data-slick-index="0"]').addClass('slowZoom');
+    j$('.home-slick').on('afterChange', function (slick, currentSlide) {
+      var currSlide = j$('.home-slick').slick('slickCurrentSlide'),
+        currSlideIndex = j$('.home-slick').find("[data-slick-index='" + currSlide + "']");
+      j$('.home-slick div').removeClass('slowZoom');
       currSlideIndex.addClass('slowZoom');
     });
   }());
   
   (function initSlides() {
     // initialize simple image slider using slides.js
-    $("#slides").slidesjs({
+    j$("#slides").slidesjs({
       width: 940,
       height: 528,
 			play: {
@@ -51,12 +51,12 @@ $(document).ready(function () {
   // init isotope
   (function galleryInit() {
     
-    var $container = $('.gallery');
+    var $container = j$('.gallery');
     $container.isotope({
       itemSelector: '.gallery-item',
       layoutMode: 'packery'
     });
-    $(window).resize(function () {
+    j$(window).resize(function () {
       $container.isotope('layout');
     });
   }());

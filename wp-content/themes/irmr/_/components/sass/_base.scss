@@ -50,9 +50,7 @@ html, body, #pagewrap {
 	width: 100%;
 	display: block;
 }
-#pagewrap {
-  overflow-x: hidden;
-}
+
 .row {
 	@include layout($default);
 	@include container(1190px);
@@ -1250,9 +1248,8 @@ form {
 
 .gallery {
 	@extend .clearfix;
-  width: calc(100% + 4px);
+  width: 100%;
 	height: calc(100vh - 103px) !important;
-  margin-left: -2px;
 	
 	.row {
 		@include layout($homegrid);
