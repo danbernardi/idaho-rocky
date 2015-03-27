@@ -93,6 +93,51 @@ function zd_posts( $atts, $content = null ) {
 }
 add_shortcode( 'posts', 'zd_posts' );
 
+
+// slideshow wrapper
+function zd_slideshow( $atts, $content = null ) {
+	$output = '';
+		
+	$output .= '<div class="divider"></div><div id="slides">';
+  $output .= do_shortcode($content);
+  $output .= '</div><div class="divider">';
+		
+	return $output;
+}
+add_shortcode( 'slideshow', 'zd_slideshow' );
+
+// individual slides
+function zd_slide( $atts ) {
+	$output = '';
+		
+  extract( shortcode_atts( array(
+    'img'   => '',
+    'alt' => '',
+	), $atts ) );
+		
+	$output .= '<img src="'.$img.'" alt="'.$alt.'">';
+		
+	return $output;
+}
+add_shortcode( 'slide', 'zd_slide' );
+
+/*
+[slideshow]
+[slide img="/img/dining-slide05.jpg" alt="slide01"]
+[slide img="/img/dining-slide05.jpg" alt="slide02"]
+[slide img="/img/dining-slide05.jpg" alt="slide03"]
+[slide img="/img/dining-slide05.jpg" alt="slide04"]
+[/slideshow]
+<div class="divider"></div>
+		<div id="slides">
+			<img src="img/dining-slide05.jpg">
+  			<img src="img/dining-slide03.jpg">
+  			<img src="img/dining-slide04.jpg">
+  			<img src="img/dining-slide01.jpg">
+  		</div>
+  		<div class="divider"></div>
+*/
+
 /*
 [overview]
 [overview_page img="" title="" link=""][/overview_page]
@@ -186,7 +231,7 @@ add_shortcode( 'button', 'zd_button' );
 
 // disables automatic spacing & p tags inside selected shortcodes. Add shortcode name to array inside $block
 function the_content_filter($content) {
-	$block = join("|",array('overview', 'overview_page', 'list_press', 'posts'));
+	$block = join("|",array('overview', 'overview_page', 'list_press', 'posts', 'slide', 'slideshow'));
 	$rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
 	$rep = preg_replace("/(<p>)?\[\/($block)](<\/p>|<br \/>)?/","[/$2]",$rep);
 return $rep;
