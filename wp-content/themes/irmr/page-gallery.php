@@ -9,7 +9,7 @@ include('header.php'); ?>
       <?php 
         $args = array( 
           'post_type' => 'gallery', 
-          'posts_per_page' => 10,
+          'posts_per_page' => -1,
           'orderby' => 'rand'
         );
         $loop = new WP_Query( $args );
