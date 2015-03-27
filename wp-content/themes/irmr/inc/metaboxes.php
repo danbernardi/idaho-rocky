@@ -227,7 +227,7 @@ function zd_press_options( array $meta_boxes ) {
                 'name'       => __( 'Date Published', 'zd' ),
                 'desc'       => __( 'Enter the date the article was published.', 'zd' ),
                 'id'         => $prefix . 'press_pubdate',
-                'type'       => 'text_small',
+                'type'       => 'text_medium',
                 'show_on_cb' => 'cmb2_hide_if_no_cats',
                 'date_format' => 'F j, Y',
             ),
