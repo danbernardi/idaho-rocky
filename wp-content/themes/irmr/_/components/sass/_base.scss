@@ -547,8 +547,8 @@ header {
   }
   span {
     display: block;
-    position: relative;
-    bottom: auto;
+    position: relative !important;
+    bottom: auto !important;
     left: auto;
   }
 }
