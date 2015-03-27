@@ -541,7 +541,17 @@ header {
 		}
 		
 	}
-	
+.recent-press {
+  a {
+    padding-bottom: 10px !important;
+  }
+  span {
+    display: block;
+    position: relative;
+    bottom: auto;
+    left: auto;
+  }
+}
 	
 	// footer navigation
 	.pagenavigation {
