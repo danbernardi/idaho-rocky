@@ -40,23 +40,15 @@
             <?php the_content(); ?>
             <div class="divider"></div>
 						<?php comments_template('comments.php'); ?>
-
-						<?php endwhile; ?>
 						
 						<div class="pagenavigation">
-              <?php
-                $prev_title = get_post_meta( get_the_ID(), '_zd_prev_title', true );
-                $prev_url = get_post_meta( get_the_ID(), '_zd_prev_url', true );
-                $next_title = get_post_meta( get_the_ID(), '_zd_next_title', true );
-                $next_url = get_post_meta( get_the_ID(), '_zd_next_url', true );
-              ?>
               <figure class="previous">
                 <img src="/img/pagenavigation/adayinthelife-feat.jpg" alt="Next Page" />
                 <figcaption>
                   <div>
-                    <h2><?php echo $prev_title; ?></h2>
+                    <h2>Previous Post</h2>
                     <p>Go to previous post</p>
-                    <a href="<?php echo $prev_url; ?>"></a>
+                    <a href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>"></a>
                   </div>
                 </figcaption>
               </figure>
@@ -65,13 +57,15 @@
                 <img src="/img/pagenavigation/adayinthelife-feat.jpg" alt="Next Page" />
                 <figcaption>
                   <div>
-                    <h2><?php echo $next_title; ?></h2>
+                    <h2>Next Post</h2>
                     <p>Go to next post</p>
-                    <a href="<?php echo $next_url; ?>"></a>
+                    <a href="<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>"></a>
                   </div>
                 </figcaption>
               </figure>
             </div>
+            
+            <?php endwhile; ?>
 
 				    <?php include('inline-footer.php'); ?>
 				</article>
