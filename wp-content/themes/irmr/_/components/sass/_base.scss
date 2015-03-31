@@ -1210,6 +1210,15 @@ form {
 	ul li {
 		display: inline-block;
 		margin-right: 7px;
+    
+    &.active a {
+		  background: lighten($red, 9);
+		  color: white;
+						
+		  &:hover {
+			  background: lighten($red, 15);
+		  }
+		}
 				
 		a {		
 			display: block;
@@ -1220,15 +1229,6 @@ form {
 					
 			&:hover {
 				background: darken(#eee, 5);
-			}
-					
-			&.active {
-				background: lighten($red, 9);
-				color: white;
-						
-				&:hover {
-					background: lighten($red, 15);
-				}
 			}
 		}
 	}
