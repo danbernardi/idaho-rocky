@@ -43,52 +43,13 @@ $red: #88451E;
 $yellow: #8B6700;
 $green: #5B6D37;
 
-// fonts
-@font-face {
-    font-family: 'nexa_boldregular';
-    src: url('../fonts/nexa_bold-webfont.eot');
-    src: url('../fonts/nexa_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/nexa_bold-webfont.woff2') format('woff2'),
-         url('../fonts/nexa_bold-webfont.woff') format('woff'),
-         url('../fonts/nexa_bold-webfont.ttf') format('truetype'),
-         url('../fonts/nexa_bold-webfont.svg#nexa_boldregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'nexa_lightregular';
-    src: url('../fonts/nexa_light-webfont.eot');
-    src: url('../fonts/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/nexa_light-webfont.woff2') format('woff2'),
-         url('../fonts/nexa_light-webfont.woff') format('woff'),
-         url('../fonts/nexa_light-webfont.ttf') format('truetype'),
-         url('../fonts/nexa_light-webfont.svg#nexa_lightregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'bree_serifregular';
-    src: url('../fonts/BreeSerif-Regular-webfont.eot');
-    src: url('../fonts/BreeSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/BreeSerif-Regular-webfont.woff2') format('woff2'),
-         url('../fonts/BreeSerif-Regular-webfont.woff') format('woff'),
-         url('../fonts/BreeSerif-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/BreeSerif-Regular-webfont.svg#bree_serifregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 
 // font variables
 $sans-serif-light: 'nexa_lightregular', Helvetica, Arial, sans-serif;
 $sans-serif-bold: 'nexa_boldregular', Helvetica, Arial, sans-serif;
 $bodytext: 'Lato', helvetica, Arial, sans-serif;
-$serif: 'bree_serifregular', Georgia, Times New Roman, sans-serif;
+$serif: 'Lora', Georgia, Times New Roman, sans-serif;
 
 // fontawesome
 .fa {

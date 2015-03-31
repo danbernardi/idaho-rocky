@@ -77,7 +77,7 @@ function zd_theme_setup() {
 	function zd_scripts() {
 		// Load our main stylesheet.
 		wp_enqueue_style( 'zd-style', get_stylesheet_uri() );
-		wp_enqueue_style( 'googlefonts', 'http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' );
+		wp_enqueue_style( 'googlefonts', 'http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700|Lora:700' );
 		wp_enqueue_style( 'fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' );
 
 		// Load our main javascript file.
