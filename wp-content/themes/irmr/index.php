@@ -56,9 +56,9 @@
 				<div class="image-holder"></div>
 				<figcaption>
 					<div>
-						<h2><?php echo $prev_title; ?></h2>
+						<h2><?php _e('Contact', 'zd'); ?></h2>
 						<p>Go to previous page</p>
-						<a href="<?php echo $prev_url; ?>"></a>
+						<a href="<?php echo get_permalink(98); ?>"></a>
 					</div>
 				</figcaption>
 			</figure>
@@ -67,9 +67,9 @@
 				<div class="image-holder"></div>
 				<figcaption>
 					<div>
-						<h2><?php echo $next_title; ?></h2>
+						<h2><?php _e('Home', 'zd'); ?></h2>
 						<p>Go to next page</p>
-						<a href="<?php echo $text_url; ?>"></a>
+						<a href="<?php echo home_url(); ?>"></a>
 					</div>
 				</figcaption>
 			</figure>
