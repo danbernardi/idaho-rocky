@@ -55,7 +55,6 @@ html, body, #pagewrap {
 	@include layout($default);
 	@include container(1190px);
 	@extend .clearfix;
-  position: relative;
 }
 .container-padding {
 	padding: 0 45px;
@@ -1432,7 +1431,7 @@ form {
 .cta-overlay {
   color: lighten($lightbrown, 30);
   position: absolute;
-  right: 0;
+  right: 40px;
   bottom: 40px;
   height: auto;
   width: 480px;
@@ -1496,18 +1495,21 @@ form {
 // slick slider
 .slick-dots {
   text-align: left;
-  bottom: 60px;
+  bottom: 71px;
   max-width: 1190px;
   position: relative;
   padding-left: 45px;
   
   li {
-    background: rgba(white, 0.2);
+    background: rgba(white, 0.4);
     height: 10px;
     width: 40px;
+    &:hover {
+      background: rgba(white, 0.6);
+    }
     
     &.slick-active {
-      background: rgba(white, 0.6);
+      background: rgba(white, 0.9);
     }
     
     button{
