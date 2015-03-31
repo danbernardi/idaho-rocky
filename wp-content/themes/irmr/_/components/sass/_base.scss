@@ -1555,3 +1555,18 @@ form {
     border-bottom: 1px solid #ddd;
   }
 }
+
+.list {
+  margin-bottom: 20px;
+  
+  li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 20px;
+    
+    &.hdr {
+      list-style-type: none;
+      margin-left: 0;
+    }
+  }
+}
