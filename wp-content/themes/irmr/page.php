@@ -41,7 +41,7 @@
 			?>
 			
 			<figure class="previous">
-				<img src="/img/pagenavigation/prev.jpg" alt="Next Page" />
+				<div class="image-holder"></div>
 				<figcaption>
 					<div>
 						<h2><?php echo $prev_title; ?></h2>
@@ -52,7 +52,7 @@
 			</figure>
 			
 			<figure class="next">
-				<img src="/img/pagenavigation/next.jpg" alt="Next Page" />
+        <div class="image-holder"></div>
 				<figcaption>
 					<div>
 						<h2><?php echo $next_title; ?></h2>
