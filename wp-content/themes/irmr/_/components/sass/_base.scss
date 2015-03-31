@@ -55,6 +55,7 @@ html, body, #pagewrap {
 	@include layout($default);
 	@include container(1190px);
 	@extend .clearfix;
+  position: relative;
 }
 .container-padding {
 	padding: 0 45px;
@@ -1426,10 +1427,10 @@ form {
   color: lighten($lightbrown, 30);
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 40px;
   height: auto;
   width: 460px;
-  background: rgba(darken($brown, 20), 0.8);
+  background: rgba(darken($brown, 20), 0.4);
   padding: 40px;
   
   h4 {
