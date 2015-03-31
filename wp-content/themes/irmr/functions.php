@@ -46,7 +46,7 @@ function zd_theme_setup() {
     
   // define custom thumbnail sizes
 	if ( function_exists( 'add_image_size' ) ) {
-    add_image_size( 'slideshow', 1280, 857, true );
+    add_image_size( 'slideshow', 1920, 1080, true );
     
     // gallery sizes
     add_image_size( 'size-1x1', 323,  301, true );
