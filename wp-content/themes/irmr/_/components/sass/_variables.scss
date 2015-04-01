@@ -20,17 +20,57 @@ $interior: (
 	global-box-sizing: border-box,
 );
 
+// breakpoint config
+$breakpoint-default-media: only screen;
+$breakpoint-default-feature: max-width;
+
+// define breakpoints
+$mw-1260: 1260px;
+$mw-1090: 1090px;
+$mw-960: 960px;
+$mw-840: 840px;
+$mw-767: 767px;
+$mw-580: 580px;
+$mw-480: 480px;
+$pair-960-1090: 960px 1090px;
+
+$mh-600: 'max-height' 600px;
 
 // modular scale
 $ms-base: 1rem 1.25rem;
 $ms-ratio: $golden;  // 1.618
 
 body { font-size: ms(0); }
-  h5 { font-size: ms(1); }
-  h4 { font-size: ms(2); }
-  h3 { font-size: ms(3); }
-  h2 { font-size: ms(4); }
-  h1 { font-size: ms(5); }
+  h5 { 
+    font-size: ms(1); 
+    @include breakpoint($mw-480) {
+      font-size: ms(0);
+    }
+  }
+  h4 { 
+    font-size: ms(2); 
+    @include breakpoint($mw-480) {
+      font-size: ms(1);
+    }
+  }
+  h3 { 
+    font-size: ms(3); 
+    @include breakpoint($mw-480) {
+      font-size: ms(2);
+    }
+  }
+  h2 { 
+    font-size: ms(4); 
+    @include breakpoint($mw-480) {
+      font-size: ms(3);
+    }
+  }
+  h1 { 
+    font-size: ms(5); 
+    @include breakpoint($mw-480) {
+      font-size: ms(4);
+    }
+  }
 
 // colors
 $tan: #EBE4CD;

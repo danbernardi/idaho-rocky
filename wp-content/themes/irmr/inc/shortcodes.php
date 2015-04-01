@@ -69,8 +69,8 @@ function zd_overview_page( $atts, $content = null ) {
 	), $atts ) );
 		
 	$output .= '<div class="overviewpage"><figure>';
-  $output .= '<img src="'.$img.'" alt="'.$title.'">';
-  $output .= '<figcaption><div>';
+  $output .= '<div class="image-holder" style="background-image: url('.$img.');"></div>';
+  $output .= '<figcaption><div class="text-holder">';
   $output .= '<h2>'.$title.'</h2>';
   $output .= '<p>'.$content.'</p>';
   $output .= '<a href="'.$link.'"></a>';

@@ -60,5 +60,18 @@ j$(document).ready(function () {
       $container.isotope('layout');
     });
   }());
+  
+  // mobile menu
+  (function mobmenuInit() {
+    j$('#mobmenu').css('visibility', 'visible');
+    j$("#mobmenu").mmenu({
+      // options
+    }, {
+      // configuration
+      offCanvas: {
+        pageNodetype: "section"
+      }
+    });
+  }());
 	
 });

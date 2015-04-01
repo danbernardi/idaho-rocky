@@ -50,6 +50,9 @@ html, body, #pagewrap {
 	width: 100%;
 	display: block;
 }
+#pagewrap {
+  z-index: 1;
+}
 
 .row {
 	@include layout($default);
@@ -58,6 +61,10 @@ html, body, #pagewrap {
 }
 .container-padding {
 	padding: 0 45px;
+  @include breakpoint($mw-480) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 
@@ -69,6 +76,9 @@ header {
 	background: $tan;
 	width: 100%;
 	display: block;
+  @include breakpoint($pair-960-1090) {
+    height: 156px;
+  }
 	
 	.row {
 		margin: 0;
@@ -76,6 +86,15 @@ header {
 	
 	.logo {
 		@include span(2 of 12);
+    @include breakpoint($mw-1090) {
+      width: 100%;
+      text-align: center;
+      margin-right: 0;
+    }
+    @include breakpoint($mw-960) {
+      width: 150px;
+      text-align: left;
+    }
 		
 		img {
 			width: 150px;
@@ -85,6 +104,13 @@ header {
 	
 	nav {
 		@include span(10 of 12 last);
+    @include breakpoint($mw-1090) {
+      width: 100%;
+      text-align: center;
+    }
+    @include breakpoint($mw-960) {
+      display: none;
+    }
 		
 		ul li {
 			display: inline-block;
@@ -100,6 +126,12 @@ header {
 				font-size: 11px;
 				padding: 0 14px;
 				letter-spacing: 1px;
+        @include breakpoint($mw-1260) {
+          padding: 0 7px;
+        }
+        @include breakpoint($mw-1090) {
+          line-height: 64px;
+        }
 				
 				&:hover,
 				&.active {
@@ -118,6 +150,9 @@ header {
 				border-right: 5px solid #eee;
 				border-left: 5px solid #eee;
 				border-bottom: 5px solid #eee;
+        @include breakpoint($mw-1090) {
+          top: 64px;
+        }
 				
 				li {
 					display: block;
@@ -147,6 +182,68 @@ header {
 			}
 		}
 	}
+}
+
+// mobile menu
+.mobmenu-trigger {
+  display: none;
+  position: absolute;
+  right: 45px;
+  top: 35px;
+  @include breakpoint($mw-480) {
+    right: 20px;
+  }
+    
+  a {
+    display: block;
+    
+    i {
+      font-size: 30px;
+    }
+    span {
+      display: inline-block;
+      padding-left: 7px;
+      position: relative;
+      top: -4px;
+    }
+  }
+  @include breakpoint($mw-960) {
+    display: block;
+  }
+}
+.mm-menu {
+  z-index: 1;
+}
+.mm-next,
+.mm-prev {
+  width: 100% !important;
+  border: none !important;
+}
+
+#mobmenu {
+  visibility: hidden;
+  background: url(../../img/sidenavbg.jpg) left top no-repeat;
+  background-size: cover;
+  color: $tan;
+  
+  .mm-header>a {
+    color: rgba($tan, 0.7);
+  }
+  .mm-btn:before, 
+  .mm-btn:after, 
+  .mm-next:after {
+    border-color: rgba($tan, 0.7);
+  }
+  .mm-listview>li:after,
+  .mm-header {
+    border-color: rgba($tan, 0.2);
+  }
+  .mm-listview>li>a, 
+  .mm-listview>li>span {
+    &:hover {
+      background: rgba(black, 0.1);
+    }
+  }
 }
 
 
@@ -372,8 +469,10 @@ header {
 	// left sidebar
 	aside {
 		@include span(3 of 12);
-		
 		height: 100%;
+    @include breakpoint($mw-960) {
+      display: none;
+    }
 		
 		.fixedscroll {
 			height: 100%;
@@ -511,8 +610,16 @@ header {
 	// right content
 	article.main {
 		@include span(9 of 12 last);
-		
 		padding: 45px 61px 45px 25px;
+    @include breakpoint($mw-960) {
+      width: 100%;
+      margin: 0;
+      padding: 45px;
+    }
+    @include breakpoint($mw-480) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 		
 		form {
 			background: #FFF;
@@ -568,8 +675,14 @@ header {
 		
 		
 		.previous {
-			@include span(1 of 3);
+			@include span(2 of 6);
 			background: $yellow;
+      @include breakpoint($mw-1090) {
+        @include span(3 of 6);
+      }
+      @include breakpoint($mw-767) {
+        @include span(6 of 6 last);
+      }
       .image-holder {
         background-image: url('/img/pagenavigation/prev.jpg');
         background-size: cover;
@@ -577,8 +690,14 @@ header {
       }
 		}
 		.next {
-			@include span(2 of 3 last);
+			@include span(4 of 6 last);
 			background: $red;
+      @include breakpoint($mw-1090) {
+        @include span(3 of 6 last);
+      }
+      @include breakpoint($mw-767) {
+        @include span(6 of 6 last);
+      }
       .image-holder {
         background-image: url('/img/pagenavigation/next.jpg');
         background-size: cover;
@@ -719,34 +838,54 @@ header {
 			
 		.overviewpage {
 			@include span(1 of 2);
-				
 			position: relative;
 			margin-bottom: 7px;
 			overflow: hidden;
 			border: 5px solid #eee;
 			background: $brown;
+      @include breakpoint($mw-840) {
+        @include span(2 of 2 last);
+        height: 200px;
+      }
+      @include breakpoint($mw-480) {
+        height: 253px;
+      }
 				
 			figure {
-				img {
+				.image-holder {
+          background-image: url("/img/pagenavigation/next.jpg");
+          background-size: cover;
+          background-position: center center;
 					position: relative;
-					display: block;	
-
+					display: block;
 					max-width: none;
+          height: 224px;
 					width: calc(100% + 50px);
 					opacity: 0.7;
 					transform: translate3d(-40px,0,0);
 					transition: opacity 0.35s, transform 0.35s;
+          @include breakpoint($mw-840) {
+            height: 200px;
+          }
+          @include breakpoint($mw-480) {
+            height: 253px;
+          }
 				}
 					
 				figcaption {
-						
-					> div {
+					.text-holder {
 						position: absolute;
 						top: 0;
 						left: 0;
 						padding: 50px 38px;
 						width: 100%;
 						height: 100%;
+            @include breakpoint($mw-960) {
+              padding: 26px 38px;
+            }
+            @include breakpoint($mw-480) {
+              padding: 20px;
+            }
 							
 						h2 {
 							font-family: $bodytext;
@@ -758,6 +897,9 @@ header {
 							letter-spacing: 1px;
 							margin-bottom: 5px;
 							text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+              @include breakpoint($mw-960) {
+                font-size: 20px;
+              }
 						}
 							
 						a {
@@ -789,20 +931,20 @@ header {
 					}
 				}
 					
-				&:hover img {
+				&:hover .image-holder {
 					opacity: .3;
 				}
-				&:hover p {
+				&:hover .text-holder p {
 					opacity: 1;
 				}
 
-				&:hover img,
-				&:hover h2,
-				&:hover p {
+				&:hover .image-holder,
+				&:hover .text-holder h2,
+				&:hover .text-holder p {
 					transform: translate3d(0,0,0);
 				}
 				
-				&:hover p {
+				&:hover .text-holder p {
 					transition-delay: 0.05s;
 					transition-duration: 0.35s;
 				}
@@ -810,6 +952,9 @@ header {
 			
 			&:nth-child(2n) {
 				@include span(1 of 2 last);
+        @include breakpoint($mw-840) {
+          @include span(2 of 2 last);
+        }
 			}
 			&:last-child {
 				@include span(2 of 2 last);
@@ -1042,17 +1187,24 @@ img.featuredimg {
 // footer
 footer {
 	@extend .clearfix;
-			
 	margin-top: 10px;
 	border-bottom: 1px solid #DDD;
 	padding-bottom: 10px;
 	text-align: right;
 	font-size: 13px;
 	position: relative;
+  @include breakpoint($mw-767) {
+    text-align: left;
+  }
 	
 	.socialmedia {
 		float: right;
 		margin-left: 14px;
+    @include breakpoint($mw-480) {
+      float: none;
+      margin-left: -10px;
+      margin-bottom: 10px;
+    }
 				
 		ul li {
 			margin-left: 10px;
@@ -1067,11 +1219,19 @@ footer {
 		font-size: 11px;
 		margin-bottom: 0;
 		padding-top: 2px;
+    @include breakpoint($mw-767) {
+      width: 100%;
+      float: none;
+      clear: both;
+    }
 	}
 	
 	nav {
 		float: right;
 		display: inline-block;
+    @include breakpoint($mw-767) {
+      float: left;
+    }
 	}
 	ul li {
 		display: inline-block;
@@ -1298,20 +1458,38 @@ form {
     &.size-1x1 {
       width: 25%;
       height: 50%;
+      @include breakpoint($mw-767) {
+        width: 50%;
+      }
+      @include breakpoint($mw-480) {
+        width: 100%;
+      }
     }
     &.size-1x2 {
       width: 25%;
       height: 100%;
+      @include breakpoint($mw-767) {
+        width: 50%;
+      }
+      @include breakpoint($mw-480) {
+        width: 100%;
+      }
     }
     &.size-2x1 {
       display: block;
       width: 50%;
       height: 50%;
+      @include breakpoint($mw-480) {
+        width: 100%;
+      }
     }
     &.size-3x1 {
       display: block;
       width: 75%;
       height: 50%;
+      @include breakpoint($mw-767) {
+        width: 100%;
+      }
     }
     &.size-4x1 {
       display: block;
@@ -1321,11 +1499,17 @@ form {
     &.size-2x2 {
       width: 50%;
       height: 100%;
+      @include breakpoint($mw-767) {
+        width: 100%;
+      }
     }
     &.size-3x2 {
       display: block;
       width: 75%;
       height: 100%;
+      @include breakpoint($mw-767) {
+        width: 100%;
+      }
     }
     &.size-4x2 {
       display: block;
@@ -1395,6 +1579,15 @@ form {
   width: 100%;
   height: calc(100vh - 103px);
   margin-bottom: 0;
+  @include breakpoint($mw-1090) {
+    height: calc(100vh - 156px);
+  }
+  @include breakpoint($mw-960) {
+    height: calc(100vh - 103px);
+  }
+  @include breakpoint($mh-600) {
+    height: 500px;
+  }
   
   div {
     display: block;
@@ -1405,6 +1598,12 @@ form {
     transform-origin: 20% 80%;
     transition: transform 0 linear;
     transition-delay: 1s;
+    @include breakpoint($mw-960) {
+      height: calc(100vh - 103px);
+    }
+    @include breakpoint($mh-600) {
+      height: 500px;
+    }
     &.slowZoom {
       img {
         transform: scale(1.3) rotate(0.1deg);
@@ -1412,18 +1611,23 @@ form {
       }
     }
     img {
+      position: relative;
+      left: 50%;
+      margin-left: -960px;
       margin-top: -203px;
       transition: transform 0s linear;
       transition-delay: 4s;
       transform: scale(1) rotate(0deg);
       display: block;
-      max-width: 100%;
-      width: 100%;
+      min-width: 100%;
+      max-width: none;
       height: calc(100vh + 203px);
       background-size: 100%;
       background-position: center center;
       background-repeat: no-repeat;      
-      
+      @include breakpoint($mh-600) {
+        height: calc(500px + 203px) !important;
+      }
     }
   }
 }
@@ -1431,11 +1635,26 @@ form {
 .cta-overlay {
   color: lighten($lightbrown, 30);
   position: absolute;
-  right: 40px;
+  right: 45px;
   bottom: 40px;
   height: auto;
   width: 480px;
   text-shadow: 2px 2px 1px rgba(black, 0.6);
+  @include breakpoint($mw-1260) {
+    bottom: 90px;
+  }
+  @include breakpoint($mw-960) {
+    right: auto;
+    left: 45px;
+  }
+  @include breakpoint($mw-580) {
+    width: 100%;
+    padding: 0 20px;
+    left: 0;
+  }
+  @include breakpoint($mh-600) {
+    top: 200px;
+  }
   
   h4 {
     margin-bottom: 10px;
@@ -1447,6 +1666,10 @@ form {
     border-bottom: 1px solid $lightbrown;
     padding-bottom: 10px;
     font-family: $serif;
+    @include breakpoint($mw-580) {
+      font-size: 26px;
+    }
+    
     span {
       display: block;
       font-size: 15px;
@@ -1498,7 +1721,17 @@ form {
   bottom: 71px;
   max-width: 1190px;
   position: relative;
-  padding-left: 45px;
+  padding: 0 45px;
+  @include breakpoint($mw-1260) {
+    text-align: right;
+  }
+  @include breakpoint($mw-960) {
+    text-align: left;
+  }
+  @include breakpoint($mw-580) {
+    width: 100%;
+    padding: 0 20px;
+  }
   
   li {
     background: rgba(white, 0.4);

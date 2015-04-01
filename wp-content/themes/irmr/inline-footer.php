@@ -6,7 +6,6 @@
     $googleplus = of_get_option( 'zd_googleplus' );
   ?>
   
-  <p class="copyright"><?php echo of_get_option( 'zd_copyright'); ?></p>
   <div class="socialmedia">
     <ul>
       <?php 
@@ -28,4 +27,5 @@
   <nav>
     <?php wp_nav_menu( array('theme_location'  => 'footer') ); ?>
   </nav>
+  <p class="copyright"><?php echo of_get_option( 'zd_copyright'); ?></p>
 </footer>

@@ -17,5 +17,9 @@
 			<nav>
 				<?php wp_nav_menu( array('theme_location'  => 'primary') ); ?>
 			</nav>
+			<div class="mobmenu-trigger"><a href="#mobmenu"><i class="fa fa-bars"></i><span>MENU</span></a></div>
+			<div id="mobmenu">
+			  <?php wp_nav_menu( array('theme_location'  => 'primary') ); ?>
+			</div>
 		</div>
 	</header>
