@@ -226,6 +226,9 @@ header {
   background-size: cover;
   color: $tan;
   
+  .mm-header {
+    top: 45px;
+  }
   .mm-header>a {
     color: rgba($tan, 0.7);
   }
@@ -243,6 +246,9 @@ header {
     &:hover {
       background: rgba(black, 0.1);
     }
+  }
+  .mm-panel .mm-listview {
+    padding-top: 45px;
   }
 }
 
