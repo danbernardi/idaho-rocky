@@ -28,9 +28,11 @@ include('header.php'); ?>
         ?>
         
         <div class="gallery-item <?php echo $imgSize; ?>" style="background-image: url(<?php echo $thumb_url; ?>);">
-          <figure>
-          <figcaption><?php echo $imgCaption; ?></figcaption>
-          </figure>
+          <?php if(strlen($imgCaption) != 0) { ?>
+            <figure>
+              <figcaption><?php echo $imgCaption; ?></figcaption>
+            </figure>
+          <?php } ?>
         </div>
         
         <?php /*
