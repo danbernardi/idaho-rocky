@@ -111,6 +111,12 @@ function optionsframework_options() {
         'desc' => __('Upload your logo', 'zd'),
         'id' => 'zd_logo',
         'type' => 'upload');
+        
+    $options[] = array(
+        'name' => __('Favicon', 'zd'),
+        'desc' => __('Upload your favicon in ico format', 'zd'),
+        'id' => 'zd_favicon',
+        'type' => 'upload');
 	
     // Footer Settings
     $options[] = array(
