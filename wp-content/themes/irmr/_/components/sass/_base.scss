@@ -839,6 +839,9 @@ header {
         position: relative;
         top: -17px;
       }
+      @include breakpoint($mw-480) {
+        top: -12px;
+      }
 		}
 	}
 		
