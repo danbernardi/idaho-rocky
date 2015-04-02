@@ -404,6 +404,7 @@ header {
 	// table styles
 	table {
 		width: 100%;
+    min-width: 490px;
 	}
 	
 	.rates {
@@ -631,6 +632,9 @@ header {
 			background: #FFF;
 			padding: 40px;
 			border: 5px solid #EEE;
+      @include breakpoint($mw-480) {
+        padding: 20px;
+      }
 			
 			&.comments {
 				background: none;
@@ -819,10 +823,13 @@ header {
 		
 		.solidbtn {
 			@include re-solidbtn();
-			
 			position: absolute;
 			right: 0;
 			top: 17px;
+      @include breakpoint($mw-690) {
+        position: relative;
+        top: -17px;
+      }
 		}
 	}
 		
@@ -974,10 +981,12 @@ header {
 	padding: 4px 20px;
 	background: lighten($red, 6);
 	color: $offwhite;
-	dispaly: inline-block;
+	display: inline-block;
 	border-radius: 4px;
 	margin-right: 7px;
 	position: relative;
+  margin-bottom: 3px;
+  margin-top: 3px;
 	
 	&:hover {
 		background: lighten($red, 9);
@@ -1022,17 +1031,27 @@ header {
 }
 
 // img styles
-img.alignright {
+.alignright {
 	width: 50%;
 	margin: 0 0 20px 20px;
 	float: right;
 	border: 5px solid #EEE;
+  @include breakpoint($mw-480) {
+    width: auto !important;
+    margin: 20px 0 !important;
+    float: none !important;
+  }
 }
-img.alignleft {
+.alignleft {
 	width: 50%;
 	margin: 0 20px 20px 0;
 	float: left;
 	border: 5px solid #EEE;
+  @include breakpoint($mw-480) {
+    width: auto !important;
+    margin: 20px 0 !important;
+    float: none !important;
+  }
 }
 img.featuredimg {
 	width:23%;
@@ -1099,12 +1118,19 @@ img.featuredimg {
 	
 	.item {
 		@include span(1 of 2);
-		
 		padding: 0 40px 10px;
 		border: 5px solid #eee;
 		background: #FFF;
 		margin-bottom: 20px;
 		min-height: 462px;
+    @include breakpoint($mw-767) {
+      padding: 0 20px 10px;
+    }
+    @include breakpoint($mw-690) {
+      width: 100%;
+      margin-right: 0;
+      min-height: inherit;
+    }
 		
 		&:nth-child(2n) {
 			@include last();
@@ -1120,6 +1146,10 @@ img.featuredimg {
 			margin-top: -1px;
 			width: calc(100% + 81px);
 			max-width: none;
+      @include breakpoint($mw-767) {
+        width: calc(100% + 41px);
+        margin-left: -20px;
+      }
 		}
 	}
 }
@@ -1127,10 +1157,23 @@ img.featuredimg {
 .blog .posts .item {
   padding-left: 270px;
   min-height: 297px;
+  @include breakpoint($mw-767) {
+    padding-left: 40px;
+  }
+  @include breakpoint($mw-480) {
+    padding: 20px;
+  }
   img.alignleft {
     position: absolute;
     left: 40px;
     top: 40px;
+    @include breakpoint($mw-767) {
+      position: relative;
+      left: auto;
+      top: auto;
+      margin-bottom: 15px;
+      float: none;
+    }
   }
   a {
     display: inline-block;
@@ -1142,16 +1185,21 @@ img.featuredimg {
 	
 	.item {
 		@include span(2 of 2 last);
-		
 		background: #FFF;
 		padding: 40px;
 		border: 5px solid #EEE;
 		margin-bottom: 20px;
     position: relative;
+    @include breakpoint($mw-580) {
+      padding: 20px;
+    }
 		a {
 			font-family: $bodytext;
 			font-size: 23px;
       display: block;
+      @include breakpoint($mw-580) {
+        font-size: 18px;
+      }
 		}
 		
 		a.solidbtn {
@@ -1167,6 +1215,9 @@ img.featuredimg {
 		}
     .press a {
       margin-left: -9px;
+      @include breakpoint($mw-580) {
+        margin-left: 0;
+      }
     }
 	}
 }
@@ -1175,7 +1226,7 @@ img.featuredimg {
 	.item {
 	
 		img {
-			width: 24%;
+			width: 205px;
 			max-height: none;
 			margin-bottom: 0;
 		}
@@ -1270,9 +1321,18 @@ form {
 			
 		div {
 			@include span(3 of 12);
+      @include breakpoint($mw-767) {
+        @include span(6 of 12);
+      }
+      @include breakpoint($mw-480) {
+        @include span(12 of 12 last);
+      }
 			
 			&:nth-child(1) {
 				@include span(6 of 12);
+        @include breakpoint($mw-767) {
+          @include span(12 of 12 last);
+        }
 			}
 			&:nth-child(3) {
 				@include last();
@@ -1285,9 +1345,18 @@ form {
 		
 		div {
 			@include span(2 of 12);
+      @include breakpoint($mw-767) {
+        @include span(4 of 12);
+      }
+      @include breakpoint($mw-480) {
+        @include span(12 of 12 last);
+      }
 			
 			&:nth-child(1) {
 				@include span(6 of 12);
+        @include breakpoint($mw-767) {
+          @include span(12 of 12 last);
+        }
 			}
 			
 			&:nth-child(4) {
@@ -1301,10 +1370,20 @@ form {
 		
 		div {
 			@include span(3 of 12);
+      @include breakpoint($mw-767) {
+        @include span(6 of 12);
+        &:nth-child(2) {
+          @include last();
+        }
+      }
+      @include breakpoint($mw-480) {
+        @include span(12 of 12 last);
+      }
 			
 			&:nth-child(4) {
 				@include last();
 			}
+      
 		}
 	}
 	
@@ -1313,10 +1392,18 @@ form {
 		
 		div {
 			@include span(3 of 12);
-		
+		  @include breakpoint($mw-767) {
+        @include span(6 of 12);
+      }
+      @include breakpoint($mw-480) {
+        @include span(12 of 12 last);
+      }
 		
 			&:nth-child(1) {
 				@include span(6 of 12);
+        @include breakpoint($mw-767) {
+          @include span(12 of 12 last);
+        }
 			}
 
 			&:nth-child(3) {
@@ -1560,6 +1647,9 @@ form {
   background: #FFF;
   margin-bottom: 30px;
   position: relative;
+  @include breakpoint($mw-480) {
+    padding: 20px;
+  }
   
   .comment {
     border: none;
@@ -1790,6 +1880,9 @@ form {
   border: 5px solid #EEE;
   padding: 40px;
   margin-bottom: 30px;
+  @include breakpoint($mw-580) {
+    padding: 20px;
+  }
   h4 {
     color: $red;
   }
@@ -1816,3 +1909,29 @@ form {
     }
   }
 }
+
+.single-post .content .comment-author img {
+  width: auto;
+}
+
+.columns-2 .column,
+.columns-4 .column {
+  @include breakpoint($mw-580) {
+    width: 100%;
+    margin: 0;
+  }
+}
+ul.copy {
+  margin-left: 20px;
+}
+h5.table {
+  padding-top: 12px;
+}
+
+.tablewrap {
+  @include breakpoint($mw-580) {
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+}
+

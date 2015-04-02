@@ -262,7 +262,7 @@ add_shortcode( 'button', 'zd_button' );
 
 // disables automatic spacing & p tags inside selected shortcodes. Add shortcode name to array inside $block
 function the_content_filter($content) {
-	$block = join("|",array('overview', 'overview_page', 'list_press', 'posts', 'slide', 'slideshow'));
+	$block = join("|",array('overview', 'overview_page', 'list_press', 'posts', 'slide', 'slideshow', 'column', 'column-group'));
 	$rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
 	$rep = preg_replace("/(<p>)?\[\/($block)](<\/p>|<br \/>)?/","[/$2]",$rep);
 return $rep;
