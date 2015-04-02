@@ -1497,6 +1497,10 @@ form {
 
 .socialshare {
 	float: right;
+  @include breakpoint($mw-480) {
+    float: none;
+    margin-top: 10px;
+  }
 	
 	ul li {
 		display: inline-block;
