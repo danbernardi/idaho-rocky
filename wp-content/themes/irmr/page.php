@@ -17,8 +17,8 @@
     
     ?>
 		<h2 class="pagetitle">
+		  <span><?php the_title(); ?></span>
 		  <?php 
-		    the_title();
 		    if($hdg_btn == 'on') { echo '<a class="solidbtn red" href="'.$hdg_btn_url.'">'.$hdg_btn_text.'</a>'; }
 		  ?>
     </h2>

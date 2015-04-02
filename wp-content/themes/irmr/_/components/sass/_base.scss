@@ -254,7 +254,9 @@ header {
     padding-top: 45px;
   }
 }
-
+.mm-listview>li:not(.mm-divider):after {
+  left: 0;
+}
 
 // homepage
 .home-images-grid {
@@ -1942,3 +1944,6 @@ h5.table {
   }
 }
 
+.gcc_msg {
+  color: lighten($red, 30);
+}
