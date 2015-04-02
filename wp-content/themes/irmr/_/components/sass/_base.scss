@@ -825,7 +825,12 @@ header {
 		line-height: 1.5;
 		color: lighten($red, 5);
 		position: relative;
-		
+		span {
+      @include breakpoint($mw-690) {
+        display: block;
+      }
+    }
+    
 		.solidbtn {
 			@include re-solidbtn();
 			position: absolute;
