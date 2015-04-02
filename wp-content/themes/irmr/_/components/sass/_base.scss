@@ -423,7 +423,6 @@ header {
 		
 		table {
 			width: 100%;
-			margin-bottom: 40px;
 			
 			tr {
 				background: lighten($darkbrown, 60);
@@ -1943,6 +1942,7 @@ h5.table {
 }
 
 .tablewrap {
+  margin-bottom: 40px;
   @include breakpoint($mw-580) {
     max-width: 100%;
     overflow-x: scroll;
