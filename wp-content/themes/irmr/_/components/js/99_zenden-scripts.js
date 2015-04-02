@@ -8,7 +8,6 @@ j$(document).ready(function () {
 	
   (function initScrollToFixed() {
     j$('.content aside .fixedscroll').scrollToFixed();
-    console.log('scroll to fixed initialized...');
   }());
   
   (function initSlick() {

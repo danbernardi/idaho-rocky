@@ -228,6 +228,9 @@ header {
   
   .mm-header {
     top: 45px;
+    &:hover {
+      background: rgba(black, 0.2);
+    }
   }
   .mm-header>a {
     color: rgba($tan, 0.7);
