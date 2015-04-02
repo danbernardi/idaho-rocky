@@ -12,7 +12,7 @@ function zd_page_options( array $meta_boxes ) {
     $meta_boxes['page_options'] = array(
         'id'            => 'page_options',
         'title'         => __( 'Page Options', 'zd' ),
-        'object_types'  => array( 'page', 'post' ), // Post type
+        'object_types'  => array( 'page' ), // Post type
         'context'       => 'normal',
         'priority'      => 'high',
         'show_names'    => true, // Show field names on the left
@@ -76,6 +76,38 @@ function zd_page_options( array $meta_boxes ) {
     return $meta_boxes;
 }
 add_filter( 'cmb2_meta_boxes', 'zd_page_options' );
+
+
+function zd_post_options( array $meta_boxes ) {
+
+    // Start with an underscore to hide fields from custom fields list
+    $prefix = '_zd_';
+    
+      $meta_boxes['post_options'] = array(
+        'id'            => 'post_options',
+        'title'         => __( 'Post Options', 'zd' ),
+        'object_types'  => array( 'post' ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+        'fields'        => array(
+            array(
+                'name'       => __( 'Hide Image', 'zd' ),
+                'desc'       => __( 'Check this box to hide the featured image on the single view for this post.', 'zd' ),
+                'id'         => $prefix . 'hide_featured_image',
+                'type'       => 'checkbox',
+                'show_on_cb' => 'cmb2_hide_if_no_cats',
+            ),
+        ),
+    );
+
+    // Add other metaboxes as needed
+
+    return $meta_boxes;
+}
+add_filter( 'cmb2_meta_boxes', 'zd_post_options' );
 
 
 

@@ -36,6 +36,7 @@ function zd_theme_setup() {
 
 	// This theme uses wp_nav_menu() in two locations, header and footer.
 	register_nav_menus( array( 'primary' => __( 'Primary Menu', 'zd' ) ) );
+	register_nav_menus( array( 'responsive' => __( 'Responsive Menu', 'zd' ) ) );
 	register_nav_menus( array( 'footer' => __( 'Footer Menu', 'zd' ) ) );
 
 	// Switch default core markup for search form, comment form, and comments

@@ -35,7 +35,10 @@
             <div class="divider"></div>
             
             <?php if( has_post_thumbnail() ) { ?>
-              <img class="alignleft featuredimg" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
+              <?php $noImage = $hdg_btn_url = get_post_meta( get_the_ID(), '_zd_hide_featured_image', true );
+              if( $noImage != 'on' ) { ?>
+                <img class="alignleft featuredimg" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
+              <?php } ?>
             <?php } ?>
             <?php the_content(); ?>
             <div class="divider"></div>

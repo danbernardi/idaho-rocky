@@ -1618,19 +1618,23 @@ form {
     }
     img {
       position: relative;
-      left: 50%;
-      margin-left: -960px;
       margin-top: -203px;
       transition: transform 0s linear;
       transition-delay: 4s;
       transform: scale(1) rotate(0deg);
       display: block;
       min-width: 100%;
-      max-width: none;
-      height: calc(100vh + 203px);
+      max-width: 100%;
+      height: auto;
       background-size: 100%;
       background-position: center center;
-      background-repeat: no-repeat;      
+      background-repeat: no-repeat;  
+      @include breakpoint($mw-1260) {
+        left: 50%;
+        margin-left: -960px;
+        max-width: none;
+        height: calc(100vh + 203px);
+      }
       @include breakpoint($mh-600) {
         height: calc(500px + 203px) !important;
       }
