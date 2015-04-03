@@ -1043,7 +1043,8 @@ header {
 }
 
 // img styles
-.alignright {
+img.alignright,
+figure.alignright {
 	width: 50%;
 	margin: 0 0 20px 20px;
 	float: right;
@@ -1054,7 +1055,8 @@ header {
     float: none !important;
   }
 }
-.alignleft {
+img.alignleft,
+figure.alignleft {
 	width: 50%;
 	margin: 0 20px 20px 0;
 	float: left;

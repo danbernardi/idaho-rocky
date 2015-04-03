@@ -5,11 +5,12 @@ var j$ = jQuery.noConflict();
 j$(document).ready(function () {
 	"use strict";
 
-	
+	// init fixed sidebar
   (function initScrollToFixed() {
     j$('.content aside .fixedscroll').scrollToFixed();
   }());
   
+  // init homepage slideshow
   (function initSlick() {
     j$('.home-slick').slick({
       slidesToShow: 1,
@@ -33,8 +34,8 @@ j$(document).ready(function () {
     });
   }());
   
+  // init simple image slider using slides.js
   (function initSlides() {
-    // initialize simple image slider using slides.js
     j$("#slides").slidesjs({
       width: 940,
       height: 528,
@@ -49,7 +50,6 @@ j$(document).ready(function () {
   
   // init isotope
   (function galleryInit() {
-    
     var $container = j$('.gallery');
     $container.isotope({
       itemSelector: '.gallery-item',
@@ -60,7 +60,7 @@ j$(document).ready(function () {
     });
   }());
   
-  // mobile menu
+  // init mobile menu
   (function mobmenuInit() {
     j$('#mobmenu').css('visibility', 'visible');
     j$("#mobmenu").mmenu({
@@ -71,6 +71,12 @@ j$(document).ready(function () {
         pageNodetype: "section"
       }
     });
+    
+    // When the browser / device is resized, the menu will close
+    var API = j$("#mobmenu").data("mmenu");
+		j$(window).resize(function () {
+		  API.close();
+		});
   }());
 	
 });
