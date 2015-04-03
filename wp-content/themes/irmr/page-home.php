@@ -16,7 +16,7 @@ include('header.php'); ?>
         // Loop through them and output an image
         foreach ( (array) $files as $attachment_id => $attachment_url ) {
           echo '<div>';
-          echo wp_get_attachment_image( $attachment_id, $img_size );
+          echo '<div class="image-holder" style="background-image: url('.$attachment_url.');"></div>';
           echo '</div>';
         }
 														
