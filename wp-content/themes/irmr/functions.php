@@ -50,14 +50,14 @@ function zd_theme_setup() {
     add_image_size( 'slideshow', 1920, 1200, true );
     
     // gallery sizes
-    add_image_size( 'size-1x1', 323,  301, true );
-    add_image_size( 'size-2x1', 646,  301, true );
-    add_image_size( 'size-3x1', 969,  301, true );
-    add_image_size( 'size-4x1', 1294, 301, true );
-    add_image_size( 'size-1x2', 323,  602, true );
-    add_image_size( 'size-2x2', 646,  602, true );
-    add_image_size( 'size-3x2', 969,  602, true );
-    add_image_size( 'size-4x2', 1294, 602, true );
+    add_image_size( 'size-1x1', 646,  602, true );
+    add_image_size( 'size-2x1', 1292,  602, true );
+    add_image_size( 'size-3x1', 969,  602, true );
+    add_image_size( 'size-4x1', 1938, 602, true );
+    add_image_size( 'size-1x2', 646,  1204, true );
+    add_image_size( 'size-2x2', 1292,  1204, true );
+    add_image_size( 'size-3x2', 969,  1204, true );
+    add_image_size( 'size-4x2', 1938, 1204, true );
   }
     
   // hide admin bar
