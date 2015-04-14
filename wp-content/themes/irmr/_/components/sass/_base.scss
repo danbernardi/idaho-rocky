@@ -1961,5 +1961,8 @@ h5.table {
     &:nth-of-type(2n) {
       @include last();
     }
+    @include breakpoint($mw-580) {
+      @include span(12 of 12 last);
+    }
   }
 }
