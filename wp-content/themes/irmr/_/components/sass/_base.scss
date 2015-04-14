@@ -1956,6 +1956,7 @@ h5.table {
 }
 
 .images-group {
+  @include layout($interior);
   @include container();
   img {
     @include span(6 of 12);
