@@ -1766,6 +1766,7 @@ form {
     width: 100%;
     padding: 0 20px;
     left: 0;
+    bottom: 115px;
   }
   @include breakpoint($mh-600) {
     top: 200px;
@@ -1846,6 +1847,7 @@ form {
   @include breakpoint($mw-580) {
     width: 100%;
     padding: 0 20px;
+    bottom: 90px;
   }
   
   li {
