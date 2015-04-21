@@ -35,16 +35,6 @@ include('header.php'); ?>
           <?php } ?>
         </div>
         
-        <?php /*
-        <div>
-			<figure>
-				<figcaption>
-					<span>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</span>
-				</figcaption>
-			</figure>
-		</div>
-        */ ?>
-        
         <?php endwhile; ?>
 
 </section>
